@@ -5,6 +5,8 @@ import elements
 import embodied
 import numpy as np
 
+from .paper_artifacts import PaperArtifactWriter
+
 
 def eval_only(make_agent, make_env, make_logger, args):
   assert args.from_checkpoint
@@ -15,6 +17,7 @@ def eval_only(make_agent, make_env, make_logger, args):
   logdir = elements.Path(args.logdir)
   logdir.mkdir()
   print('Logdir', logdir)
+  paper = PaperArtifactWriter(logdir, args)
   step = logger.step
   usage = elements.Usage(**args.usage)
   agg = elements.Agg()
@@ -22,6 +25,8 @@ def eval_only(make_agent, make_env, make_logger, args):
   episodes = defaultdict(elements.Agg)
   should_log = elements.when.Clock(args.log_every)
   policy_fps = elements.FPS()
+  eval_scores = []
+  eval_lengths = []
 
   @elements.timer.section('logfn')
   def logfn(tran, worker):
@@ -41,10 +46,15 @@ def eval_only(make_agent, make_env, make_logger, args):
         episode.add(key + '/sum', value, agg='sum')
     if tran['is_last']:
       result = episode.result()
+      score = result.pop('score')
+      length = result.pop('length')
       logger.add({
-          'score': result.pop('score'),
-          'length': result.pop('length'),
+          'score': score,
+          'length': length,
       }, prefix='episode')
+      eval_scores.append(float(score))
+      eval_lengths.append(float(length))
+      paper.write_eval_episode(step, score, length)
       rew = result.pop('rewards')
       if len(rew) > 1:
         result['reward_rate'] = (np.abs(rew[1:] - rew[:-1]) >= 0.01).mean()
@@ -63,7 +73,8 @@ def eval_only(make_agent, make_env, make_logger, args):
   print('Start evaluation')
   policy = lambda *args: agent.policy(*args, mode='eval')
   driver.reset(agent.init_policy)
-  while step < args.steps:
+  target_eps = int(getattr(args, 'eval_eps', 0) or 0)
+  while step < args.steps and (not target_eps or len(eval_scores) < target_eps):
     driver(policy, steps=10)
     if should_log(step):
       logger.add(agg.result())
@@ -73,4 +84,6 @@ def eval_only(make_agent, make_env, make_logger, args):
       logger.add({'timer': elements.timer.stats()['summary']})
       logger.write()
 
+  paper.finalize_eval(
+      step, args.from_checkpoint, len(eval_scores), eval_scores, eval_lengths)
   logger.close()

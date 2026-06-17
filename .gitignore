@@ -4,4 +4,24 @@ __pycache__/
 *.py[cod]
 *.egg-info
 MUJOCO_LOG.TXT
-;
+
+# Local experiment outputs and caches.
+wandb/
+paper_artifacts/
+logs/
+runs/
+tmp/
+*.log
+
+# DreamerV3 run outputs.
+**/ckpt/
+**/replay/
+**/scope/
+**/plugins/profile/
+
+# Large media/checkpoint artifacts that should not be committed by default.
+*.mp4
+*.gif
+*.npz
+*.pkl
+*.ckpt

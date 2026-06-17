@@ -57,6 +57,11 @@ def main(argv=None):
       replica=config.replica,
       replicas=config.replicas,
       logdir=config.logdir,
+      task=config.task,
+      seed=config.seed,
+      env=config.env,
+      agent=config.agent,
+      logger=config.logger,
       batch_size=config.batch_size,
       batch_length=config.batch_length,
       report_length=config.report_length,
@@ -170,8 +175,22 @@ def make_logger(config):
       outputs.append(elements.logger.ExpaOutput(
           exp, run, proj, config.logger.user, config.flat))
     elif output == 'wandb':
-      name = '/'.join(logdir.split('/')[-4:])
-      outputs.append(elements.logger.WandBOutput(name))
+      name = os.environ.get('WANDB_RUN_NAME') or '/'.join(logdir.split('/')[-4:])
+      kwargs = {}
+      for envkey, argkey in [
+          ('WANDB_PROJECT', 'project'),
+          ('WANDB_ENTITY', 'entity'),
+          ('WANDB_MODE', 'mode'),
+          ('WANDB_GROUP', 'group'),
+          ('WANDB_JOB_TYPE', 'job_type'),
+      ]:
+        if os.environ.get(envkey):
+          kwargs[argkey] = os.environ[envkey]
+      if os.environ.get('WANDB_TAGS'):
+        kwargs['tags'] = [
+            tag.strip() for tag in os.environ['WANDB_TAGS'].split(',')
+            if tag.strip()]
+      outputs.append(elements.logger.WandBOutput(name, **kwargs))
     elif output == 'scope':
       outputs.append(elements.logger.ScopeOutput(elements.Path(logdir)))
     else:
