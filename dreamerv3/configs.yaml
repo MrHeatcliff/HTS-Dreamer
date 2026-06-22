@@ -136,9 +136,27 @@ defaults:
       norm: rms
       l_hier: 0.1
       l_sdyn: 0.1
+      l_ctrl: 0.0
       l_temp: 0.01
       l_vc: 0.01
       l_sparse: 1e-5
+      use_lhier: True
+      use_lsdyn: True
+      use_lctrl: False
+      use_ltemp: True
+      use_lvc: True
+      use_lsparse: True
+      use_lred: False
+      method: auxiliary_hierarchy
+      sparsity_mode: levelwise_topk
+      actor_critic_input: rssm_feat
+      actor_critic_stopgrad_z: False
+      hier_beta0: 1.0
+      hier_rho: 0.75
+      ctrl_reward_scale: 1.0
+      ctrl_continue_scale: 1.0
+      ctrl_value_scale: 1.0
+      discount: 0.997
       temporal_k_pos: 4
       temporal_temperature: 0.1
       temporal_far_negative_mode: none
@@ -154,7 +172,13 @@ defaults:
       hts_lr_scale: 1.0
       hierarchy_lr_scale: 1.0
       warmup_steps: 0
+      aux_warmup_raw_frames: 0
+      aux_warmup_agent_actions: 0
+      aux_warmup_optimizer_updates: 0
+      aux_warmup_action_repeat: 4
+      aux_warmup_train_ratio: 256
       vicreg_gamma: 1.0
+      vicreg_cov_scale: 1.0
       variant: hts_full
       flat_width: 192
       flat_topk: 48
@@ -231,6 +255,110 @@ hts_no_hier:
 
 hts_no_sdyn:
   agent.hts.l_sdyn: 0.0
+
+hts_warmup_50k_raw:
+  agent.hts.aux_warmup_raw_frames: 50000
+  agent.hts.aux_warmup_agent_actions: 12500
+
+hts_warmup_100k_raw:
+  agent.hts.aux_warmup_raw_frames: 100000
+  agent.hts.aux_warmup_agent_actions: 25000
+
+hts_levels_2:
+  agent.hts.levels: 2
+  agent.hts.topk_per_level: [8, 8]
+  agent.hts.strides: [32, 1]
+  agent.hts.strides_coarse_to_fine: [32, 1]
+  agent.hts.beta_hier: [0.5, 0.5]
+  agent.hts.alpha_sdyn: [0.5, 0.5]
+
+hts_levels_4:
+  agent.hts.levels: 4
+  agent.hts.topk_per_level: [8, 8, 8, 8]
+  agent.hts.strides: [32, 8, 2, 1]
+  agent.hts.strides_coarse_to_fine: [32, 8, 2, 1]
+  agent.hts.beta_hier: [0.25, 0.25, 0.25, 0.25]
+  agent.hts.alpha_sdyn: [0.25, 0.25, 0.25, 0.25]
+
+hts_paper_core_zfull:
+  agent.hts.method: paper_core_control_prefix
+  agent.hts.variant: paper_core_control_prefix
+  agent.hts.levels: 4
+  agent.hts.head_dim: 32
+  agent.hts.topk: 8
+  agent.hts.topk_per_level: [8, 8, 8, 8]
+  agent.hts.strides: [32, 8, 2, 1]
+  agent.hts.strides_coarse_to_fine: [32, 8, 2, 1]
+  agent.hts.beta_hier: [0.3657142857, 0.2742857143, 0.2057142857, 0.1542857143]
+  agent.hts.alpha_sdyn: [0.25, 0.25, 0.25, 0.25]
+  agent.hts.hier_beta0: 1.0
+  agent.hts.hier_rho: 0.75
+  agent.hts.l_hier: 0.1
+  agent.hts.l_sdyn: 0.1
+  agent.hts.l_ctrl: 0.1
+  agent.hts.l_temp: 0.0
+  agent.hts.l_vc: 0.0
+  agent.hts.l_sparse: 0.0
+  agent.hts.use_lhier: True
+  agent.hts.use_lsdyn: True
+  agent.hts.use_lctrl: True
+  agent.hts.use_ltemp: False
+  agent.hts.use_lvc: False
+  agent.hts.use_lsparse: False
+  agent.hts.use_lred: False
+  agent.hts.sparsity_mode: levelwise_topk
+  agent.hts.actor_critic_input: z_full
+  agent.hts.actor_critic_stopgrad_z: False
+  agent.hts.training_regime: joint_online_initial
+  agent.hts.vicreg_cov_scale: 0.001
+
+hts_paper_core_zfull_topk_detail:
+  agent.hts.method: paper_core_control_prefix
+  agent.hts.variant: paper_core_control_prefix
+  agent.hts.levels: 4
+  agent.hts.head_dim: 32
+  agent.hts.topk: 8
+  agent.hts.topk_per_level: [8, 12, 16, 32]
+  agent.hts.strides: [32, 8, 2, 1]
+  agent.hts.strides_coarse_to_fine: [32, 8, 2, 1]
+  agent.hts.beta_hier: [0.3657142857, 0.2742857143, 0.2057142857, 0.1542857143]
+  agent.hts.alpha_sdyn: [0.25, 0.25, 0.25, 0.25]
+  agent.hts.hier_beta0: 1.0
+  agent.hts.hier_rho: 0.75
+  agent.hts.l_hier: 0.1
+  agent.hts.l_sdyn: 0.1
+  agent.hts.l_ctrl: 0.1
+  agent.hts.l_temp: 0.0
+  agent.hts.l_vc: 0.0
+  agent.hts.l_sparse: 0.0
+  agent.hts.use_lhier: True
+  agent.hts.use_lsdyn: True
+  agent.hts.use_lctrl: True
+  agent.hts.use_ltemp: False
+  agent.hts.use_lvc: False
+  agent.hts.use_lsparse: False
+  agent.hts.use_lred: False
+  agent.hts.sparsity_mode: levelwise_topk
+  agent.hts.actor_critic_input: z_full
+  agent.hts.actor_critic_stopgrad_z: False
+  agent.hts.training_regime: joint_online_initial
+  agent.hts.vicreg_cov_scale: 0.001
+
+hts_levels_6:
+  agent.hts.levels: 6
+  agent.hts.topk_per_level: [8, 8, 8, 8, 8, 8]
+  agent.hts.strides: [32, 16, 8, 4, 2, 1]
+  agent.hts.strides_coarse_to_fine: [32, 16, 8, 4, 2, 1]
+  agent.hts.beta_hier: [0.1666666667, 0.1666666667, 0.1666666667, 0.1666666667, 0.1666666667, 0.1666666667]
+  agent.hts.alpha_sdyn: [0.1666666667, 0.1666666667, 0.1666666667, 0.1666666667, 0.1666666667, 0.1666666667]
+
+hts_levels_8:
+  agent.hts.levels: 8
+  agent.hts.topk_per_level: [8, 8, 8, 8, 8, 8, 8, 8]
+  agent.hts.strides: [32, 24, 16, 12, 8, 4, 2, 1]
+  agent.hts.strides_coarse_to_fine: [32, 24, 16, 12, 8, 4, 2, 1]
+  agent.hts.beta_hier: [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+  agent.hts.alpha_sdyn: [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
 
 hts_dense_multistride_no_sparse:
   agent.hts.variant: dense_multistride_no_sparse
