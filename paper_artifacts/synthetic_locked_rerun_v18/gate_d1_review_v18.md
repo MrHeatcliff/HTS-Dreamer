@@ -1,0 +1,7 @@
+# Gate D1 Review V18
+
+Gate D1: `PASS_LOCKED_SYNTHETIC`
+
+Candidate decision: `PASS_WITH_LOCKED_PROTOCOL_DEVELOPMENT_CANDIDATE`
+
+Gate D2: `blocked`.

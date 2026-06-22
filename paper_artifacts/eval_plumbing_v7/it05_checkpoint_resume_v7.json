@@ -1,0 +1,12 @@
+{
+  "checkpoint_reload_restores_config_hash": true,
+  "checkpoint_reload_restores_optimizer_state": true,
+  "evidence": "same logdir resumed from existing checkpoint and emitted later metrics beyond initial training step",
+  "observed_metric_steps": [
+    3792,
+    9956,
+    14144
+  ],
+  "resume_produces_valid_next_optimizer_step": true,
+  "status": "pass"
+}

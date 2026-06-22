@@ -1,0 +1,17 @@
+{
+  "checkpoint_dirs": [
+    "/tmp/hts_v7_eval_plumbing_smoke/ckpt/20260611T140906F400549"
+  ],
+  "checkpoints_manifest_json": true,
+  "config_hash_eval": "6dafd5763ad76d3a",
+  "config_hash_train": "db07d338a2dad06c",
+  "eval_episodes": 1,
+  "eval_logdir": "/tmp/hts_v7_eval_only_smoke",
+  "eval_metrics_jsonl": true,
+  "eval_only_checkpoint_loaded": true,
+  "final_eval_json": true,
+  "run_meta_json": true,
+  "status": "pass",
+  "train_logdir": "/tmp/hts_v7_eval_plumbing_smoke",
+  "train_metrics_jsonl": true
+}

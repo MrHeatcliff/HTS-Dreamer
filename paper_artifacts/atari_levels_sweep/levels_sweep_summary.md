@@ -1,0 +1,6 @@
+| levels | completed | latest_raw_frames | auc_20bin_mean | final_20pct_mean | final_bin_mean | latest_episode_score | last_total_dictionary_width | last_total_active_budget | last_vicreg_cov_scale | logdir |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | True | 439552.0 | 3.879218434874049 | 6.009469696969696 | 6.0 | 3.0 | 64.0 | 16.0 | 0.0010000000474974513 | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_levels_sweep/breakout_seed0_cov0p001/levels_2/seed_0 |
+| 4 | True | 437544.0 | 5.65669714692884 | 10.08270202020202 | 11.636363636363637 | 9.0 |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_levels_sweep/breakout_seed0_cov0p001/levels_4/seed_0 |
+| 6 | True | 437856.0 | 4.766385720239809 | 6.015625 | 5.4375 | 6.0 |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_levels_sweep/breakout_seed0_cov0p001/levels_6/seed_0 |
+| 8 | True | 439552.0 | 4.847427094319509 | 5.6156153250774 | 5.470588235294118 | 5.0 |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_levels_sweep/breakout_seed0_cov0p001/levels_8/seed_0 |

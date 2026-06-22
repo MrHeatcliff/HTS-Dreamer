@@ -1,0 +1,96 @@
+{
+  "checks": {
+    "decoder_target_shape_aligned": true,
+    "no_checkpoint_mismatch": true,
+    "no_label_leakage": true,
+    "normalization_consistent": true,
+    "oracle_constant": true,
+    "oracle_nested": true,
+    "oracle_noise": true,
+    "oracle_permuted": true,
+    "same_target_tensor_all_levels": true
+  },
+  "rows": [
+    {
+      "end_to_end_gain": 0.17805830313261733,
+      "fixture": "oracle_nested",
+      "marginal_gains": [
+        0.08309387678860922,
+        0.04154693839430461,
+        0.024928161541541913,
+        0.016618776852762696,
+        0.011870549555398902
+      ],
+      "nonincreasing": true,
+      "prefix_nrmse": [
+        0.24928163036582765,
+        0.16618775357721843,
+        0.12464081518291382,
+        0.09971265364137191,
+        0.08309387678860922,
+        0.07122332723321032
+      ]
+    },
+    {
+      "end_to_end_gain": 0.0,
+      "fixture": "oracle_constant",
+      "marginal_gains": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonincreasing": true,
+      "prefix_nrmse": [
+        0.49856329063247223,
+        0.49856329063247223,
+        0.49856329063247223,
+        0.49856329063247223,
+        0.49856329063247223,
+        0.49856329063247223
+      ]
+    },
+    {
+      "end_to_end_gain": -0.17805830313261733,
+      "fixture": "oracle_permuted",
+      "marginal_gains": [
+        -0.011870549555398902,
+        -0.016618776852762696,
+        -0.024928161541541913,
+        -0.04154693839430461,
+        -0.08309387678860922
+      ],
+      "nonincreasing": false,
+      "prefix_nrmse": [
+        0.07122332723321032,
+        0.08309387678860922,
+        0.09971265364137191,
+        0.12464081518291382,
+        0.16618775357721843,
+        0.24928163036582765
+      ]
+    },
+    {
+      "end_to_end_gain": -0.20394847944383632,
+      "fixture": "oracle_noise",
+      "marginal_gains": [
+        -0.011445756398986262,
+        -0.019761919468990863,
+        -0.05627612962143258,
+        -0.04432696228020627,
+        -0.07213771167422034
+      ],
+      "nonincreasing": false,
+      "prefix_nrmse": [
+        0.49856327086634855,
+        0.5100090272653348,
+        0.5297709467343257,
+        0.5860470763557583,
+        0.6303740386359645,
+        0.7025117503101849
+      ]
+    }
+  ],
+  "status": "pass"
+}

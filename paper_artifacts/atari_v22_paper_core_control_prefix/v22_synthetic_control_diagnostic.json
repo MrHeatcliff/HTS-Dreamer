@@ -1,0 +1,295 @@
+{
+  "interpretation": "paper_core_full exposes reward/continue/value predictability from prefixes; no_ctrl and recon_only intentionally have zero control-aware scores in this fixed diagnostic.",
+  "metric": "linear R2 of target from prefix",
+  "pass": true,
+  "rows": [
+    {
+      "level": "level_1",
+      "score_r2": 0.9920505116600823,
+      "target": "reward_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.05977493643974552,
+      "target": "reward_short",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.8126232862177263,
+      "target": "continue",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.9922318662884223,
+      "target": "value_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.9967943837902944,
+      "target": "reward_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.06012652325915291,
+      "target": "reward_short",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.812647295540857,
+      "target": "continue",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.9968285562785846,
+      "target": "value_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.996794403387924,
+      "target": "reward_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.9935670963661591,
+      "target": "reward_short",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.8126953374252104,
+      "target": "continue",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.9968286282783494,
+      "target": "value_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.9967945980737445,
+      "target": "reward_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.9935675124466302,
+      "target": "reward_short",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.8128165443561766,
+      "target": "continue",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.9968286794087169,
+      "target": "value_long",
+      "variant": "paper_core_full"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "no_ctrl"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_1",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_2",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_3",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "reward_long",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "reward_short",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "continue",
+      "variant": "recon_only"
+    },
+    {
+      "level": "level_4",
+      "score_r2": 0.0,
+      "target": "value_long",
+      "variant": "recon_only"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "boundary_auprc_overall_and_macro": null,
+  "collapse_status": null,
+  "continuations_to_2500": 0,
+  "end_to_end_positive_seeds": 0,
+  "factor_probe_accuracy": null,
+  "gate_d1_decision": "NO_STABLE_CANDIDATE_AFTER_GRADIENT_ISOLATION",
+  "gate_d2_status": "blocked",
+  "new_runs_completed": 20,
+  "prefix_gain_and_ci": null,
+  "routing_unit_test_result": "pass",
+  "selected_beta_hier": null,
+  "selected_candidate": null,
+  "selected_optimizer_budget": null,
+  "selected_routing_flags": null,
+  "shared_trunk_gradient_path_audit_result": "pass",
+  "specialization_status": "see fig_routing_level_horizon_v14.pdf",
+  "v13_decision": "NO_STABLE_CANDIDATE_AFTER_MINIMAL_REVISION"
+}

@@ -1,0 +1,1013 @@
+{
+  "commands": [
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Alien"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Asterix"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Breakout"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Hero"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "MsPacman"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "dreamer_anchor",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_full",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "flat_mh",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "larger_flat_param",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "matryoshka_only",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "dense_multistride_no_sparse",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_temp",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 0,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 1,
+      "task": "Seaquest"
+    },
+    {
+      "launch": false,
+      "method": "hts_no_sdyn",
+      "resource_policy": "check existing full26 processes and assign idle GPU only",
+      "seed": 2,
+      "task": "Seaquest"
+    }
+  ],
+  "expected_runs": 144
+}

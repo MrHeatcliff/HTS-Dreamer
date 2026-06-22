@@ -1,0 +1,22 @@
+{
+  "decoder_prefix_stop_gradient": {
+    "current_level_grad_norm": 2.4494895935058594,
+    "default": true,
+    "disabled_lower_prefix_grad_norm": 2.4494895935058594,
+    "lower_prefix_grad_norm": 0.0,
+    "status": "pass"
+  },
+  "dynamics_target_stop_gradient": {
+    "default": true,
+    "status": "pass",
+    "target_no_sg_grad_norm": 0.125,
+    "target_sg_grad_norm": 0.0883883461356163
+  },
+  "predictor_prefix_stop_gradient": {
+    "default": false,
+    "default_lower_prefix_grad_norm": 4.898979187011719,
+    "detached_ablation_lower_prefix_grad_norm": 0.0,
+    "paper_status": "not_explicit_in_manuscript",
+    "status": "pass"
+  }
+}

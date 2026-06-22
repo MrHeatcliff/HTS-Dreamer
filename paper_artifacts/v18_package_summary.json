@@ -1,0 +1,42 @@
+{
+  "all_seed_baseline_reproduced": true,
+  "artifact_dir": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_locked_rerun_v18",
+  "baseline_boundary_auprc_macro": 0.5886741344193551,
+  "baseline_boundary_auprc_overall": 0.7031229334644903,
+  "candidate_decision": "PASS_WITH_LOCKED_PROTOCOL_DEVELOPMENT_CANDIDATE",
+  "cumulative_test_counts": {
+    "FAIL": 12,
+    "PASS": 85,
+    "XFAIL": 1
+  },
+  "gate_d1_status": "PASS_LOCKED_SYNTHETIC",
+  "gate_d2_status": "blocked",
+  "locked_protocol_hash": "fd7cac88a857b81df3e0a8fa5e08f941dfc2783f473f24efbec5ef707a558905",
+  "new_runs_completed": 10,
+  "new_runs_expected": 10,
+  "relation_to_v16_atari_reference": "external DreamerV3 reference only; not used for Gate D",
+  "seed0_baseline_reproduced": "pass",
+  "unrelated_official_processes_observed_but_untouched": "232461       39:50 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_qbert --seed 1 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/qbert/seed_1 --logger.outputs jsonl,scope,wandb",
+  "v17_root_cause": "historical_direct_head_parameterization_plus_v9_v12_checkpoint_lineage",
+  "variant_boundary_auprc_macro": {
+    "locked_hier_x3": 0.5873902412974752,
+    "locked_no_hier_loss": 0.5929018206537993
+  },
+  "variant_boundary_auprc_overall": {
+    "locked_hier_x3": 0.713103238873355,
+    "locked_no_hier_loss": 0.7063879251492257
+  },
+  "variant_prefix_gains": {
+    "locked_baseline_direct_head": 0.0013702074893974902,
+    "locked_hier_x3": 0.0037496192412495464,
+    "locked_no_hier_loss": 0.0004069902237365364
+  },
+  "variants_run": [
+    "locked_baseline_direct_head",
+    "locked_hier_x3",
+    "locked_no_hier_loss"
+  ],
+  "variants_skipped_or_not_applicable": [
+    "locked_recon_trunk_isolated_fine_only_x3"
+  ]
+}

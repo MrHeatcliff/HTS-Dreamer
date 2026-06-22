@@ -1,0 +1,23 @@
+{
+  "api_key_env_present": false,
+  "api_ok": true,
+  "configured": true,
+  "entity": "ttdat170703-ho-chi-minh-city-university-of-technology",
+  "group": "v19_ab_locked_hier_x3",
+  "mode_requested": "online",
+  "netrc_exists": true,
+  "network_host": "api.wandb.ai",
+  "network_ok": true,
+  "project": "hts-wm-atari-dev",
+  "status": "pass",
+  "tags": [
+    "v19_ab",
+    "locked_hier_x3",
+    "atari100k",
+    "size12m",
+    "alien_breakout"
+  ],
+  "username": "ttdat170703",
+  "wandb_import": true,
+  "wandb_version": "0.27.0"
+}

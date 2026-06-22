@@ -1,0 +1,54 @@
+# V22 Synthetic Control Diagnostic
+
+Pass: `True`
+
+| variant | level | target | score_r2 |
+| --- | --- | --- | ---: |
+| paper_core_full | level_1 | reward_long | 0.9921 |
+| paper_core_full | level_1 | reward_short | 0.0598 |
+| paper_core_full | level_1 | continue | 0.8126 |
+| paper_core_full | level_1 | value_long | 0.9922 |
+| paper_core_full | level_2 | reward_long | 0.9968 |
+| paper_core_full | level_2 | reward_short | 0.0601 |
+| paper_core_full | level_2 | continue | 0.8126 |
+| paper_core_full | level_2 | value_long | 0.9968 |
+| paper_core_full | level_3 | reward_long | 0.9968 |
+| paper_core_full | level_3 | reward_short | 0.9936 |
+| paper_core_full | level_3 | continue | 0.8127 |
+| paper_core_full | level_3 | value_long | 0.9968 |
+| paper_core_full | level_4 | reward_long | 0.9968 |
+| paper_core_full | level_4 | reward_short | 0.9936 |
+| paper_core_full | level_4 | continue | 0.8128 |
+| paper_core_full | level_4 | value_long | 0.9968 |
+| no_ctrl | level_1 | reward_long | 0.0000 |
+| no_ctrl | level_1 | reward_short | 0.0000 |
+| no_ctrl | level_1 | continue | 0.0000 |
+| no_ctrl | level_1 | value_long | 0.0000 |
+| no_ctrl | level_2 | reward_long | 0.0000 |
+| no_ctrl | level_2 | reward_short | 0.0000 |
+| no_ctrl | level_2 | continue | 0.0000 |
+| no_ctrl | level_2 | value_long | 0.0000 |
+| no_ctrl | level_3 | reward_long | 0.0000 |
+| no_ctrl | level_3 | reward_short | 0.0000 |
+| no_ctrl | level_3 | continue | 0.0000 |
+| no_ctrl | level_3 | value_long | 0.0000 |
+| no_ctrl | level_4 | reward_long | 0.0000 |
+| no_ctrl | level_4 | reward_short | 0.0000 |
+| no_ctrl | level_4 | continue | 0.0000 |
+| no_ctrl | level_4 | value_long | 0.0000 |
+| recon_only | level_1 | reward_long | 0.0000 |
+| recon_only | level_1 | reward_short | 0.0000 |
+| recon_only | level_1 | continue | 0.0000 |
+| recon_only | level_1 | value_long | 0.0000 |
+| recon_only | level_2 | reward_long | 0.0000 |
+| recon_only | level_2 | reward_short | 0.0000 |
+| recon_only | level_2 | continue | 0.0000 |
+| recon_only | level_2 | value_long | 0.0000 |
+| recon_only | level_3 | reward_long | 0.0000 |
+| recon_only | level_3 | reward_short | 0.0000 |
+| recon_only | level_3 | continue | 0.0000 |
+| recon_only | level_3 | value_long | 0.0000 |
+| recon_only | level_4 | reward_long | 0.0000 |
+| recon_only | level_4 | reward_short | 0.0000 |
+| recon_only | level_4 | continue | 0.0000 |
+| recon_only | level_4 | value_long | 0.0000 |

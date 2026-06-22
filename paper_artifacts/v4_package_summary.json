@@ -1,0 +1,28 @@
+{
+  "canonical_expected_updates_per_agent_action": 0.25,
+  "component_matrix_config_names": [
+    "dreamer_anchor",
+    "hts_full",
+    "flat_sae",
+    "flat_mh",
+    "flat_partition_dim_matched",
+    "sgf_style_flat_same_code",
+    "recon_only_hierarchy",
+    "matryoshka_only",
+    "dense_multistride_no_sparse",
+    "larger_flat_param",
+    "larger_flat_flops",
+    "hts_no_temp",
+    "hts_no_vc",
+    "hts_no_hier",
+    "hts_no_sdyn"
+  ],
+  "component_matrix_row_count": 15,
+  "gate_a1": "blocked",
+  "gate_a2": "blocked",
+  "gate_b": "blocked",
+  "larger_flat_actual_gap": "pending",
+  "larger_flat_selected_width_analytical": 2648,
+  "paper_sha256": "9c511de120655c2c6038ce46c4c613dab9e9c3ae83db01a4b86126745b0276a6",
+  "pure_scheduler_status": "pass"
+}

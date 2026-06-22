@@ -1,0 +1,181 @@
+{
+  "rows": [
+    {
+      "eval_event_agent_actions": [
+        1588,
+        2088,
+        2588,
+        3088,
+        3088
+      ],
+      "eval_event_global_steps": [
+        570,
+        550,
+        600,
+        440,
+        810
+      ],
+      "expected_periodic_eval_count": 4,
+      "final_eval_executed_count": 1,
+      "method": "dreamer_anchor",
+      "model_size": "size1m",
+      "pass": true,
+      "periodic_eval_executed_count": 4,
+      "periodic_eval_requested_count": 4,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_dreamer_anchor_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1588,
+        2088,
+        2588,
+        3088,
+        3088
+      ],
+      "eval_event_global_steps": [
+        460,
+        520,
+        520,
+        810,
+        680
+      ],
+      "expected_periodic_eval_count": 4,
+      "final_eval_executed_count": 1,
+      "method": "hts_full",
+      "model_size": "size1m",
+      "pass": true,
+      "periodic_eval_executed_count": 4,
+      "periodic_eval_requested_count": 4,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_hts_full_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1588,
+        2088,
+        2588,
+        3088,
+        3088
+      ],
+      "eval_event_global_steps": [
+        490,
+        600,
+        500,
+        620,
+        620
+      ],
+      "expected_periodic_eval_count": 4,
+      "final_eval_executed_count": 1,
+      "method": "larger_flat_param",
+      "model_size": "size1m",
+      "pass": true,
+      "periodic_eval_executed_count": 4,
+      "periodic_eval_requested_count": 4,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_larger_flat_param_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1588,
+        2088,
+        2588,
+        3088,
+        3088
+      ],
+      "eval_event_global_steps": [
+        520,
+        530,
+        440,
+        430,
+        630
+      ],
+      "expected_periodic_eval_count": 4,
+      "final_eval_executed_count": 1,
+      "method": "dense_multistride_no_sparse",
+      "model_size": "size1m",
+      "pass": true,
+      "periodic_eval_executed_count": 4,
+      "periodic_eval_requested_count": 4,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_dense_multistride_no_sparse_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1338,
+        1588,
+        1588
+      ],
+      "eval_event_global_steps": [
+        330,
+        420,
+        260
+      ],
+      "expected_periodic_eval_count": 2,
+      "final_eval_executed_count": 1,
+      "method": "dreamer_anchor",
+      "model_size": "size12m",
+      "pass": true,
+      "periodic_eval_executed_count": 2,
+      "periodic_eval_requested_count": 2,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_dreamer_anchor_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1338,
+        1588,
+        1588
+      ],
+      "eval_event_global_steps": [
+        410,
+        480,
+        370
+      ],
+      "expected_periodic_eval_count": 2,
+      "final_eval_executed_count": 1,
+      "method": "hts_full",
+      "model_size": "size12m",
+      "pass": true,
+      "periodic_eval_executed_count": 2,
+      "periodic_eval_requested_count": 2,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_hts_full_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1338,
+        1588,
+        1588
+      ],
+      "eval_event_global_steps": [
+        330,
+        450,
+        310
+      ],
+      "expected_periodic_eval_count": 2,
+      "final_eval_executed_count": 1,
+      "method": "larger_flat_param",
+      "model_size": "size12m",
+      "pass": true,
+      "periodic_eval_executed_count": 2,
+      "periodic_eval_requested_count": 2,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_larger_flat_param_seed0"
+    },
+    {
+      "eval_event_agent_actions": [
+        1338,
+        1588,
+        1588
+      ],
+      "eval_event_global_steps": [
+        360,
+        450,
+        480
+      ],
+      "expected_periodic_eval_count": 2,
+      "final_eval_executed_count": 1,
+      "method": "dense_multistride_no_sparse",
+      "model_size": "size12m",
+      "pass": true,
+      "periodic_eval_executed_count": 2,
+      "periodic_eval_requested_count": 2,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_dense_multistride_no_sparse_seed0"
+    }
+  ],
+  "status": "pass"
+}

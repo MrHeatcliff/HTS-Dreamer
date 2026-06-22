@@ -1,0 +1,63 @@
+{
+  "actual_hts_addon_params": "pending",
+  "actual_larger_flat_params": "pending",
+  "canonical_replay_windows": {
+    "100": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    },
+    "1000": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    },
+    "500": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    },
+    "5000": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    }
+  },
+  "full_p0_smoke_status": "partial",
+  "gate_a1": "blocked",
+  "gate_a2": "blocked",
+  "gate_b": "blocked",
+  "gradient_balance_diagnosis": "temporal InfoNCE dominates projector/head_1/trunk on deterministic fixture",
+  "larger_flat_relative_gap": "pending_actual_count",
+  "larger_flat_selected_width_analytical": 2648,
+  "paper_sha256": "9c511de120655c2c6038ce46c4c613dab9e9c3ae83db01a4b86126745b0276a6",
+  "remaining_blockers": [
+    [
+      "Gate A1",
+      "blocked",
+      "real update-producing replay trace still pending"
+    ],
+    [
+      "Gate A2",
+      "blocked",
+      "actual size12m counts, full P0 smoke, UT-12, RT-01..RT-09 pending"
+    ],
+    [
+      "Gate B",
+      "blocked",
+      "real synthetic trainer/evaluator and linear probes pending"
+    ]
+  ],
+  "review_timestamp": "2026-06-11T05:05:41.125710+00:00",
+  "stop_gradient_flags": {
+    "decoder_prefix_stop_gradient": true,
+    "dynamics_target_stop_gradient": true,
+    "predictor_prefix_stop_gradient": false
+  },
+  "synthetic_trainer_evaluator_status": "not_wired",
+  "test_counts": {
+    "fail": 0,
+    "pass": 15,
+    "xfail": 20
+  }
+}

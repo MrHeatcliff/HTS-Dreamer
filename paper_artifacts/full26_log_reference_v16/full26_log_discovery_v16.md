@@ -1,0 +1,34 @@
+# Full26 Log Discovery V16
+
+- alien seed 0: completed=`True`, latest_step=`437828.0`, metrics=6, running=`False`
+- alien seed 1: completed=`True`, latest_step=`439040.0`, metrics=6, running=`False`
+- alien seed 2: completed=`True`, latest_step=`437140.0`, metrics=6, running=`False`
+- alien seed 3: completed=`True`, latest_step=`436412.0`, metrics=6, running=`False`
+- alien seed 4: completed=`True`, latest_step=`439220.0`, metrics=6, running=`False`
+- asterix seed 0: completed=`True`, latest_step=`438840.0`, metrics=8, running=`False`
+- asterix seed 1: completed=`True`, latest_step=`439360.0`, metrics=8, running=`False`
+- asterix seed 2: completed=`True`, latest_step=`438740.0`, metrics=8, running=`False`
+- asterix seed 3: completed=`True`, latest_step=`438364.0`, metrics=8, running=`False`
+- asterix seed 4: completed=`True`, latest_step=`439788.0`, metrics=8, running=`False`
+- breakout seed 0: completed=`True`, latest_step=`438276.0`, metrics=8, running=`False`
+- breakout seed 1: completed=`True`, latest_step=`438820.0`, metrics=8, running=`False`
+- breakout seed 2: completed=`True`, latest_step=`439928.0`, metrics=8, running=`False`
+- breakout seed 3: completed=`False`, latest_step=`218760.0`, metrics=8, running=`False`
+- breakout seed 4: completed=`True`, latest_step=`439680.0`, metrics=8, running=`False`
+- crazy_climber seed 0: completed=`True`, latest_step=`439200.0`, metrics=8, running=`False`
+- crazy_climber seed 1: completed=`False`, latest_step=`435320.0`, metrics=8, running=`False`
+- crazy_climber seed 2: completed=`False`, latest_step=`433840.0`, metrics=8, running=`False`
+- crazy_climber seed 3: completed=`False`, latest_step=`435532.0`, metrics=8, running=`False`
+- crazy_climber seed 4: completed=`False`, latest_step=`432520.0`, metrics=8, running=`False`
+- hero seed 0: completed=`True`, latest_step=`439128.0`, metrics=8, running=`False`
+- hero seed 1: completed=`True`, latest_step=`439152.0`, metrics=8, running=`False`
+- hero seed 2: completed=`False`, latest_step=`434320.0`, metrics=8, running=`False`
+- hero seed 3: completed=`True`, latest_step=`439340.0`, metrics=8, running=`False`
+- hero seed 4: completed=`False`, latest_step=`435140.0`, metrics=8, running=`False`
+- ms_pacman seed 0: completed=`True`, latest_step=`439360.0`, metrics=8, running=`False`
+- ms_pacman seed 1: completed=`True`, latest_step=`440000.0`, metrics=8, running=`False`
+- ms_pacman seed 2: completed=`True`, latest_step=`438280.0`, metrics=8, running=`False`
+- ms_pacman seed 3: completed=`True`, latest_step=`437708.0`, metrics=8, running=`False`
+- ms_pacman seed 4: completed=`True`, latest_step=`439832.0`, metrics=8, running=`False`
+- qbert seed 0: completed=`False`, latest_step=`238920.0`, metrics=8, running=`True`
+- seaquest seed : completed=`False`, latest_step=``, metrics=0, running=`False`

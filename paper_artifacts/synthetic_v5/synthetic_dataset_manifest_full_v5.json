@@ -1,0 +1,7 @@
+{
+  "name": "synthetic_multiscale_full",
+  "status": "not_generated_until_smoke_evaluator_passes",
+  "test_episodes": 2000,
+  "train_episodes": 10000,
+  "val_episodes": 2000
+}

@@ -1,0 +1,41 @@
+{
+  "alpha_max": 0.35551999103107124,
+  "alpha_min": 0.11311999711850632,
+  "alpha_monotonic_non_decreasing": true,
+  "alpha_values": [
+    0.11311999711850632,
+    0.35551999103107124
+  ],
+  "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v21_aux_warmup/smoke/warmup50k/breakout/seed_0_10k",
+  "logger_outputs": "jsonl,scope,wandb",
+  "metrics_rows": 48,
+  "nonfinite_count": 0,
+  "nonfinite_examples": [],
+  "policy_video_disabled": true,
+  "required_key_missing_counts": {
+    "train/hts/aux_warmup_agent_actions": 0,
+    "train/hts/aux_warmup_alpha": 0,
+    "train/hts/aux_warmup_horizon_agent_actions": 0,
+    "train/hts/aux_warmup_horizon_raw_frames": 0,
+    "train/hts/aux_warmup_raw_frames": 0,
+    "train/hts/coef_hier_effective": 0,
+    "train/hts/coef_sdyn_effective": 0,
+    "train/hts/coef_sparse_effective": 0,
+    "train/hts/coef_temp_effective": 0,
+    "train/hts/coef_vc_effective": 0,
+    "train/loss/hier_raw": 0,
+    "train/loss/hier_weighted": 0,
+    "train/loss/sdyn_raw": 0,
+    "train/loss/sdyn_weighted": 0,
+    "train/loss/sparse_raw": 0,
+    "train/loss/sparse_weighted": 0,
+    "train/loss/temp_raw": 0,
+    "train/loss/temp_weighted": 0,
+    "train/loss/vc_raw": 0,
+    "train/loss/vc_weighted": 0
+  },
+  "scores_rows": 46,
+  "status": "PASS",
+  "train_rows_with_warmup": 2,
+  "wandb_run_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/4in2y0lw"
+}

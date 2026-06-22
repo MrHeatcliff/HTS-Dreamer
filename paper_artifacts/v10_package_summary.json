@@ -1,0 +1,87 @@
+{
+  "aggregate_mean_prefix_profile": [
+    {
+      "ci95_high": 1.0056465443705616,
+      "ci95_low": 1.0028944293948885,
+      "level": 1,
+      "mean": 1.0042106613699864,
+      "std": 0.0015889245041856648
+    },
+    {
+      "ci95_high": 1.008653225739794,
+      "ci95_low": 1.0044571389477277,
+      "level": 2,
+      "mean": 1.006755976249779,
+      "std": 0.002382736669751079
+    },
+    {
+      "ci95_high": 1.0107137825314032,
+      "ci95_low": 1.004821906675177,
+      "level": 3,
+      "mean": 1.007666048665571,
+      "std": 0.0035692452700892604
+    },
+    {
+      "ci95_high": 1.0049904962072347,
+      "ci95_low": 1.0004423910612055,
+      "level": 4,
+      "mean": 1.0024317493068566,
+      "std": 0.002863453526904165
+    },
+    {
+      "ci95_high": 1.0064733382587248,
+      "ci95_low": 1.0035418174396802,
+      "level": 5,
+      "mean": 1.004906068888371,
+      "std": 0.0017195860191007925
+    },
+    {
+      "ci95_high": 1.0108647959994193,
+      "ci95_low": 1.0019081479359853,
+      "level": 6,
+      "mean": 1.0063523793786113,
+      "std": 0.005006790627870326
+    }
+  ],
+  "cumulative_test_counts": {
+    "FAIL": 0,
+    "PASS": 39,
+    "XFAIL": 1
+  },
+  "decoder_gradient_audit_conclusion": "pass",
+  "end_to_end_positive_gain_hts_seeds": 2,
+  "evaluator_oracle_test_status": "pass",
+  "failing_seed_ids": [
+    0,
+    3,
+    4
+  ],
+  "gate_c_telemetry_status": "pass",
+  "gate_d1_v10_review_decision": "REQUIRES_TARGETED_TUNING",
+  "gate_d1_v9_status": "fail",
+  "nondegrading_hts_seeds": 0,
+  "remaining_blockers": [
+    "Gate D2 remains blocked pending review of V10 Gate-D1 decision",
+    "UT-15-P1 larger_flat_flops remains P1"
+  ],
+  "root_cause_decision": "true_seed_instability",
+  "selected_development_config": null,
+  "strict_monotonic_hts_seeds": 0,
+  "synthetic_run_audit_completed": 50,
+  "synthetic_run_audit_expected": 50,
+  "targeted_rerun_count": 0,
+  "targeted_reruns_launched": false,
+  "telemetry_semantics_cleanup_status": "pass",
+  "temporal_dominance_correlation_summary": {
+    "corr_temp_to_hier_gradient_ratio_full_prefix_gain": 0.4138690272326972,
+    "corr_temp_to_hier_loss_ratio_full_prefix_gain": 0.6021962759417058
+  },
+  "unrelated_running_processes_observed_but_untouched": "dat.tt2  1434998 1347215 70 21:29 pts/2    00:47:28 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_boxing --seed 3 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/boxing/seed_3 --logger.outputs jsonl,scope,wandb",
+  "violating_levels_by_seed": {
+    "0": "3,5,6",
+    "1": "2,4",
+    "2": "2,3,5",
+    "3": "2,5,6",
+    "4": "2,3,5,6"
+  }
+}

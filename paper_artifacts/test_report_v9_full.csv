@@ -1,0 +1,40 @@
+test_id,test_name,status,failure_reason,evidence_version,execution_status,artifact_path
+UT-01,inherited unit test 1,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-02,inherited unit test 2,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-03,inherited unit test 3,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-04,inherited unit test 4,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-05,inherited unit test 5,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-06,inherited unit test 6,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-07,inherited unit test 7,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-08,inherited unit test 8,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-09,inherited unit test 9,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-10,inherited unit test 10,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-11,inherited unit test 11,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-12,inherited unit test 12,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-13,inherited unit test 13,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-14,inherited unit test 14,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+UT-15-P1,larger_flat_flops remains P1,XFAIL,P1 deferred,v9,inherited_from_v8,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/remaining_xfail_v8.md
+IT-01,inherited integration test 1,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+IT-02,inherited integration test 2,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+IT-03,inherited integration test 3,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+IT-04,inherited integration test 4,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+IT-05,inherited integration test 5,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+IT-06,inherited integration test 6,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-01,inherited regression test 1,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-02,inherited regression test 2,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-03,inherited regression test 3,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-04,inherited regression test 4,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-05,inherited regression test 5,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-06,inherited regression test 6,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-07,inherited regression test 7,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-08,inherited regression test 8,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+RT-09,inherited regression test 9,PASS,,v9,inherited_from_v7,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv
+GC-01,Gate-C inherited functional smoke 1,PASS,,v9,inherited_from_v8,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v8/v8_package_summary.json
+GC-02,Gate-C inherited functional smoke 2,PASS,,v9,inherited_from_v8,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v8/v8_package_summary.json
+GC-03,Gate-C inherited functional smoke 3,PASS,,v9,inherited_from_v8,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v8/v8_package_summary.json
+GC-04,Gate-C inherited functional smoke 4,PASS,,v9,inherited_from_v8,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v8/v8_package_summary.json
+GCR-01,memory telemetry,PASS,,v9,executed_v9,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/telemetry/memory_telemetry_audit_v9.json
+GCR-02,periodic eval scheduling,PASS,,v9,executed_v9,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/telemetry/periodic_eval_schedule_audit_v9.json
+GCR-03,native writer provenance,PASS,,v9,executed_v9,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/telemetry/native_writer_provenance_audit_v9.json
+GCR-04,corrected fairness grouping,PASS,,v9,executed_v9,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/telemetry/throughput_memory_fairness_v9.csv
+GD1-01,synthetic full fixed-buffer development,FAIL,Gate D1 acceptance criterion failed: prefix_reconstruction_improves_all_seeds is false,v9,executed_v9,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/run_manifest_v9.json

@@ -1,0 +1,35 @@
+{
+  "decision": "TRAINING_HARNESS_DRIFT_FOUND",
+  "gate_d1_decision": "BLOCKED_PENDING_HARNESS_FIX",
+  "gate_d2_status": "blocked",
+  "metrics": {
+    "R0": {
+      "macro": 0.08550793927516975,
+      "overall": 0.29831903814222194
+    },
+    "R1": {
+      "macro": 0.08548711816790933,
+      "overall": 0.2983085571380252
+    },
+    "R2": {
+      "macro": 0.08477204790602186,
+      "overall": 0.29811145494960706
+    },
+    "detached_probe_z1_overall": {
+      "exact_baseline_shared_trunk": 0.2845925115511402,
+      "exact_no_hier_loss": 0.2844330743903207,
+      "exact_recon_trunk_isolated": 0.2845724006353848,
+      "historical_baseline_shared_trunk": 0.35290899674338994,
+      "recon_trunk_isolated_fine_only_x3": 0.284368717800583
+    },
+    "historical": {
+      "macro": 0.5886741344193551,
+      "overall": 0.7031229334644903
+    }
+  },
+  "rationale": [
+    "R0 exact baseline fails to reproduce the historical baseline under the same V15 evaluator.",
+    "Historical and V14 references are not directly comparable by provenance."
+  ],
+  "split_branch_proposal_updated": false
+}

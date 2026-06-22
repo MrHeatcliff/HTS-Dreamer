@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "tests": [
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-02",
+      "test_name": "baseline routing matches current implementation"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-03",
+      "test_name": "trunk-isolated hierarchy gives zero trunk gradient"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-04",
+      "test_name": "trunk-isolated hierarchy keeps decoder gradients"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-05",
+      "test_name": "trunk-isolated hierarchy keeps active fine-head gradients"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-06",
+      "test_name": "no-z1-recon gives zero hierarchy gradient to head_1"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-07",
+      "test_name": "no-level1-loss makes weighted L_hier_level_1 zero"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-08",
+      "test_name": "temporal and sdyn gradients unchanged across routing-only candidates"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-09",
+      "test_name": "parameter counts matched across routing-only candidates"
+    },
+    {
+      "reason": "",
+      "status": "PASS",
+      "test_id": "GI-10",
+      "test_name": "disabled routes zero gradients but modules remain loadable"
+    }
+  ]
+}

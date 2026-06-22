@@ -1,0 +1,1 @@
+# Atari Fair Compare Interpretation V20\n\nV20 supports a fairer Alien/Breakout comparison with completed HTS seeds and locked metric extraction. It does not support full Atari benchmark superiority or paper-final 26-game claims. V18 selected `locked_hier_x3`; V19 passed small Atari sanity; V20 tests whether it beats DreamerV3 on Alien/Breakout before expansion.\n

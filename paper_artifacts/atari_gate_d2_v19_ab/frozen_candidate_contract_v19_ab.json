@@ -1,0 +1,71 @@
+{
+  "atari_hts_module_config": {
+    "agent.hts.l_hier": 0.3,
+    "agent.hts.l_sdyn": 0.1,
+    "agent.hts.l_sparse": 1e-05,
+    "agent.hts.l_temp": 0.01,
+    "agent.hts.l_vc": 0.01,
+    "beta_hier": [
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666
+    ],
+    "configs": [
+      "hts_atari100k",
+      "size12m"
+    ],
+    "mapping": "V18 locked_hier_x3 multiplies hierarchy coefficient by 3; Atari mapping sets agent.hts.l_hier from 0.1 to 0.3 and leaves other HTS terms fixed.",
+    "module": "dreamerv3.main_hts",
+    "stop_gradient_flags": {
+      "decoder_prefix_stop_gradient": true,
+      "dynamics_target_stop_gradient": true,
+      "predictor_prefix_stop_gradient": false
+    },
+    "strides": [
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "topk_per_level": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "training_regime": "joint",
+    "variant": "hts_full"
+  },
+  "candidate_name": "hts_locked_hier_x3",
+  "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+  "config_hash": "1d4116cef553ecee1d6bf7c0bc07004703da15453fd21d7ceeb017c62f9ca028",
+  "dreamerv3_backbone_config": {
+    "batch": "16x64",
+    "configs": "atari100k size12m",
+    "run.train_ratio": 256
+  },
+  "hierarchy_coefficient_or_beta": {
+    "atari_agent.hts.l_hier": 0.3,
+    "default_l_hier": 0.1,
+    "multiplier": 3.0
+  },
+  "mapping_from_locked_synthetic_direct_head_candidate_to_atari": "V18 locked_hier_x3 multiplies hierarchy coefficient by 3; Atari mapping sets agent.hts.l_hier from 0.1 to 0.3 and leaves other HTS terms fixed.",
+  "mapping_valid": true,
+  "parameter_counts": "resolved in run logs via train/opt/param_count and HTS metrics",
+  "script_hash": "b17314d4e86ad5a3c28872672f21d2ad0424fab34caaa11ebbcfd07612c684ad",
+  "selected_coefficients": {
+    "synthetic_lambda_hier": 3.0
+  },
+  "source_gate": "V18",
+  "source_synthetic_decision": "PASS_WITH_LOCKED_PROTOCOL_DEVELOPMENT_CANDIDATE",
+  "synthetic_protocol_hash": "fd7cac88a857b81df3e0a8fa5e08f941dfc2783f473f24efbec5ef707a558905",
+  "trainable_parameter_counts": "resolved in run logs via optimizer summary",
+  "wandb_entity": "ttdat170703-ho-chi-minh-city-university-of-technology"
+}

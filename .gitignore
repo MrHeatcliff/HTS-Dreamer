@@ -7,7 +7,18 @@ MUJOCO_LOG.TXT
 
 # Local experiment outputs and caches.
 wandb/
-paper_artifacts/
+
+# Paper artifacts: commit small scripts, manifests, reports, CSV summaries, and
+# figures by default. Ignore bulky generated payloads and raw event streams.
+paper_artifacts/**/data/
+paper_artifacts/**/run_logs/
+paper_artifacts/**/*.jsonl
+paper_artifacts/**/*.npz
+paper_artifacts/**/*.npy
+paper_artifacts/**/*.pkl
+paper_artifacts/**/*.pt
+paper_artifacts/**/*.pth
+paper_artifacts/**/*.ckpt
 logs/
 runs/
 tmp/

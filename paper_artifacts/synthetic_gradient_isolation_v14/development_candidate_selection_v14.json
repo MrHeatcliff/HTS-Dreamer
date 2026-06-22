@@ -1,0 +1,126 @@
+{
+  "decision": "NO_STABLE_CANDIDATE_AFTER_GRADIENT_ISOLATION",
+  "entries": [
+    {
+      "boundary_auprc_macro": 0.08548711816790933,
+      "boundary_auprc_overall": 0.2983085571380252,
+      "ci95_high": 0.0007152020750367472,
+      "ci95_low": 9.29813951310754e-05,
+      "collapse_status": "no_collapse_detected",
+      "config_name": "recon_trunk_isolated",
+      "end_to_end_positive_seeds": 4,
+      "factor_probe_accuracy": 0.4174599202473958,
+      "nondegrading_seeds": 0,
+      "prefix_gain": 0.00040409173508391125,
+      "rejection_reason": "mechanism_preservation_failed",
+      "routing_evidence_status": true,
+      "routing_flags": {
+        "beta_hier": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "hier_recon_include_level1_decoder_loss": true,
+        "hier_recon_update_shared_trunk": false,
+        "hier_recon_update_z1_head": true,
+        "train_new": true
+      },
+      "selection_status": "reject",
+      "strict_monotonic_seeds": 0
+    },
+    {
+      "boundary_auprc_macro": 0.08477010957404722,
+      "boundary_auprc_overall": 0.29811138899467204,
+      "ci95_high": 0.0009543980837240396,
+      "ci95_low": 0.0003621873655998309,
+      "collapse_status": "no_collapse_detected",
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "end_to_end_positive_seeds": 5,
+      "factor_probe_accuracy": 0.4172369384765625,
+      "nondegrading_seeds": 0,
+      "prefix_gain": 0.0006748706658580739,
+      "rejection_reason": "mechanism_preservation_failed",
+      "routing_evidence_status": true,
+      "routing_flags": {
+        "beta_hier": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "hier_recon_include_level1_decoder_loss": true,
+        "hier_recon_update_shared_trunk": false,
+        "hier_recon_update_z1_head": false,
+        "train_new": true
+      },
+      "selection_status": "reject",
+      "strict_monotonic_seeds": 0
+    },
+    {
+      "boundary_auprc_macro": 0.08477010957404722,
+      "boundary_auprc_overall": 0.29811138899467204,
+      "ci95_high": 0.0010192959516048595,
+      "ci95_low": 0.0004468797901328259,
+      "collapse_status": "no_collapse_detected",
+      "config_name": "recon_trunk_isolated_fine_only",
+      "end_to_end_positive_seeds": 5,
+      "factor_probe_accuracy": 0.4172369384765625,
+      "nondegrading_seeds": 0,
+      "prefix_gain": 0.0007484993471194024,
+      "rejection_reason": "mechanism_preservation_failed",
+      "routing_evidence_status": true,
+      "routing_flags": {
+        "beta_hier": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "hier_recon_include_level1_decoder_loss": false,
+        "hier_recon_update_shared_trunk": false,
+        "hier_recon_update_z1_head": false,
+        "train_new": true
+      },
+      "selection_status": "reject",
+      "strict_monotonic_seeds": 0
+    },
+    {
+      "boundary_auprc_macro": 0.08477029793295202,
+      "boundary_auprc_overall": 0.2981287662647038,
+      "ci95_high": 0.0023744396950215463,
+      "ci95_low": 0.0018191020826180404,
+      "collapse_status": "no_collapse_detected",
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "end_to_end_positive_seeds": 5,
+      "factor_probe_accuracy": 0.4230173746744792,
+      "nondegrading_seeds": 0,
+      "prefix_gain": 0.002079206091769126,
+      "rejection_reason": "mechanism_preservation_failed",
+      "routing_evidence_status": true,
+      "routing_flags": {
+        "beta_hier": [
+          0,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "hier_recon_include_level1_decoder_loss": false,
+        "hier_recon_update_shared_trunk": false,
+        "hier_recon_update_z1_head": false,
+        "train_new": true
+      },
+      "selection_status": "reject",
+      "strict_monotonic_seeds": 0
+    }
+  ],
+  "selected_candidate": null
+}

@@ -1,0 +1,7 @@
+{
+  "expansion_to_more_games_allowed": false,
+  "gate_d_breakout_stage_a_allowed": true,
+  "gate_e_allowed": false,
+  "reason": "Expansion remains blocked until Breakout Stage A and Gate E pass.",
+  "status": "V22_INCONCLUSIVE_RUN_OR_METRIC"
+}

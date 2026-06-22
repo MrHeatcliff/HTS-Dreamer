@@ -1,0 +1,10 @@
+candidate_width,analytical_addon_params,actual_addon_params,target_actual_hts_addon_params,relative_gap,selected
+2616,10102584,N/A,N/A,0.005525893,false
+2624,10116928,N/A,N/A,0.0041139041,false
+2632,10131272,N/A,N/A,0.0027019152,false
+2640,10145616,N/A,N/A,0.0012899263,false
+2648,10159960,N/A,N/A,0.0001220626,true
+2656,10174304,N/A,N/A,0.0015340515,false
+2664,10188648,N/A,N/A,0.0029460404,false
+2672,10202992,N/A,N/A,0.0043580294,false
+2680,10217336,N/A,N/A,0.0057700183,false

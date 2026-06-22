@@ -1,0 +1,48 @@
+{
+  "R0_exact_baseline_auprc_overall_and_macro": {
+    "macro": 0.08550793927516975,
+    "overall": 0.29831903814222194
+  },
+  "R1_trunk_isolated_auprc_overall_and_macro": {
+    "macro": 0.08548711816790933,
+    "overall": 0.2983085571380252
+  },
+  "R2_no_hierarchy_loss_auprc_overall_and_macro": {
+    "macro": 0.08477204790602186,
+    "overall": 0.29811145494960706
+  },
+  "cumulative_test_counts": {
+    "FAIL": 11,
+    "PASS": 71,
+    "XFAIL": 1
+  },
+  "dataset_hash_matches_expected": true,
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "detached_probe_auprc_result": {
+    "exact_baseline_shared_trunk": 0.2845925115511402,
+    "exact_no_hier_loss": 0.2844330743903207,
+    "exact_recon_trunk_isolated": 0.2845724006353848,
+    "historical_baseline_shared_trunk": 0.35290899674338994,
+    "recon_trunk_isolated_fine_only_x3": 0.284368717800583
+  },
+  "gate_d1_decision": "BLOCKED_PENDING_HARNESS_FIX",
+  "gate_d2_status": "blocked",
+  "hidden_route_audit_result": "pass",
+  "historical_baseline_comparability_result": "fail",
+  "historical_checkpoint_metric_under_current_evaluator": {
+    "macro": 0.5886741344193551,
+    "overall": 0.7031229334644903
+  },
+  "multi_readout_boundary_audit_result": "pass",
+  "new_runs_completed": 15,
+  "new_runs_expected": 15,
+  "remaining_blockers": [
+    "Gate D2 blocked",
+    "split branch not approved in V15"
+  ],
+  "root_cause_decision": "TRAINING_HARNESS_DRIFT_FOUND",
+  "routing_equivalence_audit_result": "pass",
+  "split_branch_proposal_updated_or_blocked": "blocked",
+  "unrelated_official_processes_observed_but_untouched": "dat.tt2  3940335 1347215 67 13:18 pts/2    00:13:07 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_qbert --seed 0 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/qbert/seed_0 --logger.outputs jsonl,scope,wandb",
+  "v14_decision": "NO_STABLE_CANDIDATE_AFTER_GRADIENT_ISOLATION"
+}

@@ -1,0 +1,481 @@
+{
+  "rows": [
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/dreamer_anchor/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/hts_full/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/flat_sae/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/flat_mh/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/flat_partition_dim_matched/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/sgf_style_flat_same_code/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/recon_only_hierarchy/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/matryoshka_only/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/dense_multistride_no_sparse/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/larger_flat_param/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/hts_no_temp/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/hts_no_vc/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/hts_no_hier/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c1/breakout/size1m/hts_no_sdyn/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/dreamer_anchor/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/hts_full/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/flat_mh/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/larger_flat_param/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/matryoshka_only/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/dense_multistride_no_sparse/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/hts_no_temp/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/breakout/size1m/hts_no_sdyn/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/dreamer_anchor/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/hts_full/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/flat_mh/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/larger_flat_param/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/matryoshka_only/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/dense_multistride_no_sparse/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/hts_no_temp/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c2/alien/size1m/hts_no_sdyn/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c3/breakout/size12m/dreamer_anchor/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c3/breakout/size12m/hts_full/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c3/breakout/size12m/larger_flat_param/seed_0"
+    },
+    {
+      "fields_pass": true,
+      "files": {
+        "config_snapshot.json": true,
+        "paper_artifacts/checkpoints_manifest.json": true,
+        "paper_artifacts/eval_metrics.jsonl": true,
+        "paper_artifacts/final_eval.json": true,
+        "paper_artifacts/run_meta.json": true,
+        "paper_artifacts/train_metrics.jsonl": true,
+        "runtime_summary.json": true
+      },
+      "files_pass": true,
+      "run": "/tmp/hts_gate_c_v8/gate_c_v8_c3/breakout/size12m/dense_multistride_no_sparse/seed_0"
+    }
+  ],
+  "status": "pass"
+}

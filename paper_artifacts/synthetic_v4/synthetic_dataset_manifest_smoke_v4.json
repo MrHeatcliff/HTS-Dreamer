@@ -1,0 +1,78 @@
+{
+  "action_values": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "behavior_policy": "70% iid random actions, 30% block-structured actions with block length in {4,8,16}",
+  "boundary_names": [
+    "fast",
+    "mid",
+    "slow",
+    "context",
+    "macro"
+  ],
+  "episode_length": 128,
+  "factor_cardinalities": {
+    "context": 4,
+    "fast": 8,
+    "mid": 8,
+    "nuisance": 16,
+    "slow": 8
+  },
+  "factor_names": [
+    "fast",
+    "mid",
+    "slow",
+    "context",
+    "nuisance"
+  ],
+  "full_state_id": "(((fast * 8 + mid) * 8 + slow) * 4 + context)",
+  "macro_state_id": "slow * 4 + context",
+  "name": "synthetic_multiscale",
+  "noise_std": 0.01,
+  "observation_type": "state_vector_44",
+  "reward_mode": "zero_fixed_buffer_representation",
+  "splits": {
+    "test": [
+      {
+        "episodes": 16,
+        "file": "test/test_000.npz",
+        "length": 128
+      }
+    ],
+    "train": [
+      {
+        "episodes": 16,
+        "file": "train/train_000.npz",
+        "length": 128
+      },
+      {
+        "episodes": 16,
+        "file": "train/train_001.npz",
+        "length": 128
+      },
+      {
+        "episodes": 16,
+        "file": "train/train_002.npz",
+        "length": 128
+      },
+      {
+        "episodes": 16,
+        "file": "train/train_003.npz",
+        "length": 128
+      }
+    ],
+    "val": [
+      {
+        "episodes": 16,
+        "file": "val/val_000.npz",
+        "length": 128
+      }
+    ]
+  },
+  "v4_label": "synthetic_multiscale_smoke",
+  "version": 1
+}

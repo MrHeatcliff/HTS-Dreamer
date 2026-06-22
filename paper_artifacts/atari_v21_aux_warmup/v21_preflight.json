@@ -1,0 +1,21 @@
+{
+  "code_commit": "04c0e4f87a3a8d85687ebbd1b891ae1eea504b9e",
+  "created_at": "2026-06-17T14:21:29",
+  "disk": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1    7.0T  5.7T  903G  87% /mnt/disk1\n/dev/sda3       4.4T  3.9T  223G  95% /",
+  "file_hashes": {
+    "dreamerv3/configs.yaml": "30f30353ab7e89817d45788b8d983cbd3ef669a4c9f34d445bd45121dbcc4134",
+    "dreamerv3/hts.py": "19c48b7059ce67cebd81f7ecbc57c7d4dfda81dc1bd9851e30302d9a1e5423c8",
+    "dreamerv3/hts_agent.py": "1a65e582635bc611b8e86a7339df423d35fbbe54a278fbe5418409fe4a039387",
+    "dreamerv3/hts_unit_tests.py": "f8f162f3f4a3808e83325a58c24d21a8b6f013ed66e98627b8fad1f3e37a0da0",
+    "dreamerv3/main_hts.py": "7dea0732eecf11c45b5794b7a126719e4390672a888cb4e2c334920bd07b0e39"
+  },
+  "gpu_snapshot": "0, NVIDIA GeForce RTX 3090, 17053, 24576, 100\n1, NVIDIA GeForce RTX 3090, 10072, 24576, 99\n2, NVIDIA GeForce RTX 3090, 2, 24576, 0\n3, NVIDIA GeForce RTX 3090, 2, 24576, 0\n4, NVIDIA GeForce RTX 3090, 15434, 24576, 76\n5, NVIDIA GeForce RTX 3090, 2, 24576, 0\n6, NVIDIA GeForce RTX 3090, 14076, 24576, 93\n7, NVIDIA GeForce RTX 3090, 5768, 24576, 3",
+  "host": "vishc-server-1",
+  "memory": "total        used        free      shared  buff/cache   available\nMem:           692Gi       391Gi        33Gi       1.0Gi       266Gi       294Gi\nSwap:          8.0Gi       7.9Gi        75Mi",
+  "policy_video_disabled": true,
+  "selected_gpu": 5,
+  "status": "PASS",
+  "unit_tests": "PASS: 18; XFAIL: 21; FAIL: 0",
+  "wandb_group": "v21_aux_warmup_breakout",
+  "wandb_project": "hts-wm-atari-dev"
+}

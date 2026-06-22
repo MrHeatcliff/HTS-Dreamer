@@ -1,0 +1,319 @@
+{
+  "pass": 18,
+  "xfail": 21,
+  "fail": 0,
+  "results": [
+    {
+      "test_id": "UT-01",
+      "test_name": "six head shapes",
+      "status": "PASS",
+      "assertions_checked": "six [B,T,32] outputs",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-02",
+      "test_name": "TopK per level and total active budget 48",
+      "status": "PASS",
+      "assertions_checked": "each level has 8 active dimensions; total active count is 48",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-03",
+      "test_name": "valid prefix input contract",
+      "status": "PASS",
+      "assertions_checked": "decoder level 4 receives concat z1..z4 with width 16",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-04",
+      "test_name": "lower-prefix stop-gradient",
+      "status": "PASS",
+      "assertions_checked": "level 4 decoder sends no gradient to lower prefixes z1..z3",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-05",
+      "test_name": "coarse-to-fine stride mapping",
+      "status": "PASS",
+      "assertions_checked": "strides are [32,16,8,4,2,1]",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-06",
+      "test_name": "action-window off-by-one",
+      "status": "PASS",
+      "assertions_checked": "t=3, Delta=4 uses actions [a3,a4,a5,a6] and target h7",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-07",
+      "test_name": "reset/terminal masking",
+      "status": "PASS",
+      "assertions_checked": "window crossing reset at t=5 is invalid",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-08",
+      "test_name": "positive sampler validity",
+      "status": "PASS",
+      "assertions_checked": "positive pairs are valid within episode and positive valid fraction > 0",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-09",
+      "test_name": "none/hard/soft negative modes differ",
+      "status": "PASS",
+      "assertions_checked": "losses={'none': 6.4145283699035645, 'hard': 6.637998580932617, 'soft': 6.475249767303467}; far_counts={'none': 0.0, 'hard': 5.5, 'soft': 5.5}",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-10",
+      "test_name": "VC constant/random/duplicate behavior",
+      "status": "PASS",
+      "assertions_checked": "constant variance penalty positive; duplicate covariance > random; cov_scale changes total VC only",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-11",
+      "test_name": "manual weighted-objective equality",
+      "status": "PASS",
+      "assertions_checked": "manual and implemented weighted objective both equal 17.0",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-15-MATRIX",
+      "test_name": "required P0 component-matrix contracts",
+      "status": "PASS",
+      "assertions_checked": "all required rows implemented and contract fields match",
+      "artifact_path": "paper_artifacts/component_matrix_v4.csv",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-15-P1",
+      "test_name": "optional P1 status report",
+      "status": "XFAIL",
+      "assertions_checked": "P1 rows are reported separately",
+      "artifact_path": "paper_artifacts/component_matrix_v4.csv",
+      "failure_reason": "larger_flat_flops remains P1 pending and does not block P0"
+    },
+    {
+      "test_id": "UT-16A",
+      "test_name": "50K raw-frame auxiliary warmup schedule",
+      "status": "PASS",
+      "assertions_checked": "alpha(0)=0, alpha(half)=0.5, alpha(horizon)=1, alpha(after)=1",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-16B",
+      "test_name": "100K raw-frame auxiliary warmup schedule",
+      "status": "PASS",
+      "assertions_checked": "alpha(0)=0, alpha(half)=0.5, alpha(horizon)=1, alpha(after)=1",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-16C",
+      "test_name": "zero-warmup equivalence",
+      "status": "PASS",
+      "assertions_checked": "warmup disabled gives alpha=1 from the first update",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-17",
+      "test_name": "warmup loss routing",
+      "status": "PASS",
+      "assertions_checked": "L_wm is not multiplied by alpha; only HTS auxiliary losses are",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-18",
+      "test_name": "warmup architecture invariance contract",
+      "status": "PASS",
+      "assertions_checked": "warmup changes only auxiliary coefficients, not architecture",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-12",
+      "test_name": "regime-specific parameter deltas",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "requires automated one-step optimizer delta by module and regime"
+    },
+    {
+      "test_id": "UT-13A",
+      "test_name": "decoder prefix stop-gradient scope",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "decoder SG is tested in UT-04; code-manuscript split audit generated separately"
+    },
+    {
+      "test_id": "UT-13B",
+      "test_name": "predictor and target stop-gradient scope",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "predictor-prefix and dynamics-target SG are implementation decisions not explicit in paper.txt"
+    },
+    {
+      "test_id": "UT-14",
+      "test_name": "evaluation labels excluded from training",
+      "status": "PASS",
+      "assertions_checked": "official Atari batch has no synthetic evaluation labels",
+      "artifact_path": "",
+      "failure_reason": ""
+    },
+    {
+      "test_id": "UT-15-P0",
+      "test_name": "full P0 forward/backward/checkpoint smoke",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "debug initialization exists; full optimizer/checkpoint reload smoke remains pending"
+    },
+    {
+      "test_id": "UT-15-P1",
+      "test_name": "P1 optional controls",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "larger_flat_flops and external long-suite wiring remain P1"
+    },
+    {
+      "test_id": "IT-01",
+      "test_name": "tiny synthetic shard overfit",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "official HTS synthetic trainer not wired"
+    },
+    {
+      "test_id": "IT-02",
+      "test_name": "synthetic checkpoint evaluator smoke",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "current evaluator sample is structural placeholder"
+    },
+    {
+      "test_id": "IT-03",
+      "test_name": "short Atari smoke with complete artifacts",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "manual smoke exists; automated assertion pending"
+    },
+    {
+      "test_id": "IT-04",
+      "test_name": "periodic evaluation does not mutate training state",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "periodic eval not integrated"
+    },
+    {
+      "test_id": "IT-05",
+      "test_name": "checkpoint resume preserves optimizer and config",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "resume smoke not automated"
+    },
+    {
+      "test_id": "IT-06",
+      "test_name": "run-end replay-ratio consistency",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "writer exists; update-producing smoke pending"
+    },
+    {
+      "test_id": "RT-01",
+      "test_name": "dreamer anchor unchanged",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "baseline-vs-HTS regression pending"
+    },
+    {
+      "test_id": "RT-02",
+      "test_name": "disabling all HTS scales recovers anchor loss",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "zero-scale regression pending"
+    },
+    {
+      "test_id": "RT-03",
+      "test_name": "hts_no_temp differs only by temporal loss",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "ablation regression pending"
+    },
+    {
+      "test_id": "RT-04",
+      "test_name": "hts_no_vc differs only by VC loss",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "ablation regression pending"
+    },
+    {
+      "test_id": "RT-05",
+      "test_name": "hts_no_hier differs only by hierarchy loss",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "ablation regression pending"
+    },
+    {
+      "test_id": "RT-06",
+      "test_name": "hts_no_sdyn differs only by sparse-dynamics loss",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "ablation regression pending"
+    },
+    {
+      "test_id": "RT-07",
+      "test_name": "dense_multistride_no_sparse differs only by TopK/L1",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "official variant/regression pending"
+    },
+    {
+      "test_id": "RT-08",
+      "test_name": "flat_partition_dim_matched trains reconstruction only",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "variant regression pending"
+    },
+    {
+      "test_id": "RT-09",
+      "test_name": "larger_flat_param is widened flat_mh",
+      "status": "XFAIL",
+      "assertions_checked": "",
+      "artifact_path": "",
+      "failure_reason": "actual size12m match and checkpoint reload pending"
+    }
+  ]
+}

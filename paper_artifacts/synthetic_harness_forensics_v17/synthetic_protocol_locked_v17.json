@@ -1,0 +1,37 @@
+{
+  "batch_size": 32,
+  "boundary_label_definition": "synthetic_v7 boundary_fast/mid/slow/context/macro",
+  "boundary_readout_policy": "V15 evaluator, z1 raw_delta_l2, validation threshold for F1, test AUPRC",
+  "checkpoint_selection_policy": "use step_1000 replay checkpoint",
+  "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+  "command_template": "replay V9 hts_full final checkpoint at update 250, continue to update 1000 using synthetic_tuning_v11.weighted_loss(BASE)",
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "entrypoint": "python -m dreamerv3.synthetic_harness_forensics_v17",
+  "evaluator_hash": "1fe9299b169a0870ac904d083b6c38c213d82f5ab746668ec3a5af6e934fe169",
+  "initialization_seed_policy": "use existing V9 hts_full final checkpoint generated from synthetic_v7.init_params(seed)",
+  "learning_rate": 0.05,
+  "loss_coefficients": {
+    "lambda_hier": 1.0,
+    "lambda_sdyn": 1.0,
+    "lambda_sparse": 1.0,
+    "lambda_temp": 0.01,
+    "lambda_vc": 0.01
+  },
+  "loss_reduction_semantics": "mean reductions as synthetic_v7.model_loss and synthetic_tuning_v11.weighted_loss",
+  "masking_semantics": "fixed-length synthetic episodes; no terminal masks",
+  "normalization_policy": "none; action scalar divided by 2 inside predictor",
+  "optimizer": "sgd",
+  "optimizer_updates": 1000,
+  "required_reproduction_threshold": {
+    "absolute_auprc_tolerance": 0.05,
+    "minimum_overall_auprc": 0.65
+  },
+  "sampler_class": "np.random.default_rng",
+  "sampler_order_policy": "window samples from train obs/actions with batch_size 32 and seq_len 64",
+  "sampler_seed_policy": "seed; advance through the first 250 historical V9 updates before V12 continuation",
+  "script_hash": "4c4dc1bac86886f6521a902999ede5bbed9ee802ca6cb5952f78b025aa19ddf8",
+  "sequence_length": 64,
+  "test_shard_hash": "e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78",
+  "train_shard_hash": "9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf",
+  "val_shard_hash": "2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0"
+}

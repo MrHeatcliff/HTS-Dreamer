@@ -1,0 +1,12 @@
+{
+  "alien_dreamer_completed_seed_latest_scores": {
+    "0": 1080.0,
+    "1": 720.0,
+    "2": 880.0,
+    "3": 600.0,
+    "4": 2280.0
+  },
+  "alien_dreamer_latest_episode_score_mean": 1112.0,
+  "explanation_1112": "1112.0 equals the mean of latest episode scores over Alien DreamerV3 completed seeds 0..4.",
+  "explanation_1512": "1512.0 was not reproduced from the current DreamerV3 Alien scores.jsonl under V20 metrics; it is not latest mean, final-20%-bin mean, final-bin mean, or 20-bin AUC from these logs. Treat it as a historical extraction/summary mismatch unless its source artifact is identified."
+}

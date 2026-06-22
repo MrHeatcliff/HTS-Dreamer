@@ -1,0 +1,27 @@
+{
+  "boundary_auprc": null,
+  "boundary_f1": null,
+  "coefficient_routing_status": "pass",
+  "collapse_status": null,
+  "continuation_completed_runs": 20,
+  "continuation_configs": [
+    "baseline_v9",
+    "hier_x3",
+    "temp_003_hier_x3",
+    "temp_003"
+  ],
+  "end_to_end_positive_seeds": 0,
+  "existing_checkpoint_convergence_diagnosis": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_convergence_v12/convergence_diagnosis_existing_v12.json",
+  "factor_probe_accuracy": null,
+  "final_matched_optimizer_budget": 1000,
+  "full_prefix_gain_and_ci": null,
+  "gate_d1_decision": "NO_STABLE_CANDIDATE_AFTER_MATCHED_BUDGET",
+  "gate_d2_status": "blocked",
+  "nondegrading_seeds": 0,
+  "prefix_profile": null,
+  "selected_candidate": null,
+  "specialization_summary": "see level-horizon V11 and continuation aggregate metrics",
+  "strict_monotonic_seeds": 0,
+  "v11_candidate_budget": "250 optimizer updates, batch 32, length 64",
+  "v9_baseline_budget": "250 optimizer updates, batch 32, length 64"
+}

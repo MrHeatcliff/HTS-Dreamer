@@ -1,0 +1,295 @@
+{
+  "mismatches": [
+    "historical baseline uses direct heads without shared trunk; V14 candidates use explicit shared trunk",
+    "historical baseline checkpoint lineage is V9/V12 continuation; V14 candidates are fresh V14 runs",
+    "V14 baseline_shared_trunk is a metric reference, not a V14 retraining run",
+    "checkpoint schedules and initialization semantics differ"
+  ],
+  "pass_condition": "not met; compared rows are not genuinely comparable",
+  "rows": [
+    {
+      "TopK_budgets": "dense synthetic proxy; no realized TopK mask",
+      "batch_size": 32,
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "boundary_probe_type": "unsupervised delta score",
+      "boundary_score_formula": "z1 raw_delta_l2",
+      "checkpoint_schedule": "500,1000 after V12 continuation",
+      "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+      "config_hash": "52b3df151ce86232e006f4ea107e252ad50e945ea4b70017bd76cc7701dd85ba",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "dataset_shard_hashes": {
+        "test": "e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78",
+        "train": "9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf",
+        "val": "2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0"
+      },
+      "evaluation_split": "test[:256]",
+      "evaluator_script_hash": "45fdffaa25ff10d63fcc5b23c8a54e3610adc4a508da95b94f17fe861df5e601",
+      "initialization_seed_semantics": "V9/V12 historical checkpoint lineage",
+      "learning_rate": 0.05,
+      "model_widths": {
+        "head_dim": 8,
+        "trunk": "none"
+      },
+      "optimizer": "sgd",
+      "optimizer_updates": 1000,
+      "resolved_coefficients": {
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "routing_flags": "direct_heads_no_shared_trunk",
+      "row": "historical_baseline_v12_or_v13",
+      "sampler_seed_semantics": "np.random.default_rng(seed), continuation from 250",
+      "script_hash": "45fdffaa25ff10d63fcc5b23c8a54e3610adc4a508da95b94f17fe861df5e601",
+      "script_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/dreamerv3/synthetic_convergence_v12.py",
+      "sequence_length": 64,
+      "stop_gradient_flags": "historical baseline did not expose V14 shared-trunk routing flags",
+      "stride_schedule": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "threshold_policy": "validation F1 threshold"
+    },
+    {
+      "TopK_budgets": "dense synthetic proxy; no realized TopK mask",
+      "batch_size": 32,
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "boundary_probe_type": "unsupervised delta score",
+      "boundary_score_formula": "z1 raw_delta_l2",
+      "checkpoint_schedule": "historical V12 baseline rows only, not retrained in V14",
+      "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+      "config_hash": "7d618aca778d8de1d7b06a94878f33335f20b05101301bdec9449a042792bb5c",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "dataset_shard_hashes": {
+        "test": "e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78",
+        "train": "9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf",
+        "val": "2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0"
+      },
+      "evaluation_split": "test[:256]",
+      "evaluator_script_hash": "db631b506ed42c669d2e478038c8a41517af51adfe0fbe769f235272ccda3b69",
+      "initialization_seed_semantics": "not applicable; reused V12 rows",
+      "learning_rate": 0.05,
+      "model_widths": {
+        "head_dim": 8,
+        "trunk_dim": 44
+      },
+      "optimizer": "sgd",
+      "optimizer_updates": 1000,
+      "resolved_coefficients": {
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "routing_flags": {
+        "beta_hier": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "hier_recon_include_level1_decoder_loss": true,
+        "hier_recon_update_shared_trunk": true,
+        "hier_recon_update_z1_head": true,
+        "train_new": false
+      },
+      "row": "v14_baseline_shared_trunk_reference",
+      "sampler_seed_semantics": "not applicable; reused V12 rows",
+      "script_hash": "db631b506ed42c669d2e478038c8a41517af51adfe0fbe769f235272ccda3b69",
+      "script_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/dreamerv3/synthetic_gradient_isolation_v14.py",
+      "sequence_length": 64,
+      "stop_gradient_flags": "shared trunk reconstruction gradients enabled",
+      "stride_schedule": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "threshold_policy": "validation F1 threshold"
+    },
+    {
+      "TopK_budgets": "dense synthetic proxy; no realized TopK mask",
+      "batch_size": 32,
+      "beta_hier": {
+        "baseline_shared_trunk": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "recon_trunk_isolated": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "recon_trunk_isolated_fine_only": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "recon_trunk_isolated_fine_only_x3": [
+          0,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "recon_trunk_isolated_no_z1_grad": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "boundary_probe_type": "unsupervised delta score",
+      "boundary_score_formula": "z1 raw_delta_l2",
+      "checkpoint_schedule": "initial,250,500,1000",
+      "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+      "config_hash": "621141f5c8aad39fbeec0db20cffda2151760aef36278ea45889b3d625465dc7",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "dataset_shard_hashes": {
+        "test": "e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78",
+        "train": "9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf",
+        "val": "2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0"
+      },
+      "evaluation_split": "test[:256]",
+      "evaluator_script_hash": "db631b506ed42c669d2e478038c8a41517af51adfe0fbe769f235272ccda3b69",
+      "initialization_seed_semantics": "v14.init_params(seed) with shared trunk",
+      "learning_rate": 0.05,
+      "model_widths": {
+        "head_dim": 8,
+        "trunk_dim": 44
+      },
+      "optimizer": "sgd",
+      "optimizer_updates": 1000,
+      "resolved_coefficients": {
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "routing_flags": {
+        "baseline_shared_trunk": {
+          "beta_hier": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hier_recon_include_level1_decoder_loss": true,
+          "hier_recon_update_shared_trunk": true,
+          "hier_recon_update_z1_head": true,
+          "train_new": false
+        },
+        "recon_trunk_isolated": {
+          "beta_hier": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hier_recon_include_level1_decoder_loss": true,
+          "hier_recon_update_shared_trunk": false,
+          "hier_recon_update_z1_head": true,
+          "train_new": true
+        },
+        "recon_trunk_isolated_fine_only": {
+          "beta_hier": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hier_recon_include_level1_decoder_loss": false,
+          "hier_recon_update_shared_trunk": false,
+          "hier_recon_update_z1_head": false,
+          "train_new": true
+        },
+        "recon_trunk_isolated_fine_only_x3": {
+          "beta_hier": [
+            0,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "hier_recon_include_level1_decoder_loss": false,
+          "hier_recon_update_shared_trunk": false,
+          "hier_recon_update_z1_head": false,
+          "train_new": true
+        },
+        "recon_trunk_isolated_no_z1_grad": {
+          "beta_hier": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hier_recon_include_level1_decoder_loss": true,
+          "hier_recon_update_shared_trunk": false,
+          "hier_recon_update_z1_head": false,
+          "train_new": true
+        }
+      },
+      "row": "v14_routing_candidates",
+      "sampler_seed_semantics": "np.random.default_rng(seed), fresh from step 1",
+      "script_hash": "db631b506ed42c669d2e478038c8a41517af51adfe0fbe769f235272ccda3b69",
+      "script_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/dreamerv3/synthetic_gradient_isolation_v14.py",
+      "sequence_length": 64,
+      "stop_gradient_flags": "V14 route-specific hierarchy reconstruction detach flags",
+      "stride_schedule": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "threshold_policy": "validation F1 threshold"
+    }
+  ],
+  "status": "fail"
+}

@@ -1,0 +1,166 @@
+{
+  "artifact_dir": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/atari_gate_d2_v19_ab",
+  "breakout_retry_no_video_launcher": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/atari_gate_d2_v19_ab/launch_v19_ab_breakout_retry_no_video.sh",
+  "candidate_mapping_to_atari_valid": true,
+  "cumulative_test_counts": {
+    "FAIL": 12,
+    "PASS": 95,
+    "XFAIL": 1
+  },
+  "dreamerv3_reference_available_from_v16": {
+    "alien": {
+      "dreamer_reference_latest_mean": 1512.0,
+      "hts_latest_mean": 1083.3333333333333,
+      "hts_seed_count_with_scores": 3,
+      "reference_rows": 819
+    },
+    "breakout": {
+      "dreamer_reference_latest_mean": 7.2,
+      "hts_latest_mean": 9.0,
+      "hts_seed_count_with_scores": 3,
+      "reference_rows": 1368
+    }
+  },
+  "games_seeds_completed": [
+    {
+      "game": "alien",
+      "seed": 0
+    },
+    {
+      "game": "alien",
+      "seed": 1
+    },
+    {
+      "game": "alien",
+      "seed": 2
+    },
+    {
+      "game": "breakout",
+      "seed": 0
+    },
+    {
+      "game": "breakout",
+      "seed": 1
+    },
+    {
+      "game": "breakout",
+      "seed": 2
+    }
+  ],
+  "games_seeds_launched": [
+    {
+      "game": "alien",
+      "seed": 0
+    },
+    {
+      "game": "alien",
+      "seed": 1
+    },
+    {
+      "game": "alien",
+      "seed": 2
+    },
+    {
+      "game": "breakout",
+      "seed": 0
+    },
+    {
+      "game": "breakout",
+      "seed": 1
+    },
+    {
+      "game": "breakout",
+      "seed": 2
+    }
+  ],
+  "games_seeds_planned": [
+    {
+      "game": "alien",
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "game": "breakout",
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "larger_atari_evaluation_justified": true,
+  "latest_dreamer_reference_scores_by_game": {
+    "alien": 1512.0,
+    "breakout": 7.2
+  },
+  "latest_hts_candidate_scores_by_game": {
+    "alien": 1083.3333333333333,
+    "breakout": 9.0
+  },
+  "launch_info": {
+    "reason": "not requested",
+    "session": "",
+    "started": false
+  },
+  "launcher": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/atari_gate_d2_v19_ab/launch_v19_ab.sh",
+  "new_atari_runs_completed": 6,
+  "new_atari_runs_planned": 6,
+  "small_gate_d2_decision": "PASS_ATARI_DEV_SANITY_SMALL",
+  "unrelated_official_processes_observed_but_untouched": "",
+  "v18_selected_candidate": "locked_hier_x3",
+  "wandb_group": "v19_ab_locked_hier_x3",
+  "wandb_project": "hts-wm-atari-dev",
+  "wandb_run_links": [
+    {
+      "game": "alien",
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v19_ab/hts_locked_hier_x3/alien/seed_0",
+      "method": "hts_locked_hier_x3",
+      "seed": 0,
+      "wandb_run_name": "v19_ab__hts_locked_hier_x3__alien__seed0",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/pwcjlqo1"
+    },
+    {
+      "game": "alien",
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v19_ab/hts_locked_hier_x3/alien/seed_1",
+      "method": "hts_locked_hier_x3",
+      "seed": 1,
+      "wandb_run_name": "v19_ab__hts_locked_hier_x3__alien__seed1",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/97oc1kc5"
+    },
+    {
+      "game": "alien",
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v19_ab/hts_locked_hier_x3/alien/seed_2",
+      "method": "hts_locked_hier_x3",
+      "seed": 2,
+      "wandb_run_name": "v19_ab__hts_locked_hier_x3__alien__seed2",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/axxk7jll"
+    },
+    {
+      "game": "breakout",
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v19_ab/hts_locked_hier_x3/breakout/seed_0_retry_no_video",
+      "method": "hts_locked_hier_x3",
+      "seed": 0,
+      "wandb_run_name": "v19_ab__hts_locked_hier_x3__breakout__seed0__retry_no_video",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/f6o2fnp3"
+    },
+    {
+      "game": "breakout",
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v19_ab/hts_locked_hier_x3/breakout/seed_1",
+      "method": "hts_locked_hier_x3",
+      "seed": 1,
+      "wandb_run_name": "v19_ab__hts_locked_hier_x3__breakout__seed1",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/c25vx5ov"
+    },
+    {
+      "game": "breakout",
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v19_ab/hts_locked_hier_x3/breakout/seed_2_retry_no_video",
+      "method": "hts_locked_hier_x3",
+      "seed": 2,
+      "wandb_run_name": "v19_ab__hts_locked_hier_x3__breakout__seed2__retry_no_video",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/14l8csg2"
+    }
+  ]
+}

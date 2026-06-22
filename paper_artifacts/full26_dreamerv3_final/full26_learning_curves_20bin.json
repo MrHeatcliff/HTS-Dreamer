@@ -1,0 +1,4162 @@
+[
+  {
+    "bin_index": 0,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 222.3253968253968,
+    "score_sem": 21.18949331886214
+  },
+  {
+    "bin_index": 1,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 195.8373015873016,
+    "score_sem": 11.809070971860697
+  },
+  {
+    "bin_index": 2,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 225.01666666666665,
+    "score_sem": 8.227676869363957
+  },
+  {
+    "bin_index": 3,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 303.0340548340548,
+    "score_sem": 29.977507752904025
+  },
+  {
+    "bin_index": 4,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 370.7878787878788,
+    "score_sem": 21.971923026663912
+  },
+  {
+    "bin_index": 5,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 428.40555555555557,
+    "score_sem": 23.15272375518592
+  },
+  {
+    "bin_index": 6,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 478.9166666666667,
+    "score_sem": 46.06691992212103
+  },
+  {
+    "bin_index": 7,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 508.66666666666663,
+    "score_sem": 43.66844426690007
+  },
+  {
+    "bin_index": 8,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 556.9412698412699,
+    "score_sem": 51.22401960437434
+  },
+  {
+    "bin_index": 9,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 564.0,
+    "score_sem": 28.86939513236538
+  },
+  {
+    "bin_index": 10,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 546.7642857142857,
+    "score_sem": 27.42582501131042
+  },
+  {
+    "bin_index": 11,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 621.7071428571428,
+    "score_sem": 51.8203907545976
+  },
+  {
+    "bin_index": 12,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 690.4325396825396,
+    "score_sem": 75.64387270262038
+  },
+  {
+    "bin_index": 13,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 652.0833333333333,
+    "score_sem": 30.683945886202313
+  },
+  {
+    "bin_index": 14,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 826.5,
+    "score_sem": 188.75386677422588
+  },
+  {
+    "bin_index": 15,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 813.8690476190476,
+    "score_sem": 116.95944313251701
+  },
+  {
+    "bin_index": 16,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 648.2777777777777,
+    "score_sem": 31.84883275958709
+  },
+  {
+    "bin_index": 17,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 817.845238095238,
+    "score_sem": 75.75367424090881
+  },
+  {
+    "bin_index": 18,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 869.952380952381,
+    "score_sem": 115.4771703443945
+  },
+  {
+    "bin_index": 19,
+    "game": "alien",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 882.702380952381,
+    "score_sem": 119.25291298847097
+  },
+  {
+    "bin_index": 0,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 2.844444444444444,
+    "score_sem": 0.47307765655947276
+  },
+  {
+    "bin_index": 1,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 4.0955555555555545,
+    "score_sem": 0.9920852213493319
+  },
+  {
+    "bin_index": 2,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 23.047222222222224,
+    "score_sem": 5.754155235057167
+  },
+  {
+    "bin_index": 3,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 35.455,
+    "score_sem": 3.0933734831366286
+  },
+  {
+    "bin_index": 4,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 39.93388888888889,
+    "score_sem": 2.814962271966108
+  },
+  {
+    "bin_index": 5,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 48.75277777777778,
+    "score_sem": 3.758181199187437
+  },
+  {
+    "bin_index": 6,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 58.45055555555556,
+    "score_sem": 10.344767878939374
+  },
+  {
+    "bin_index": 7,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 70.6,
+    "score_sem": 16.152457673335316
+  },
+  {
+    "bin_index": 8,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 73.42283549783551,
+    "score_sem": 13.322139901543474
+  },
+  {
+    "bin_index": 9,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 75.2488888888889,
+    "score_sem": 11.915893567255996
+  },
+  {
+    "bin_index": 10,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 81.9595238095238,
+    "score_sem": 7.19698191972402
+  },
+  {
+    "bin_index": 11,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 90.47460317460317,
+    "score_sem": 10.60121599389696
+  },
+  {
+    "bin_index": 12,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 96.81785714285715,
+    "score_sem": 13.985576024415078
+  },
+  {
+    "bin_index": 13,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 91.94666666666667,
+    "score_sem": 14.047832405159408
+  },
+  {
+    "bin_index": 14,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 106.36666666666665,
+    "score_sem": 11.625746093142675
+  },
+  {
+    "bin_index": 15,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 105.90238095238097,
+    "score_sem": 12.60283736454566
+  },
+  {
+    "bin_index": 16,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 112.8607142857143,
+    "score_sem": 13.101384877725168
+  },
+  {
+    "bin_index": 17,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 105.50873015873017,
+    "score_sem": 11.02120407575395
+  },
+  {
+    "bin_index": 18,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 122.30634920634921,
+    "score_sem": 13.662602422798773
+  },
+  {
+    "bin_index": 19,
+    "game": "amidar",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 117.56190476190477,
+    "score_sem": 12.156734553791075
+  },
+  {
+    "bin_index": 0,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 242.725,
+    "score_sem": 11.1719649122256
+  },
+  {
+    "bin_index": 1,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 244.95833333333334,
+    "score_sem": 17.356450930097687
+  },
+  {
+    "bin_index": 2,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 416.7216666666667,
+    "score_sem": 29.87461534852327
+  },
+  {
+    "bin_index": 3,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 467.785,
+    "score_sem": 32.70499778321351
+  },
+  {
+    "bin_index": 4,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 451.3666666666667,
+    "score_sem": 21.281415992989437
+  },
+  {
+    "bin_index": 5,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 473.5909090909091,
+    "score_sem": 53.81808966515452
+  },
+  {
+    "bin_index": 6,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 443.9633333333333,
+    "score_sem": 44.78565256369002
+  },
+  {
+    "bin_index": 7,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 472.1833333333333,
+    "score_sem": 32.46773098871486
+  },
+  {
+    "bin_index": 8,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 533.7333333333333,
+    "score_sem": 30.987689311868493
+  },
+  {
+    "bin_index": 9,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 573.3714285714286,
+    "score_sem": 11.669450785390591
+  },
+  {
+    "bin_index": 10,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 522.98,
+    "score_sem": 13.19122132328921
+  },
+  {
+    "bin_index": 11,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 600.0,
+    "score_sem": 10.300485425454472
+  },
+  {
+    "bin_index": 12,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 602.5600000000001,
+    "score_sem": 14.865600559681402
+  },
+  {
+    "bin_index": 13,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 585.0699999999999,
+    "score_sem": 20.742707634250646
+  },
+  {
+    "bin_index": 14,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 619.2533333333333,
+    "score_sem": 27.133706139944998
+  },
+  {
+    "bin_index": 15,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 641.0266666666666,
+    "score_sem": 15.1975974709455
+  },
+  {
+    "bin_index": 16,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 574.8857142857144,
+    "score_sem": 29.885527177780844
+  },
+  {
+    "bin_index": 17,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 618.96,
+    "score_sem": 21.611230413838076
+  },
+  {
+    "bin_index": 18,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 675.1000000000001,
+    "score_sem": 20.1921568932098
+  },
+  {
+    "bin_index": 19,
+    "game": "assault",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 623.6847619047619,
+    "score_sem": 11.985160469260423
+  },
+  {
+    "bin_index": 0,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 260.22727272727275,
+    "score_sem": 6.663222250695763
+  },
+  {
+    "bin_index": 1,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 255.8263305322129,
+    "score_sem": 20.83166930717621
+  },
+  {
+    "bin_index": 2,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 283.3031674208145,
+    "score_sem": 45.26387838599112
+  },
+  {
+    "bin_index": 3,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 363.50000000000006,
+    "score_sem": 63.619703446862005
+  },
+  {
+    "bin_index": 4,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 290.30634278002697,
+    "score_sem": 14.603358977731137
+  },
+  {
+    "bin_index": 5,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 313.6717171717172,
+    "score_sem": 20.658861841704475
+  },
+  {
+    "bin_index": 6,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 335.23015873015873,
+    "score_sem": 19.031998886282484
+  },
+  {
+    "bin_index": 7,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 345.91036414565826,
+    "score_sem": 21.26320161084131
+  },
+  {
+    "bin_index": 8,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 380.0746965452848,
+    "score_sem": 30.93308579474322
+  },
+  {
+    "bin_index": 9,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 357.1126242178874,
+    "score_sem": 48.71121681919099
+  },
+  {
+    "bin_index": 10,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 387.64529914529913,
+    "score_sem": 36.61985855339219
+  },
+  {
+    "bin_index": 11,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 398.21428571428567,
+    "score_sem": 17.171200527366178
+  },
+  {
+    "bin_index": 12,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 474.0793650793651,
+    "score_sem": 36.03027477592032
+  },
+  {
+    "bin_index": 13,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 474.9721659919029,
+    "score_sem": 33.61060375183601
+  },
+  {
+    "bin_index": 14,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 504.28860028860026,
+    "score_sem": 62.41973288518372
+  },
+  {
+    "bin_index": 15,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 484.375,
+    "score_sem": 37.497685113735876
+  },
+  {
+    "bin_index": 16,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 512.3809523809524,
+    "score_sem": 37.547150145131646
+  },
+  {
+    "bin_index": 17,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 539.7058823529412,
+    "score_sem": 49.87317826281579
+  },
+  {
+    "bin_index": 18,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 558.559829059829,
+    "score_sem": 36.00765212786399
+  },
+  {
+    "bin_index": 19,
+    "game": "asterix",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 574.1997863247864,
+    "score_sem": 39.308665902402026
+  },
+  {
+    "bin_index": 0,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 15.755555555555555,
+    "score_sem": 0.6280677796245158
+  },
+  {
+    "bin_index": 1,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 15.834343434343435,
+    "score_sem": 1.998821405611175
+  },
+  {
+    "bin_index": 2,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 14.456349206349206,
+    "score_sem": 1.0520529068065354
+  },
+  {
+    "bin_index": 3,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 11.5,
+    "score_sem": 1.949358868961793
+  },
+  {
+    "bin_index": 4,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 18.40952380952381,
+    "score_sem": 1.5187774054338032
+  },
+  {
+    "bin_index": 5,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 16.692929292929293,
+    "score_sem": 0.8257047831639974
+  },
+  {
+    "bin_index": 6,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 19.533333333333335,
+    "score_sem": 5.255581395285314
+  },
+  {
+    "bin_index": 7,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 28.92676767676768,
+    "score_sem": 5.756616524737099
+  },
+  {
+    "bin_index": 8,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 26.616666666666667,
+    "score_sem": 4.126430915302646
+  },
+  {
+    "bin_index": 9,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 30.93333333333333,
+    "score_sem": 5.452882350273653
+  },
+  {
+    "bin_index": 10,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 32.16666666666667,
+    "score_sem": 5.439566976229716
+  },
+  {
+    "bin_index": 11,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 39.69444444444444,
+    "score_sem": 5.709857190491061
+  },
+  {
+    "bin_index": 12,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 43.26587301587302,
+    "score_sem": 7.14890308499983
+  },
+  {
+    "bin_index": 13,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 49.95,
+    "score_sem": 7.50846189309102
+  },
+  {
+    "bin_index": 14,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 42.650793650793645,
+    "score_sem": 3.9741923820372853
+  },
+  {
+    "bin_index": 15,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 40.56349206349206,
+    "score_sem": 3.506111713845154
+  },
+  {
+    "bin_index": 16,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 44.75476190476191,
+    "score_sem": 5.988124680416117
+  },
+  {
+    "bin_index": 17,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 42.46666666666667,
+    "score_sem": 4.7783875579865835
+  },
+  {
+    "bin_index": 18,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 53.142857142857146,
+    "score_sem": 4.181182575528934
+  },
+  {
+    "bin_index": 19,
+    "game": "bank_heist",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 46.55,
+    "score_sem": 6.285061654431084
+  },
+  {
+    "bin_index": 0,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 1720.0,
+    "score_sem": 309.38648968563575
+  },
+  {
+    "bin_index": 1,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 2733.3333333333335,
+    "score_sem": 919.323422716704
+  },
+  {
+    "bin_index": 2,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 3120.0,
+    "score_sem": 498.67379674047
+  },
+  {
+    "bin_index": 3,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 3056.666666666667,
+    "score_sem": 560.4680583623337
+  },
+  {
+    "bin_index": 4,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 3240.0,
+    "score_sem": 560.4284075597882
+  },
+  {
+    "bin_index": 5,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 3700.0,
+    "score_sem": 554.0758070878028
+  },
+  {
+    "bin_index": 6,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 3226.6666666666665,
+    "score_sem": 369.79273474024154
+  },
+  {
+    "bin_index": 7,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 2842.8571428571427,
+    "score_sem": 501.1822756935721
+  },
+  {
+    "bin_index": 8,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 2936.666666666667,
+    "score_sem": 228.34671493634897
+  },
+  {
+    "bin_index": 9,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 4356.666666666667,
+    "score_sem": 856.6031104828472
+  },
+  {
+    "bin_index": 10,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 4733.333333333334,
+    "score_sem": 846.6929129790143
+  },
+  {
+    "bin_index": 11,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 4783.333333333333,
+    "score_sem": 912.7492049358963
+  },
+  {
+    "bin_index": 12,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 4500.0,
+    "score_sem": 1074.7092630102338
+  },
+  {
+    "bin_index": 13,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 3726.666666666667,
+    "score_sem": 520.0341869103949
+  },
+  {
+    "bin_index": 14,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 7130.0,
+    "score_sem": 1120.599046145508
+  },
+  {
+    "bin_index": 15,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 6633.333333333334,
+    "score_sem": 1214.8616747963072
+  },
+  {
+    "bin_index": 16,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 9600.0,
+    "score_sem": 1202.63599369607
+  },
+  {
+    "bin_index": 17,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 10383.333333333332,
+    "score_sem": 189.44362984510423
+  },
+  {
+    "bin_index": 18,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 13466.666666666666,
+    "score_sem": 1498.4436370225387
+  },
+  {
+    "bin_index": 19,
+    "game": "battle_zone",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 12283.333333333332,
+    "score_sem": 835.1979140033549
+  },
+  {
+    "bin_index": 0,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": -1.7333333333333336,
+    "score_sem": 2.534034990550315
+  },
+  {
+    "bin_index": 1,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": -6.666666666666666,
+    "score_sem": 4.0976958295011485
+  },
+  {
+    "bin_index": 2,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 11.066666666666666,
+    "score_sem": 3.553277047709308
+  },
+  {
+    "bin_index": 3,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 17.933333333333334,
+    "score_sem": 6.630166748363958
+  },
+  {
+    "bin_index": 4,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 27.0,
+    "score_sem": 6.964034590506983
+  },
+  {
+    "bin_index": 5,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 31.266666666666662,
+    "score_sem": 8.555907640663003
+  },
+  {
+    "bin_index": 6,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 37.52333333333333,
+    "score_sem": 5.8058966194340345
+  },
+  {
+    "bin_index": 7,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 42.696666666666665,
+    "score_sem": 3.2071877608480195
+  },
+  {
+    "bin_index": 8,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 46.019999999999996,
+    "score_sem": 3.715760427631948
+  },
+  {
+    "bin_index": 9,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 59.10333333333333,
+    "score_sem": 3.5374328419223886
+  },
+  {
+    "bin_index": 10,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 61.78809523809524,
+    "score_sem": 3.2754089599430607
+  },
+  {
+    "bin_index": 11,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 61.10333333333333,
+    "score_sem": 3.1948722805284233
+  },
+  {
+    "bin_index": 12,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 62.58571428571429,
+    "score_sem": 2.548483164533228
+  },
+  {
+    "bin_index": 13,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 66.88222222222223,
+    "score_sem": 4.952618561658464
+  },
+  {
+    "bin_index": 14,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 65.16111111111111,
+    "score_sem": 3.5333892378526373
+  },
+  {
+    "bin_index": 15,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 71.46767676767678,
+    "score_sem": 5.289685103388568
+  },
+  {
+    "bin_index": 16,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 72.26666666666668,
+    "score_sem": 3.3538038106007337
+  },
+  {
+    "bin_index": 17,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 70.89047619047619,
+    "score_sem": 2.3477316692777532
+  },
+  {
+    "bin_index": 18,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 72.8108225108225,
+    "score_sem": 4.250347738097977
+  },
+  {
+    "bin_index": 19,
+    "game": "boxing",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 73.3404761904762,
+    "score_sem": 3.5844075276484726
+  },
+  {
+    "bin_index": 0,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 1.4269532510911822,
+    "score_sem": 0.0911286009919343
+  },
+  {
+    "bin_index": 1,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 1.5249746951920864,
+    "score_sem": 0.13815646956290142
+  },
+  {
+    "bin_index": 2,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 1.1611204481792716,
+    "score_sem": 0.23934921587593472
+  },
+  {
+    "bin_index": 3,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 2.8957264957264957,
+    "score_sem": 0.36927405570895244
+  },
+  {
+    "bin_index": 4,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 3.3775,
+    "score_sem": 0.2926260412198477
+  },
+  {
+    "bin_index": 5,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 3.1053146853146854,
+    "score_sem": 0.40770795349555977
+  },
+  {
+    "bin_index": 6,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 3.675884899414311,
+    "score_sem": 0.5169564217084456
+  },
+  {
+    "bin_index": 7,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 3.944817927170868,
+    "score_sem": 0.7120996481345523
+  },
+  {
+    "bin_index": 8,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 4.925767125031831,
+    "score_sem": 0.43547399275152543
+  },
+  {
+    "bin_index": 9,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 5.272848788638262,
+    "score_sem": 0.5969452065639815
+  },
+  {
+    "bin_index": 10,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 5.588053041729512,
+    "score_sem": 0.43806206396322583
+  },
+  {
+    "bin_index": 11,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 5.970326797385621,
+    "score_sem": 0.5275364223828465
+  },
+  {
+    "bin_index": 12,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 5.912698412698413,
+    "score_sem": 0.36237481657057147
+  },
+  {
+    "bin_index": 13,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 6.78263197586727,
+    "score_sem": 0.7357497835196328
+  },
+  {
+    "bin_index": 14,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 6.884558823529412,
+    "score_sem": 0.5039459347889528
+  },
+  {
+    "bin_index": 15,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 6.502777777777777,
+    "score_sem": 0.9281448874495647
+  },
+  {
+    "bin_index": 16,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 6.98657329598506,
+    "score_sem": 0.7145195906208177
+  },
+  {
+    "bin_index": 17,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 7.094199134199132,
+    "score_sem": 0.8635871491581355
+  },
+  {
+    "bin_index": 18,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 6.959009324009324,
+    "score_sem": 0.5065246649474099
+  },
+  {
+    "bin_index": 19,
+    "game": "breakout",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 7.749605688429218,
+    "score_sem": 0.9540749754229274
+  },
+  {
+    "bin_index": 0,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 930.0,
+    "score_sem": 52.630789467763066
+  },
+  {
+    "bin_index": 1,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 764.8888888888889,
+    "score_sem": 93.77756714036374
+  },
+  {
+    "bin_index": 2,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 640.8888888888889,
+    "score_sem": 39.07877451103028
+  },
+  {
+    "bin_index": 3,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 701.9696969696969,
+    "score_sem": 61.63356270266488
+  },
+  {
+    "bin_index": 4,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 627.4999999999999,
+    "score_sem": 45.86009319820608
+  },
+  {
+    "bin_index": 5,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 762.0,
+    "score_sem": 71.04052051861356
+  },
+  {
+    "bin_index": 6,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 887.3809523809525,
+    "score_sem": 115.46200207385324
+  },
+  {
+    "bin_index": 7,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 865.2380952380954,
+    "score_sem": 63.27279598704439
+  },
+  {
+    "bin_index": 8,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 907.1536796536797,
+    "score_sem": 69.53796697242966
+  },
+  {
+    "bin_index": 9,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 1147.404761904762,
+    "score_sem": 101.21597661882483
+  },
+  {
+    "bin_index": 10,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 1013.457264957265,
+    "score_sem": 87.88058967840217
+  },
+  {
+    "bin_index": 11,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 1062.6666666666665,
+    "score_sem": 99.13133824488712
+  },
+  {
+    "bin_index": 12,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 1270.2272727272727,
+    "score_sem": 132.12440919123244
+  },
+  {
+    "bin_index": 13,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 1213.3694083694083,
+    "score_sem": 88.9343737283193
+  },
+  {
+    "bin_index": 14,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 1187.968253968254,
+    "score_sem": 65.52935254024462
+  },
+  {
+    "bin_index": 15,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 1232.9761904761904,
+    "score_sem": 40.40105070365354
+  },
+  {
+    "bin_index": 16,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 1276.8181818181818,
+    "score_sem": 68.08890639123028
+  },
+  {
+    "bin_index": 17,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 1361.6666666666667,
+    "score_sem": 114.25702020736699
+  },
+  {
+    "bin_index": 18,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 1352.404761904762,
+    "score_sem": 77.5386700393676
+  },
+  {
+    "bin_index": 19,
+    "game": "chopper_command",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 1425.8531746031745,
+    "score_sem": 144.3986812644756
+  },
+  {
+    "bin_index": 0,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 9450.0,
+    "score_sem": 926.7146270562475
+  },
+  {
+    "bin_index": 1,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 6220.0,
+    "score_sem": 910.9994511524143
+  },
+  {
+    "bin_index": 2,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 16690.0,
+    "score_sem": 801.6732501462176
+  },
+  {
+    "bin_index": 3,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 23270.0,
+    "score_sem": 1445.1020725194464
+  },
+  {
+    "bin_index": 4,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 29420.0,
+    "score_sem": 2778.114468483975
+  },
+  {
+    "bin_index": 5,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 38640.0,
+    "score_sem": 2212.9347030583617
+  },
+  {
+    "bin_index": 6,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 30173.333333333332,
+    "score_sem": 4352.505281125138
+  },
+  {
+    "bin_index": 7,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 66030.0,
+    "score_sem": 8257.258624991711
+  },
+  {
+    "bin_index": 8,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 54310.0,
+    "score_sem": 6485.2509589066785
+  },
+  {
+    "bin_index": 9,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 68700.0,
+    "score_sem": 8814.090991134592
+  },
+  {
+    "bin_index": 10,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 54460.0,
+    "score_sem": 7757.014889762685
+  },
+  {
+    "bin_index": 11,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 82910.0,
+    "score_sem": 10846.791230589808
+  },
+  {
+    "bin_index": 12,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 71860.0,
+    "score_sem": 8316.121692231301
+  },
+  {
+    "bin_index": 13,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 67490.0,
+    "score_sem": 9924.740802660792
+  },
+  {
+    "bin_index": 14,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 54760.0,
+    "score_sem": 3991.1752655076425
+  },
+  {
+    "bin_index": 15,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 84100.0,
+    "score_sem": 12976.224412362788
+  },
+  {
+    "bin_index": 16,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 59360.0,
+    "score_sem": 8501.828038722026
+  },
+  {
+    "bin_index": 17,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 64760.0,
+    "score_sem": 9598.451958519145
+  },
+  {
+    "bin_index": 18,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 57280.0,
+    "score_sem": 7706.031404036711
+  },
+  {
+    "bin_index": 19,
+    "game": "crazy_climber",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 67640.0,
+    "score_sem": 6918.719534711607
+  },
+  {
+    "bin_index": 0,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 133.36904761904762,
+    "score_sem": 3.3813547714936596
+  },
+  {
+    "bin_index": 1,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 165.66666666666666,
+    "score_sem": 21.228125996736814
+  },
+  {
+    "bin_index": 2,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 283.85714285714283,
+    "score_sem": 89.2242874411881
+  },
+  {
+    "bin_index": 3,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 282.2967532467532,
+    "score_sem": 92.65336694078994
+  },
+  {
+    "bin_index": 4,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 364.6,
+    "score_sem": 107.24051473207315
+  },
+  {
+    "bin_index": 5,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 344.56666666666666,
+    "score_sem": 67.14951145681471
+  },
+  {
+    "bin_index": 6,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 280.16666666666663,
+    "score_sem": 31.884688070190265
+  },
+  {
+    "bin_index": 7,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 298.1,
+    "score_sem": 29.315661343384356
+  },
+  {
+    "bin_index": 8,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 333.17380952380955,
+    "score_sem": 70.34932480936678
+  },
+  {
+    "bin_index": 9,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 274.3333333333333,
+    "score_sem": 25.23582110149512
+  },
+  {
+    "bin_index": 10,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 177.49801587301587,
+    "score_sem": 18.18538799373665
+  },
+  {
+    "bin_index": 11,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 244.34761904761905,
+    "score_sem": 21.347052986344835
+  },
+  {
+    "bin_index": 12,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 354.125,
+    "score_sem": 90.26547266566301
+  },
+  {
+    "bin_index": 13,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 275.4107142857143,
+    "score_sem": 33.578702099602914
+  },
+  {
+    "bin_index": 14,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 200.04761904761904,
+    "score_sem": 19.68048632402445
+  },
+  {
+    "bin_index": 15,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 335.72222222222223,
+    "score_sem": 79.7775591919011
+  },
+  {
+    "bin_index": 16,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 225.32857142857142,
+    "score_sem": 16.224265022188337
+  },
+  {
+    "bin_index": 17,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 281.3690476190476,
+    "score_sem": 38.4591177940498
+  },
+  {
+    "bin_index": 18,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 229.03928571428574,
+    "score_sem": 19.315786342803033
+  },
+  {
+    "bin_index": 19,
+    "game": "demon_attack",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 291.247619047619,
+    "score_sem": 22.37641554827572
+  },
+  {
+    "bin_index": 0,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 1,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 2,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 3,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 4,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 5,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 6,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 7,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 8,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 9,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 10,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 11,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 12,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 13,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 14,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 15,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 16,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 17,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 18,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 19,
+    "game": "freeway",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 0.0,
+    "score_sem": 0.0
+  },
+  {
+    "bin_index": 0,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 75.84615384615384,
+    "score_sem": 2.5716915428603344
+  },
+  {
+    "bin_index": 1,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 90.17261904761905,
+    "score_sem": 4.0843605538427745
+  },
+  {
+    "bin_index": 2,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 149.4128205128205,
+    "score_sem": 4.004725019924228
+  },
+  {
+    "bin_index": 3,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 160.90732600732602,
+    "score_sem": 19.262494546967684
+  },
+  {
+    "bin_index": 4,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 339.3272727272727,
+    "score_sem": 52.20899893933932
+  },
+  {
+    "bin_index": 5,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 737.1363636363636,
+    "score_sem": 258.0274136388697
+  },
+  {
+    "bin_index": 6,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 790.1772727272727,
+    "score_sem": 298.2635696136517
+  },
+  {
+    "bin_index": 7,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 823.2590909090908,
+    "score_sem": 258.98138000652216
+  },
+  {
+    "bin_index": 8,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 1099.0714285714287,
+    "score_sem": 329.84987377445657
+  },
+  {
+    "bin_index": 9,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 880.5757575757576,
+    "score_sem": 259.6970701177275
+  },
+  {
+    "bin_index": 10,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 1053.3333333333335,
+    "score_sem": 287.5440062939159
+  },
+  {
+    "bin_index": 11,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 1476.7142857142858,
+    "score_sem": 315.2652728897514
+  },
+  {
+    "bin_index": 12,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 1323.5833333333333,
+    "score_sem": 321.4615840189928
+  },
+  {
+    "bin_index": 13,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 1631.6398268398268,
+    "score_sem": 368.70587659195763
+  },
+  {
+    "bin_index": 14,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 1492.2380952380954,
+    "score_sem": 372.927133247258
+  },
+  {
+    "bin_index": 15,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 1891.8121212121212,
+    "score_sem": 409.9822818989552
+  },
+  {
+    "bin_index": 16,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 2133.095238095238,
+    "score_sem": 432.8871852951341
+  },
+  {
+    "bin_index": 17,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 1850.2,
+    "score_sem": 381.10175485761744
+  },
+  {
+    "bin_index": 18,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 2165.4,
+    "score_sem": 436.89593370605877
+  },
+  {
+    "bin_index": 19,
+    "game": "frostbite",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 2240.260606060606,
+    "score_sem": 451.6717340530798
+  },
+  {
+    "bin_index": 0,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 332.4,
+    "score_sem": 10.828111562040723
+  },
+  {
+    "bin_index": 1,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 338.66666666666663,
+    "score_sem": 29.733632285492614
+  },
+  {
+    "bin_index": 2,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 332.8,
+    "score_sem": 32.227745120556534
+  },
+  {
+    "bin_index": 3,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 312.76190476190476,
+    "score_sem": 41.99346456009122
+  },
+  {
+    "bin_index": 4,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 471.1142857142857,
+    "score_sem": 69.38397627165298
+  },
+  {
+    "bin_index": 5,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 461.0,
+    "score_sem": 43.826932358995876
+  },
+  {
+    "bin_index": 6,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 445.7333333333333,
+    "score_sem": 46.91348064966686
+  },
+  {
+    "bin_index": 7,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 587.8666666666667,
+    "score_sem": 80.88497182212939
+  },
+  {
+    "bin_index": 8,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 616.6666666666667,
+    "score_sem": 69.93889396386597
+  },
+  {
+    "bin_index": 9,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 760.6,
+    "score_sem": 28.86049202629782
+  },
+  {
+    "bin_index": 10,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 788.8,
+    "score_sem": 14.058164887352829
+  },
+  {
+    "bin_index": 11,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 625.6666666666667,
+    "score_sem": 78.7521569369514
+  },
+  {
+    "bin_index": 12,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 999.0,
+    "score_sem": 211.6703936679751
+  },
+  {
+    "bin_index": 13,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 883.5333333333334,
+    "score_sem": 129.11643668496365
+  },
+  {
+    "bin_index": 14,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 982.0,
+    "score_sem": 91.09116312793465
+  },
+  {
+    "bin_index": 15,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 973.2,
+    "score_sem": 75.34369250308879
+  },
+  {
+    "bin_index": 16,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 946.2,
+    "score_sem": 109.25983708572882
+  },
+  {
+    "bin_index": 17,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 1006.6,
+    "score_sem": 66.82011673141554
+  },
+  {
+    "bin_index": 18,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 1081.4666666666667,
+    "score_sem": 104.84585934705395
+  },
+  {
+    "bin_index": 19,
+    "game": "gopher",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 1003.0666666666668,
+    "score_sem": 142.752852471987
+  },
+  {
+    "bin_index": 0,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 529.2857142857143,
+    "score_sem": 143.47082473806447
+  },
+  {
+    "bin_index": 1,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 225.36955266955266,
+    "score_sem": 64.864227688297
+  },
+  {
+    "bin_index": 2,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 2116.0333333333333,
+    "score_sem": 269.4477248826652
+  },
+  {
+    "bin_index": 3,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 3015.866666666667,
+    "score_sem": 129.70361427329448
+  },
+  {
+    "bin_index": 4,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 3166.0555555555557,
+    "score_sem": 75.6018908855562
+  },
+  {
+    "bin_index": 5,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 3121.4004884004885,
+    "score_sem": 129.70257679655592
+  },
+  {
+    "bin_index": 6,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 3113.262445887446,
+    "score_sem": 11.031804891230914
+  },
+  {
+    "bin_index": 7,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 3457.404040404041,
+    "score_sem": 195.53719089513612
+  },
+  {
+    "bin_index": 8,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 4594.838383838383,
+    "score_sem": 539.7686925290753
+  },
+  {
+    "bin_index": 9,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 5720.944444444444,
+    "score_sem": 669.3177469319222
+  },
+  {
+    "bin_index": 10,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 6087.203571428571,
+    "score_sem": 786.8789317322467
+  },
+  {
+    "bin_index": 11,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 6484.290404040404,
+    "score_sem": 734.7424819445263
+  },
+  {
+    "bin_index": 12,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 7168.7119047619035,
+    "score_sem": 284.3758725266323
+  },
+  {
+    "bin_index": 13,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 6780.976190476191,
+    "score_sem": 374.16881960974945
+  },
+  {
+    "bin_index": 14,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 7405.825396825397,
+    "score_sem": 109.46142377815319
+  },
+  {
+    "bin_index": 15,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 7711.357142857142,
+    "score_sem": 143.83450867442582
+  },
+  {
+    "bin_index": 16,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 7792.7333333333345,
+    "score_sem": 137.60466400364322
+  },
+  {
+    "bin_index": 17,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 8805.785714285714,
+    "score_sem": 846.0901747455883
+  },
+  {
+    "bin_index": 18,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 8735.341666666665,
+    "score_sem": 1019.2099215677906
+  },
+  {
+    "bin_index": 19,
+    "game": "hero",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 9313.241666666667,
+    "score_sem": 928.6398669858813
+  },
+  {
+    "bin_index": 0,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 29.909090909090907,
+    "score_sem": 3.6958766392063738
+  },
+  {
+    "bin_index": 1,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 24.81818181818182,
+    "score_sem": 5.946872224640305
+  },
+  {
+    "bin_index": 2,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 30.575757575757574,
+    "score_sem": 1.9042266071908347
+  },
+  {
+    "bin_index": 3,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 47.77272727272727,
+    "score_sem": 13.269169822132623
+  },
+  {
+    "bin_index": 4,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 94.44444444444444,
+    "score_sem": 6.361535648133173
+  },
+  {
+    "bin_index": 5,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 112.64935064935067,
+    "score_sem": 19.730776943113096
+  },
+  {
+    "bin_index": 6,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 142.20238095238096,
+    "score_sem": 14.510239562260677
+  },
+  {
+    "bin_index": 7,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 130.90151515151516,
+    "score_sem": 26.869469021045255
+  },
+  {
+    "bin_index": 8,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 157.11111111111114,
+    "score_sem": 23.07176137271505
+  },
+  {
+    "bin_index": 9,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 176.75,
+    "score_sem": 31.96795270266771
+  },
+  {
+    "bin_index": 10,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 216.19444444444443,
+    "score_sem": 40.16946355714918
+  },
+  {
+    "bin_index": 11,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 220.13492063492063,
+    "score_sem": 32.303844544976236
+  },
+  {
+    "bin_index": 12,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 237.63888888888886,
+    "score_sem": 38.48520639299094
+  },
+  {
+    "bin_index": 13,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 253.19444444444443,
+    "score_sem": 52.39098028110196
+  },
+  {
+    "bin_index": 14,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 239.015873015873,
+    "score_sem": 28.663252798182853
+  },
+  {
+    "bin_index": 15,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 264.44444444444446,
+    "score_sem": 25.216959803441714
+  },
+  {
+    "bin_index": 16,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 275.41666666666663,
+    "score_sem": 16.524392743927248
+  },
+  {
+    "bin_index": 17,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 271.7738095238095,
+    "score_sem": 17.161501105130803
+  },
+  {
+    "bin_index": 18,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 317.8015873015873,
+    "score_sem": 37.17004770591592
+  },
+  {
+    "bin_index": 19,
+    "game": "james_bond",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 369.9047619047619,
+    "score_sem": 48.4175714435348
+  },
+  {
+    "bin_index": 0,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 28.787878787878793,
+    "score_sem": 6.6113406755367965
+  },
+  {
+    "bin_index": 1,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 38.228438228438236,
+    "score_sem": 12.242356779870825
+  },
+  {
+    "bin_index": 2,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 68.03751803751804,
+    "score_sem": 11.595340431971154
+  },
+  {
+    "bin_index": 3,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 85.92207792207792,
+    "score_sem": 32.549622974935104
+  },
+  {
+    "bin_index": 4,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 49.92857142857143,
+    "score_sem": 22.05197941043768
+  },
+  {
+    "bin_index": 5,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 175.36796536796538,
+    "score_sem": 60.68059239028234
+  },
+  {
+    "bin_index": 6,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 200.73526473526474,
+    "score_sem": 45.44569960143489
+  },
+  {
+    "bin_index": 7,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 219.5897435897436,
+    "score_sem": 32.522493101358975
+  },
+  {
+    "bin_index": 8,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 342.4975024975025,
+    "score_sem": 54.50946106894289
+  },
+  {
+    "bin_index": 9,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 481.13131313131305,
+    "score_sem": 57.00351743443529
+  },
+  {
+    "bin_index": 10,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 607.070707070707,
+    "score_sem": 64.0744898613699
+  },
+  {
+    "bin_index": 11,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 696.0,
+    "score_sem": 73.59656460044621
+  },
+  {
+    "bin_index": 12,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 732.5555555555555,
+    "score_sem": 95.88825801260212
+  },
+  {
+    "bin_index": 13,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 747.6363636363637,
+    "score_sem": 79.86901632930811
+  },
+  {
+    "bin_index": 14,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 773.1111111111111,
+    "score_sem": 108.68388866028391
+  },
+  {
+    "bin_index": 15,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 891.1111111111111,
+    "score_sem": 149.67949297510313
+  },
+  {
+    "bin_index": 16,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 995.0505050505051,
+    "score_sem": 131.83804564139672
+  },
+  {
+    "bin_index": 17,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 1025.2222222222222,
+    "score_sem": 169.2723424719051
+  },
+  {
+    "bin_index": 18,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 1061.6666666666667,
+    "score_sem": 112.21782169590016
+  },
+  {
+    "bin_index": 19,
+    "game": "kangaroo",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 1058.7777777777778,
+    "score_sem": 106.15018477796004
+  },
+  {
+    "bin_index": 0,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 1663.5,
+    "score_sem": 102.280496674586
+  },
+  {
+    "bin_index": 1,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 1752.0,
+    "score_sem": 90.02888425388821
+  },
+  {
+    "bin_index": 2,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 2090.266666666667,
+    "score_sem": 211.48575260654218
+  },
+  {
+    "bin_index": 3,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 2586.333333333333,
+    "score_sem": 325.15061467298847
+  },
+  {
+    "bin_index": 4,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 3471.0,
+    "score_sem": 469.39993608861937
+  },
+  {
+    "bin_index": 5,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 4570.0,
+    "score_sem": 438.88324187646987
+  },
+  {
+    "bin_index": 6,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 5286.5,
+    "score_sem": 388.9277567878127
+  },
+  {
+    "bin_index": 7,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 5743.066666666667,
+    "score_sem": 275.3148080934906
+  },
+  {
+    "bin_index": 8,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 6480.8,
+    "score_sem": 130.74743592132123
+  },
+  {
+    "bin_index": 9,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 7259.5666666666675,
+    "score_sem": 204.84713867228461
+  },
+  {
+    "bin_index": 10,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 6821.6,
+    "score_sem": 142.57260606441898
+  },
+  {
+    "bin_index": 11,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 7570.733333333333,
+    "score_sem": 408.17706560865076
+  },
+  {
+    "bin_index": 12,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 6991.666666666667,
+    "score_sem": 412.8987796327596
+  },
+  {
+    "bin_index": 13,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 7709.866666666667,
+    "score_sem": 646.0427598507359
+  },
+  {
+    "bin_index": 14,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 7521.0,
+    "score_sem": 261.3088211293296
+  },
+  {
+    "bin_index": 15,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 8586.666666666668,
+    "score_sem": 708.7136625997523
+  },
+  {
+    "bin_index": 16,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 7728.333333333333,
+    "score_sem": 279.340393705521
+  },
+  {
+    "bin_index": 17,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 8108.833333333333,
+    "score_sem": 457.9132984407516
+  },
+  {
+    "bin_index": 18,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 8158.833333333333,
+    "score_sem": 512.4006461961402
+  },
+  {
+    "bin_index": 19,
+    "game": "krull",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 7861.833333333333,
+    "score_sem": 355.3557216211508
+  },
+  {
+    "bin_index": 0,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 366.6666666666667,
+    "score_sem": 54.454874284432364
+  },
+  {
+    "bin_index": 1,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 395.3333333333333,
+    "score_sem": 31.334751740945173
+  },
+  {
+    "bin_index": 2,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 1022.6666666666667,
+    "score_sem": 150.13297809312618
+  },
+  {
+    "bin_index": 3,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 6728.666666666666,
+    "score_sem": 1532.4460041239809
+  },
+  {
+    "bin_index": 4,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 13243.333333333334,
+    "score_sem": 3786.6214786036144
+  },
+  {
+    "bin_index": 5,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 15583.333333333332,
+    "score_sem": 3293.7449135528927
+  },
+  {
+    "bin_index": 6,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 19346.666666666668,
+    "score_sem": 4161.25889071511
+  },
+  {
+    "bin_index": 7,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 16613.333333333336,
+    "score_sem": 2920.149920047865
+  },
+  {
+    "bin_index": 8,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 25576.666666666664,
+    "score_sem": 8015.254345447947
+  },
+  {
+    "bin_index": 9,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 21150.0,
+    "score_sem": 3241.4194421580182
+  },
+  {
+    "bin_index": 10,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 23225.0,
+    "score_sem": 5395.998517420107
+  },
+  {
+    "bin_index": 11,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 19750.000000000004,
+    "score_sem": 3998.560852217818
+  },
+  {
+    "bin_index": 12,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 23280.0,
+    "score_sem": 3394.9845360472555
+  },
+  {
+    "bin_index": 13,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 22980.0,
+    "score_sem": 3839.520803433678
+  },
+  {
+    "bin_index": 14,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 23786.666666666664,
+    "score_sem": 2673.5012416097525
+  },
+  {
+    "bin_index": 15,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 22313.333333333332,
+    "score_sem": 3433.347572786006
+  },
+  {
+    "bin_index": 16,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 23646.666666666664,
+    "score_sem": 3796.543457175516
+  },
+  {
+    "bin_index": 17,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 21836.666666666664,
+    "score_sem": 1376.7142848907401
+  },
+  {
+    "bin_index": 18,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 27360.0,
+    "score_sem": 3325.3691524400715
+  },
+  {
+    "bin_index": 19,
+    "game": "kung_fu_master",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 24100.0,
+    "score_sem": 2306.989380122934
+  },
+  {
+    "bin_index": 0,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 263.07070707070704,
+    "score_sem": 18.414240595487485
+  },
+  {
+    "bin_index": 1,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 400.0,
+    "score_sem": 39.55666665106162
+  },
+  {
+    "bin_index": 2,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 461.38888888888886,
+    "score_sem": 25.249618014467924
+  },
+  {
+    "bin_index": 3,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 516.5333333333334,
+    "score_sem": 39.68187570238156
+  },
+  {
+    "bin_index": 4,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 494.83888888888885,
+    "score_sem": 76.27695896622913
+  },
+  {
+    "bin_index": 5,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 595.6333333333333,
+    "score_sem": 92.46631632286963
+  },
+  {
+    "bin_index": 6,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 682.05,
+    "score_sem": 151.3656566067746
+  },
+  {
+    "bin_index": 7,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 788.9444444444445,
+    "score_sem": 94.5320231194791
+  },
+  {
+    "bin_index": 8,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 869.0833333333333,
+    "score_sem": 81.7262027884706
+  },
+  {
+    "bin_index": 9,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 966.0714285714287,
+    "score_sem": 68.24698169299563
+  },
+  {
+    "bin_index": 10,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 1060.7301587301588,
+    "score_sem": 162.47066739156523
+  },
+  {
+    "bin_index": 11,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 1088.6071428571427,
+    "score_sem": 90.72688888828348
+  },
+  {
+    "bin_index": 12,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 1155.0714285714287,
+    "score_sem": 111.77577188121862
+  },
+  {
+    "bin_index": 13,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 1349.5357142857142,
+    "score_sem": 201.20159831190534
+  },
+  {
+    "bin_index": 14,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 1338.0634920634923,
+    "score_sem": 165.70970862741785
+  },
+  {
+    "bin_index": 15,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 1338.5515873015875,
+    "score_sem": 140.3440875134211
+  },
+  {
+    "bin_index": 16,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 1629.5714285714287,
+    "score_sem": 189.92113427656741
+  },
+  {
+    "bin_index": 17,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 1675.9841269841268,
+    "score_sem": 274.5461575818957
+  },
+  {
+    "bin_index": 18,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 1756.8253968253969,
+    "score_sem": 192.5698480668241
+  },
+  {
+    "bin_index": 19,
+    "game": "ms_pacman",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 1820.75,
+    "score_sem": 244.08216457009817
+  },
+  {
+    "bin_index": 0,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": -20.040000000000003,
+    "score_sem": 0.15388307249337072
+  },
+  {
+    "bin_index": 1,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": -20.619047619047617,
+    "score_sem": 0.09428090415820657
+  },
+  {
+    "bin_index": 2,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": -20.82857142857143,
+    "score_sem": 0.07450517034517286
+  },
+  {
+    "bin_index": 3,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": -20.857142857142854,
+    "score_sem": 0.08081220356417657
+  },
+  {
+    "bin_index": 4,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": -20.514285714285716,
+    "score_sem": 0.12999215046945525
+  },
+  {
+    "bin_index": 5,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": -20.5,
+    "score_sem": 0.06666666666666714
+  },
+  {
+    "bin_index": 6,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": -18.866666666666667,
+    "score_sem": 0.5091387062699341
+  },
+  {
+    "bin_index": 7,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": -17.05,
+    "score_sem": 0.2863564212655271
+  },
+  {
+    "bin_index": 8,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": -15.0,
+    "score_sem": 1.1382247385975914
+  },
+  {
+    "bin_index": 9,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": -15.033333333333331,
+    "score_sem": 0.5545769158156114
+  },
+  {
+    "bin_index": 10,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": -13.2,
+    "score_sem": 1.213260071048248
+  },
+  {
+    "bin_index": 11,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": -14.066666666666666,
+    "score_sem": 1.2846097548369395
+  },
+  {
+    "bin_index": 12,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": -14.733333333333334,
+    "score_sem": 1.4457600845998697
+  },
+  {
+    "bin_index": 13,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": -11.233333333333334,
+    "score_sem": 2.1620977467882128
+  },
+  {
+    "bin_index": 14,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": -12.966666666666665,
+    "score_sem": 1.2278255395436095
+  },
+  {
+    "bin_index": 15,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": -12.3,
+    "score_sem": 1.0353743284435826
+  },
+  {
+    "bin_index": 16,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": -8.6,
+    "score_sem": 1.693517050401324
+  },
+  {
+    "bin_index": 17,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": -7.8,
+    "score_sem": 0.8899438184514794
+  },
+  {
+    "bin_index": 18,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": -5.6,
+    "score_sem": 2.2908513701242166
+  },
+  {
+    "bin_index": 19,
+    "game": "pong",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": -10.7,
+    "score_sem": 2.1475567512873783
+  },
+  {
+    "bin_index": 0,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 84.2,
+    "score_sem": 14.131949617798671
+  },
+  {
+    "bin_index": 1,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 350.4,
+    "score_sem": 380.3473780637905
+  },
+  {
+    "bin_index": 2,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 1.8,
+    "score_sem": 45.37170924706276
+  },
+  {
+    "bin_index": 3,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 917.0,
+    "score_sem": 741.9778972449246
+  },
+  {
+    "bin_index": 4,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 968.7,
+    "score_sem": 776.9889008216269
+  },
+  {
+    "bin_index": 5,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 477.2,
+    "score_sem": 337.37793644516825
+  },
+  {
+    "bin_index": 6,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 53.6,
+    "score_sem": 41.50142166239609
+  },
+  {
+    "bin_index": 7,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 39.8,
+    "score_sem": 53.84451689819494
+  },
+  {
+    "bin_index": 8,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 29.4,
+    "score_sem": 63.14655968459405
+  },
+  {
+    "bin_index": 9,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": -90.0,
+    "score_sem": 106.20734437881401
+  },
+  {
+    "bin_index": 10,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": -30.0,
+    "score_sem": 116.27553482998906
+  },
+  {
+    "bin_index": 11,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 399.4,
+    "score_sem": 267.7915009853748
+  },
+  {
+    "bin_index": 12,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 811.7,
+    "score_sem": 765.498211624299
+  },
+  {
+    "bin_index": 13,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 804.4,
+    "score_sem": 630.0345133403407
+  },
+  {
+    "bin_index": 14,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 80.0,
+    "score_sem": 17.88854381999832
+  },
+  {
+    "bin_index": 15,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 845.6,
+    "score_sem": 666.8849136095373
+  },
+  {
+    "bin_index": 16,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 983.5,
+    "score_sem": 790.2264232484256
+  },
+  {
+    "bin_index": 17,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 885.1,
+    "score_sem": 702.2147876540339
+  },
+  {
+    "bin_index": 18,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 842.6,
+    "score_sem": 664.2016320365375
+  },
+  {
+    "bin_index": 19,
+    "game": "private_eye",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 928.7,
+    "score_sem": 741.2118131816303
+  },
+  {
+    "bin_index": 0,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 169.14705882352942,
+    "score_sem": 18.229534342971892
+  },
+  {
+    "bin_index": 1,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 153.62418300653593,
+    "score_sem": 22.971188866995465
+  },
+  {
+    "bin_index": 2,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 296.4852941176471,
+    "score_sem": 35.47624820709218
+  },
+  {
+    "bin_index": 3,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 330.68014705882354,
+    "score_sem": 21.264818035032715
+  },
+  {
+    "bin_index": 4,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 399.0588235294117,
+    "score_sem": 26.73550227490742
+  },
+  {
+    "bin_index": 5,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 514.7728937728938,
+    "score_sem": 50.54480803653474
+  },
+  {
+    "bin_index": 6,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 538.4750053867701,
+    "score_sem": 60.11702571450521
+  },
+  {
+    "bin_index": 7,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 532.5201465201466,
+    "score_sem": 58.149272837615314
+  },
+  {
+    "bin_index": 8,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 572.0467032967033,
+    "score_sem": 51.05280474290216
+  },
+  {
+    "bin_index": 9,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 627.0487845487845,
+    "score_sem": 65.91712483745178
+  },
+  {
+    "bin_index": 10,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 712.1388611388611,
+    "score_sem": 27.51059084697912
+  },
+  {
+    "bin_index": 11,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 729.5075757575758,
+    "score_sem": 20.09268809511171
+  },
+  {
+    "bin_index": 12,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 723.4265734265733,
+    "score_sem": 17.629105719737353
+  },
+  {
+    "bin_index": 13,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 863.7494172494173,
+    "score_sem": 81.96623260212077
+  },
+  {
+    "bin_index": 14,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 853.2799145299144,
+    "score_sem": 103.14458639045611
+  },
+  {
+    "bin_index": 15,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 854.3712121212122,
+    "score_sem": 66.45569372634776
+  },
+  {
+    "bin_index": 16,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 902.695707070707,
+    "score_sem": 65.30755358064101
+  },
+  {
+    "bin_index": 17,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 1099.0252525252524,
+    "score_sem": 186.51658605547223
+  },
+  {
+    "bin_index": 18,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 1718.7487373737372,
+    "score_sem": 350.00707424490355
+  },
+  {
+    "bin_index": 19,
+    "game": "qbert",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 2257.213383838384,
+    "score_sem": 526.7887266984012
+  },
+  {
+    "bin_index": 0,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 27.34617234617234,
+    "score_sem": 15.636395359404133
+  },
+  {
+    "bin_index": 1,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 750.1076555023923,
+    "score_sem": 166.06991787564328
+  },
+  {
+    "bin_index": 2,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 1202.5873015873017,
+    "score_sem": 117.47187330543694
+  },
+  {
+    "bin_index": 3,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 2479.8492063492063,
+    "score_sem": 314.0502220991157
+  },
+  {
+    "bin_index": 4,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 4207.842712842713,
+    "score_sem": 841.1403424421252
+  },
+  {
+    "bin_index": 5,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 6133.333333333334,
+    "score_sem": 448.7038526604048
+  },
+  {
+    "bin_index": 6,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 8039.714285714287,
+    "score_sem": 928.3305533733825
+  },
+  {
+    "bin_index": 7,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 8376.190476190477,
+    "score_sem": 453.6713425761319
+  },
+  {
+    "bin_index": 8,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 10688.0,
+    "score_sem": 1305.4421473202094
+  },
+  {
+    "bin_index": 9,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 11292.666666666666,
+    "score_sem": 1847.5517493880022
+  },
+  {
+    "bin_index": 10,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 12761.333333333334,
+    "score_sem": 2025.0104197262785
+  },
+  {
+    "bin_index": 11,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 13111.333333333334,
+    "score_sem": 2080.4291437639067
+  },
+  {
+    "bin_index": 12,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 14003.0,
+    "score_sem": 2174.4093655263923
+  },
+  {
+    "bin_index": 13,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 13506.0,
+    "score_sem": 2152.1256468896045
+  },
+  {
+    "bin_index": 14,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 12987.57142857143,
+    "score_sem": 2071.311697195469
+  },
+  {
+    "bin_index": 15,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 13197.333333333332,
+    "score_sem": 2078.816415388547
+  },
+  {
+    "bin_index": 16,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 12660.999999999998,
+    "score_sem": 1931.0506984540825
+  },
+  {
+    "bin_index": 17,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 13069.0,
+    "score_sem": 2154.929418797748
+  },
+  {
+    "bin_index": 18,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 14303.333333333332,
+    "score_sem": 2273.8449570911575
+  },
+  {
+    "bin_index": 19,
+    "game": "road_runner",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 13995.333333333334,
+    "score_sem": 2310.707126016238
+  },
+  {
+    "bin_index": 0,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 91.1,
+    "score_sem": 12.743939736204027
+  },
+  {
+    "bin_index": 1,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 122.25454545454545,
+    "score_sem": 15.80284836758632
+  },
+  {
+    "bin_index": 2,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 182.74011544011543,
+    "score_sem": 37.112538267195326
+  },
+  {
+    "bin_index": 3,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 77000.0,
+    "score_mean": 269.7333333333333,
+    "score_sem": 13.335466496027298
+  },
+  {
+    "bin_index": 4,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 288.9809523809523,
+    "score_sem": 22.212486937840136
+  },
+  {
+    "bin_index": 5,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 121000.0,
+    "score_mean": 391.8,
+    "score_sem": 51.74429437145704
+  },
+  {
+    "bin_index": 6,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 143000.0,
+    "score_mean": 472.6666666666667,
+    "score_sem": 64.59026414423634
+  },
+  {
+    "bin_index": 7,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 165000.0,
+    "score_mean": 412.2,
+    "score_sem": 40.09827926482632
+  },
+  {
+    "bin_index": 8,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 187000.0,
+    "score_mean": 418.6,
+    "score_sem": 44.539959586869855
+  },
+  {
+    "bin_index": 9,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 209000.0,
+    "score_mean": 394.1714285714286,
+    "score_sem": 35.23538110525631
+  },
+  {
+    "bin_index": 10,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 231000.0,
+    "score_mean": 381.4666666666667,
+    "score_sem": 33.99262665147644
+  },
+  {
+    "bin_index": 11,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 382.2,
+    "score_sem": 45.531878942121416
+  },
+  {
+    "bin_index": 12,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 385.1142857142857,
+    "score_sem": 28.43456936009191
+  },
+  {
+    "bin_index": 13,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 297000.0,
+    "score_mean": 397.2,
+    "score_sem": 41.51086604733753
+  },
+  {
+    "bin_index": 14,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 319000.0,
+    "score_mean": 408.66666666666663,
+    "score_sem": 39.201814016984244
+  },
+  {
+    "bin_index": 15,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 341000.0,
+    "score_mean": 381.06666666666666,
+    "score_sem": 17.767485909817278
+  },
+  {
+    "bin_index": 16,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 363000.0,
+    "score_mean": 450.0,
+    "score_sem": 17.597727125967147
+  },
+  {
+    "bin_index": 17,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 385000.0,
+    "score_mean": 375.4666666666667,
+    "score_sem": 33.720102807277044
+  },
+  {
+    "bin_index": 18,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 407000.0,
+    "score_mean": 433.2,
+    "score_sem": 33.68581633599254
+  },
+  {
+    "bin_index": 19,
+    "game": "seaquest",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 403.6,
+    "score_sem": 34.26204897550641
+  },
+  {
+    "bin_index": 0,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 11000.0,
+    "score_mean": 470.67676767676767,
+    "score_sem": 51.249498124911426
+  },
+  {
+    "bin_index": 1,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 33000.0,
+    "score_mean": 1162.4722222222222,
+    "score_sem": 66.37157375314476
+  },
+  {
+    "bin_index": 2,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 55000.0,
+    "score_mean": 1366.188383838384,
+    "score_sem": 208.7335283693636
+  },
+  {
+    "bin_index": 3,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 77000.0,
+    "score_mean": 3505.5,
+    "score_sem": 744.6463506255839
+  },
+  {
+    "bin_index": 4,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 99000.0,
+    "score_mean": 5924.4,
+    "score_sem": 2754.191882930454
+  },
+  {
+    "bin_index": 5,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 121000.0,
+    "score_mean": 4176.875,
+    "score_sem": 1220.1746080863795
+  },
+  {
+    "bin_index": 6,
+    "game": "up_n_down",
+    "num_seed_values": 3,
+    "raw_frame_center": 143000.0,
+    "score_mean": 4890.555555555556,
+    "score_sem": 1458.3019749714945
+  },
+  {
+    "bin_index": 7,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 165000.0,
+    "score_mean": 33044.0625,
+    "score_sem": 15559.668915273542
+  },
+  {
+    "bin_index": 8,
+    "game": "up_n_down",
+    "num_seed_values": 2,
+    "raw_frame_center": 187000.0,
+    "score_mean": 6753.0952380952385,
+    "score_sem": 3274.07275565114
+  },
+  {
+    "bin_index": 9,
+    "game": "up_n_down",
+    "num_seed_values": 2,
+    "raw_frame_center": 209000.0,
+    "score_mean": 3058.75,
+    "score_sem": 647.8865882621741
+  },
+  {
+    "bin_index": 10,
+    "game": "up_n_down",
+    "num_seed_values": 3,
+    "raw_frame_center": 231000.0,
+    "score_mean": 31306.666666666668,
+    "score_sem": 17453.262880767743
+  },
+  {
+    "bin_index": 11,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 253000.0,
+    "score_mean": 57826.4,
+    "score_sem": 31960.434752487334
+  },
+  {
+    "bin_index": 12,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 275000.0,
+    "score_mean": 18267.0,
+    "score_sem": 6487.7736705282805
+  },
+  {
+    "bin_index": 13,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 297000.0,
+    "score_mean": 8554.166666666668,
+    "score_sem": 2799.360324996885
+  },
+  {
+    "bin_index": 14,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 319000.0,
+    "score_mean": 7234.642857142857,
+    "score_sem": 2394.8945151134335
+  },
+  {
+    "bin_index": 15,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 341000.0,
+    "score_mean": 50255.0,
+    "score_sem": 26936.658223506493
+  },
+  {
+    "bin_index": 16,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 363000.0,
+    "score_mean": 13830.535714285714,
+    "score_sem": 4680.941530087669
+  },
+  {
+    "bin_index": 17,
+    "game": "up_n_down",
+    "num_seed_values": 4,
+    "raw_frame_center": 385000.0,
+    "score_mean": 18687.5,
+    "score_sem": 5176.488161630431
+  },
+  {
+    "bin_index": 18,
+    "game": "up_n_down",
+    "num_seed_values": 3,
+    "raw_frame_center": 407000.0,
+    "score_mean": 13122.063492063493,
+    "score_sem": 4452.156327035188
+  },
+  {
+    "bin_index": 19,
+    "game": "up_n_down",
+    "num_seed_values": 5,
+    "raw_frame_center": 429000.0,
+    "score_mean": 48419.857142857145,
+    "score_sem": 32823.66150054013
+  }
+]

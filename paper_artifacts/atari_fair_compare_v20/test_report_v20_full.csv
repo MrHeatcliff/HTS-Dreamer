@@ -1,0 +1,14 @@
+test,status
+FC-01 frozen candidate reuse,PASS
+FC-02 W&B and resource preflight,PASS
+FC-03 command manifest,PASS
+FC-04 V20 run completeness,PASS
+FC-05 metric protocol lock,PASS
+FC-06 Dreamer reference re-extraction,PASS
+FC-07 HTS candidate re-extraction,PASS
+FC-08 fair comparison tables,PASS
+FC-09 figure generation,PASS
+FC-10 fair comparison decision,PASS
+FC-11 improvement diagnosis if needed,PASS
+FC-12 research interpretation,PASS
+UT-15-P1 larger_flat_flops,XFAIL

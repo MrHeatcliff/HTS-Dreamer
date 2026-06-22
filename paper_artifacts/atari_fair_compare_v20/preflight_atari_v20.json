@@ -1,0 +1,30 @@
+{
+  "candidate_config_resolves": true,
+  "checkpointing": {
+    "run.save_every": 10000
+  },
+  "created_at": "2026-06-16T18:01:19",
+  "disk": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1    7.0T  5.7T  952G  86% /mnt/disk1\n/dev/sda3       4.4T  3.9T  225G  95% /",
+  "envs": [
+    "atari100k_alien",
+    "atari100k_breakout"
+  ],
+  "existing_dreamerv3_processes": "556599    3966 bash external_baselines/dreamerv3-official/paper_artifacts/full26_dreamerv3_audit_20260616/launch_full26_repair_missing_partial.sh\n 556602    3966 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_breakout --seed 3 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_3_repair_no_video --run.steps 110000 --run.envs 1 --run.train_ratio 256 --run.log_every 250 --run.report_every 999999 --run.log_policy_video False --run.save_every 10000 --batch_size 16 --batch_length 64 --agent.report False --logger.outputs jsonl,scope,wandb --jax.prealloc False --jax.jit True\n 556603    3966 tee /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/full26_dreamerv3_audit_20260616/run_logs/DreamerV3-official-size12m-atari100k-breakout-seed3-repair-no-video.log",
+  "gpu_selected": 7,
+  "gpu_snapshot_csv": "0, NVIDIA GeForce RTX 3090, 23338, 24576, 100\n1, NVIDIA GeForce RTX 3090, 23400, 24576, 100\n2, NVIDIA GeForce RTX 3090, 15603, 24576, 100\n3, NVIDIA GeForce RTX 3090, 3380, 24576, 91\n4, NVIDIA GeForce RTX 3090, 14970, 24576, 18\n5, NVIDIA GeForce RTX 3090, 14554, 24576, 0\n6, NVIDIA GeForce RTX 3090, 14076, 24576, 6\n7, NVIDIA GeForce RTX 3090, 2, 24576, 0",
+  "host": "vishc-server-1",
+  "logdirs_overwrite_v19": false,
+  "logger_outputs": [
+    "jsonl",
+    "scope",
+    "wandb"
+  ],
+  "memory": "total        used        free      shared  buff/cache   available\nMem:           692Gi       389Gi       6.6Gi       2.5Gi       295Gi       295Gi\nSwap:          8.0Gi       5.7Gi       2.3Gi",
+  "policy_video_disabled": true,
+  "status": "BLOCKED_RESOURCE_OR_WANDB_ISSUE",
+  "wandb": {
+    "available": false,
+    "error": "ModuleNotFoundError(\"No module named 'wandb'\")",
+    "project": "hts-wm-atari-dev"
+  }
+}

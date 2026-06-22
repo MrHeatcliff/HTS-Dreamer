@@ -1,0 +1,185 @@
+{
+  "rows": [
+    {
+      "config_name": "recon_trunk_isolated",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated/seed_4/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_no_z1_grad/seed_4/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only/seed_4/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_gradient_isolation_v14/runs/recon_trunk_isolated_fine_only_x3/seed_4/checkpoints/step_500.npz"
+    }
+  ],
+  "status": "pass"
+}

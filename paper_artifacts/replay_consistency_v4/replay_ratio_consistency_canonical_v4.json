@@ -1,0 +1,57 @@
+{
+  "absolute_error": 0.0,
+  "acceptance": "blocked_until_real_update_event_trace_passes",
+  "batch_length": 64,
+  "batch_size": 16,
+  "canonical_expected_value_preserved": true,
+  "common_failure_source_audit": {
+    "compile_only_steps": "writer has is_compile_only flag; real trace pending",
+    "counting_before_optimizer_execution": "writer logs executed update count after loop",
+    "environment_repeat_semantics": "action_repeat from env config, Atari100K default repeat=4",
+    "initial_ratio_accumulator_carry": "pure scheduler shows first-call burst",
+    "multiple_optimizer_calls_per_scheduled_update": "real trace pending",
+    "prefill_exclusion": "writer has is_prefill flag; real trace pending",
+    "resume_state": "not tested",
+    "writer_numerator_denominator": "agent actions denominator; optimizer updates numerator"
+  },
+  "executed_optimizer_updates": 25000,
+  "expected_updates_per_agent_action": 0.25,
+  "final_accumulator_state": {
+    "prev": 99997.0
+  },
+  "initial_accumulator_state": "prev=None; first call returns one update",
+  "minibatch_steps": 1024,
+  "num_agent_actions": 100000,
+  "real_training_trace_status": "instrumented_but_update_trace_smoke_pending",
+  "relative_error": 0.0,
+  "requested_update_events": 25000,
+  "strict_status": "pass",
+  "train_ratio_replayed_steps_per_agent_action": 256,
+  "updates_per_agent_action": 0.25,
+  "window_diagnostics": {
+    "100": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    },
+    "1000": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    },
+    "500": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    },
+    "5000": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    }
+  }
+}

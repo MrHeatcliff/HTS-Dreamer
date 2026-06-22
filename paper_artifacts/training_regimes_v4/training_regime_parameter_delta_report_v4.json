@@ -1,0 +1,11 @@
+{
+  "blocker": "one-step optimizer delta by module/regime not automated",
+  "implemented_config_names": [
+    "joint",
+    "detach_hts_anchor",
+    "posthoc_frozen_backbone",
+    "two_phase"
+  ],
+  "status": "xfail",
+  "tested_parameter_delta": false
+}

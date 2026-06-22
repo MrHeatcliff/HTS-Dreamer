@@ -1,0 +1,8 @@
+{
+  "config_names_match": true,
+  "csv_row_count": 15,
+  "json_row_count": 15,
+  "parity_pass": true,
+  "schema_columns_match": true,
+  "typed_boolean_json": true
+}

@@ -1,0 +1,98 @@
+{
+  "checkpoint_agent_actions_monotonic": true,
+  "gpu_memory_renamed": true,
+  "rows": [
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 1334.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 1334.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size1m_breakout_size1m_dreamer_anchor_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 1348.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 1348.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size1m_breakout_size1m_hts_full_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 1340.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 1340.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size1m_breakout_size1m_larger_flat_param_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 1348.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 1348.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size1m_breakout_size1m_dense_multistride_no_sparse_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 3382.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 3382.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size12m_breakout_size12m_dreamer_anchor_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 3398.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 3398.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size12m_breakout_size12m_hts_full_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 3390.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 3390.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size12m_breakout_size12m_larger_flat_param_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    },
+    {
+      "checkpoint_wall_clock_seconds_semantics": "not_measured",
+      "gpu_process_memory_peak_mb": 3396.0,
+      "memory_backend": "nvidia_smi_process",
+      "peak_memory_mb": 3396.0,
+      "peak_memory_semantics": "sampled process-level GPU memory via nvidia-smi",
+      "run_id": "gate_c_v9_size12m_breakout_size12m_dense_multistride_no_sparse_seed0",
+      "startup_wall_clock_seconds_semantics": "not_measured",
+      "torch_peak_allocated_mb": "",
+      "torch_peak_reserved_mb": ""
+    }
+  ],
+  "status": "pass",
+  "timing_decomposition_placeholders_detected": true,
+  "torch_memory_available": false,
+  "training_global_step_semantics": "V9 eval global steps are eval-only episode steps; use checkpoint_agent_actions instead"
+}

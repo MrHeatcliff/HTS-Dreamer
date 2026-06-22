@@ -1,0 +1,7 @@
+{
+  "gate_d1_decision": "BLOCKED_PENDING_HARNESS_FIX",
+  "gate_d2_status": "blocked",
+  "root_cause_decision": "TRAINING_HARNESS_DRIFT_FOUND",
+  "split_branch_implementation": "not approved in V15",
+  "v14_decision": "NO_STABLE_CANDIDATE_AFTER_GRADIENT_ISOLATION"
+}

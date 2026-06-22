@@ -1,0 +1,363 @@
+{
+  "input_shapes": {
+    "h": [
+      3,
+      64,
+      2560
+    ],
+    "action": [
+      3,
+      64,
+      1
+    ],
+    "reset": [
+      3,
+      64
+    ]
+  },
+  "latent_anchor_shape": [
+    3,
+    64,
+    2560
+  ],
+  "z_level_shapes": [
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ]
+  ],
+  "active_count_per_level_first_batch": [
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ]
+  ],
+  "total_active_count_first_batch": [
+    48,
+    48,
+    48,
+    48,
+    48,
+    48,
+    48,
+    48
+  ],
+  "prefix_shapes": [
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      64
+    ],
+    [
+      3,
+      64,
+      96
+    ],
+    [
+      3,
+      64,
+      128
+    ],
+    [
+      3,
+      64,
+      160
+    ],
+    [
+      3,
+      64,
+      192
+    ]
+  ],
+  "dynamics": [
+    {
+      "level": 1,
+      "stride": 32,
+      "prefix_shape": [
+        3,
+        64,
+        32
+      ],
+      "action_window_shape": [
+        3,
+        32,
+        32
+      ],
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 34,
+      "target_index": 35,
+      "valid_count": 65,
+      "invalid_count": 31
+    },
+    {
+      "level": 2,
+      "stride": 16,
+      "prefix_shape": [
+        3,
+        64,
+        64
+      ],
+      "action_window_shape": [
+        3,
+        48,
+        16
+      ],
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 18,
+      "target_index": 19,
+      "valid_count": 128,
+      "invalid_count": 16
+    },
+    {
+      "level": 3,
+      "stride": 8,
+      "prefix_shape": [
+        3,
+        64,
+        96
+      ],
+      "action_window_shape": [
+        3,
+        56,
+        8
+      ],
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 10,
+      "target_index": 11,
+      "valid_count": 160,
+      "invalid_count": 8
+    },
+    {
+      "level": 4,
+      "stride": 4,
+      "prefix_shape": [
+        3,
+        64,
+        128
+      ],
+      "action_window_shape": [
+        3,
+        60,
+        4
+      ],
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 6,
+      "target_index": 7,
+      "valid_count": 176,
+      "invalid_count": 4
+    },
+    {
+      "level": 5,
+      "stride": 2,
+      "prefix_shape": [
+        3,
+        64,
+        160
+      ],
+      "action_window_shape": [
+        3,
+        62,
+        2
+      ],
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 4,
+      "target_index": 5,
+      "valid_count": 184,
+      "invalid_count": 2
+    },
+    {
+      "level": 6,
+      "stride": 1,
+      "prefix_shape": [
+        3,
+        64,
+        192
+      ],
+      "action_window_shape": [
+        3,
+        63,
+        1
+      ],
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 3,
+      "target_index": 4,
+      "valid_count": 188,
+      "invalid_count": 1
+    }
+  ],
+  "sampled_positive_offsets": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "negative_counts_by_mode": {
+    "soft_cross_mean": 128.0,
+    "soft_far_mean": 27.245901107788086
+  },
+  "raw_losses": {
+    "hier": 0.7171103060245514,
+    "sdyn": 0.328125,
+    "temp": 5.579346656799316,
+    "vc": 0.031860098242759705,
+    "vc_var": 0.0264463908970356,
+    "vc_cov": 0.005413705483078957,
+    "sparse": 0.4070287346839905
+  },
+  "weighted_losses": {
+    "hier": 0.07171103060245514,
+    "sdyn": 0.0328125,
+    "temp": 0.055793466567993166,
+    "vc": 0.00031860098242759706,
+    "sparse": 4.0702873468399054e-06
+  },
+  "gradient_norms": {
+    "backbone": "not_computed_in_static_trace",
+    "shared_trunk": "not_computed_in_static_trace",
+    "head_1": "not_computed_in_static_trace",
+    "predictor_1": "not_computed_in_static_trace",
+    "projector": "not_computed_in_static_trace"
+  },
+  "parameter_counts": {
+    "addon_params": "available from train/opt/param_count delta after init",
+    "total_params": "available from train/opt/param_count after init"
+  },
+  "config": {
+    "latent_anchor_name": "rssm_repfeat",
+    "latent_anchor_dim": 2560,
+    "levels": 6,
+    "head_dim": 32,
+    "topk_per_level": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "strides_coarse_to_fine": [
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "temporal": {
+      "k_pos": 4,
+      "temperature": 0.1,
+      "far_negative_mode": "soft",
+      "min_far_distance": 16,
+      "far_weight": 0.25
+    }
+  },
+  "config_hash": "7355981c9f617877",
+  "temporal_metrics": {
+    "hts/temp_positive_valid_frac": 0.953125,
+    "hts/temp_terminal_boundary_invalid_frac": 0.046875,
+    "hts/temp_cross_negative_count": 128.0,
+    "hts/temp_far_negative_count": 27.245901107788086,
+    "hts/temp_mean_positive_similarity": 0.010251166298985481,
+    "hts/temp_mean_cross_negative_similarity": 0.0006182247307151556,
+    "hts/temp_mean_far_negative_similarity": -0.0009956143330782652,
+    "hts/temp_sampled_positive_offset_mean": 2.4590163230895996,
+    "hts/temp_offset_hist_1": 48.0,
+    "hts/temp_offset_hist_2": 47.0,
+    "hts/temp_offset_hist_3": 44.0,
+    "hts/temp_offset_hist_4": 44.0
+  },
+  "proj_std": 0.9879956245422363
+}

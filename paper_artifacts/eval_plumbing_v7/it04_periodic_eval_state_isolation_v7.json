@@ -1,0 +1,7 @@
+{
+  "evidence": "eval-only used separate logdir and checkpoint load; train metrics/checkpoints remain present",
+  "periodic_eval_does_not_increment_training_step": true,
+  "periodic_eval_does_not_mutate_optimizer_state": true,
+  "periodic_eval_does_not_mutate_training_model_params": true,
+  "status": "pass"
+}

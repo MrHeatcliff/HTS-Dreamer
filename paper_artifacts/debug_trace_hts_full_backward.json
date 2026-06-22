@@ -1,0 +1,359 @@
+{
+  "latent_anchor_shape": [
+    3,
+    64,
+    2560
+  ],
+  "z_shapes": [
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ],
+    [
+      3,
+      64,
+      32
+    ]
+  ],
+  "active_counts_per_level_first_batch": [
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ]
+  ],
+  "prefix_dims": [
+    32,
+    64,
+    96,
+    128,
+    160,
+    192
+  ],
+  "strides": [
+    32,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "example_action_window_indices": {
+    "level_1": {
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 34,
+      "target_index": 35
+    },
+    "level_2": {
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 18,
+      "target_index": 19
+    },
+    "level_3": {
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 10,
+      "target_index": 11
+    },
+    "level_4": {
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 6,
+      "target_index": 7
+    },
+    "level_5": {
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 4,
+      "target_index": 5
+    },
+    "level_6": {
+      "example_t": 3,
+      "action_slice_start": 3,
+      "action_slice_end_inclusive": 3,
+      "target_index": 4
+    }
+  },
+  "example_target_indices": {
+    "level_1": 35,
+    "level_2": 19,
+    "level_3": 11,
+    "level_4": 7,
+    "level_5": 5,
+    "level_6": 4
+  },
+  "valid_mask_counts": {
+    "level_1": {
+      "valid": 65,
+      "invalid": 31
+    },
+    "level_2": {
+      "valid": 128,
+      "invalid": 16
+    },
+    "level_3": {
+      "valid": 160,
+      "invalid": 8
+    },
+    "level_4": {
+      "valid": 176,
+      "invalid": 4
+    },
+    "level_5": {
+      "valid": 184,
+      "invalid": 2
+    },
+    "level_6": {
+      "valid": 188,
+      "invalid": 1
+    }
+  },
+  "positive_offset_histogram": {
+    "offset_1": 48.0,
+    "offset_2": 47.0,
+    "offset_3": 44.0,
+    "offset_4": 44.0
+  },
+  "negative_counts_by_mode": {
+    "soft_cross_mean": 128.0,
+    "soft_far_mean": 27.245901107788086
+  },
+  "raw_losses": {
+    "hier": 0.00010011152335209772,
+    "sdyn": 0.0001537101052235812,
+    "sparse": 0.0006682152743451297,
+    "temp": 7.048462390899658,
+    "vc": 0.9899988174438477
+  },
+  "weighted_losses": {
+    "hier": 1.0011152880906593e-05,
+    "sdyn": 1.537101161375176e-05,
+    "sparse": 6.682152609016612e-09,
+    "temp": 0.07048462331295013,
+    "vc": 0.00989998783916235
+  },
+  "loss_total": 0.08041000366210938,
+  "gradient_norms": {
+    "Dreamer backbone": 0.0009456080733798444,
+    "HTS trunk": 0.1264972686767578,
+    "projector": 6.955314636230469,
+    "HTS head 1": 0.6954711079597473,
+    "prefix decoder 1": 4.804277864423057e-07,
+    "predictor 1": 2.897154445236083e-06,
+    "HTS head 2": 1.1399858124150342e-07,
+    "prefix decoder 2": 4.802901116818248e-07,
+    "predictor 2": 1.5712855656602187e-06,
+    "HTS head 3": 7.018577008466309e-08,
+    "prefix decoder 3": 4.797598762706912e-07,
+    "predictor 3": 1.1723926718332223e-06,
+    "HTS head 4": 7.479312813529759e-08,
+    "prefix decoder 4": 4.804154514204129e-07,
+    "predictor 4": 7.900515015535348e-07,
+    "HTS head 5": 5.165560779119005e-08,
+    "prefix decoder 5": 4.81018560094526e-07,
+    "predictor 5": 7.089581686159363e-07,
+    "HTS head 6": 4.852815749245565e-08,
+    "prefix decoder 6": 4.803175670531346e-07,
+    "predictor 6": 5.813972734358686e-07
+  },
+  "per_loss_gradient_norms": {
+    "L_hier": {
+      "Dreamer backbone": 1.5584907808730009e-09,
+      "HTS trunk": 1.3623295558318205e-07,
+      "projector": 0.0,
+      "HTS head 1": 2.758340258424141e-07,
+      "prefix decoder 1": 4.8042775233625434e-06,
+      "predictor 1": 0.0,
+      "HTS head 2": 2.814251445215632e-07,
+      "prefix decoder 2": 4.802901457878761e-06,
+      "predictor 2": 0.0,
+      "HTS head 3": 2.894709041356691e-07,
+      "prefix decoder 3": 4.797599103767425e-06,
+      "predictor 3": 0.0,
+      "HTS head 4": 2.5381947921232495e-07,
+      "prefix decoder 4": 4.804154286830453e-06,
+      "predictor 4": 0.0,
+      "HTS head 5": 2.0716701953915617e-07,
+      "prefix decoder 5": 4.810186055692611e-06,
+      "predictor 5": 0.0,
+      "HTS head 6": 2.656119306720939e-07,
+      "prefix decoder 6": 4.8031756705313455e-06,
+      "predictor 6": 0.0
+    },
+    "L_sdyn": {
+      "Dreamer backbone": 4.757268801114378e-09,
+      "HTS trunk": 4.407896199154493e-07,
+      "projector": 0.0,
+      "HTS head 1": 1.448680791327206e-06,
+      "prefix decoder 1": 0.0,
+      "predictor 1": 2.8971540814382024e-05,
+      "HTS head 2": 1.0470330380485393e-06,
+      "prefix decoder 2": 0.0,
+      "predictor 2": 1.5712854292360134e-05,
+      "HTS head 3": 5.85187706292345e-07,
+      "prefix decoder 3": 0.0,
+      "predictor 3": 1.1723928764695302e-05,
+      "HTS head 4": 6.994206387389568e-07,
+      "prefix decoder 4": 0.0,
+      "predictor 4": 7.90051490184851e-06,
+      "HTS head 5": 4.5517606395151233e-07,
+      "prefix decoder 5": 0.0,
+      "predictor 5": 7.089581686159363e-06,
+      "HTS head 6": 3.8195372553673224e-07,
+      "prefix decoder 6": 0.0,
+      "predictor 6": 5.813972620671848e-06
+    },
+    "L_temp": {
+      "Dreamer backbone": 0.09456128627061844,
+      "HTS trunk": 12.649744033813477,
+      "projector": 695.52001953125,
+      "HTS head 1": 69.5467529296875,
+      "prefix decoder 1": 0.0,
+      "predictor 1": 0.0,
+      "HTS head 2": 0.0,
+      "prefix decoder 2": 0.0,
+      "predictor 2": 0.0,
+      "HTS head 3": 0.0,
+      "prefix decoder 3": 0.0,
+      "predictor 3": 0.0,
+      "HTS head 4": 0.0,
+      "prefix decoder 4": 0.0,
+      "predictor 4": 0.0,
+      "HTS head 5": 0.0,
+      "prefix decoder 5": 0.0,
+      "predictor 5": 0.0,
+      "HTS head 6": 0.0,
+      "prefix decoder 6": 0.0,
+      "predictor 6": 0.0
+    },
+    "L_vc": {
+      "Dreamer backbone": 6.666705587576871e-08,
+      "HTS trunk": 4.085020464117406e-06,
+      "projector": 3.2108189316204516e-06,
+      "HTS head 1": 1.620533839741256e-05,
+      "prefix decoder 1": 0.0,
+      "predictor 1": 0.0,
+      "HTS head 2": 0.0,
+      "prefix decoder 2": 0.0,
+      "predictor 2": 0.0,
+      "HTS head 3": 0.0,
+      "prefix decoder 3": 0.0,
+      "predictor 3": 0.0,
+      "HTS head 4": 0.0,
+      "prefix decoder 4": 0.0,
+      "predictor 4": 0.0,
+      "HTS head 5": 0.0,
+      "prefix decoder 5": 0.0,
+      "predictor 5": 0.0,
+      "HTS head 6": 0.0,
+      "prefix decoder 6": 0.0,
+      "predictor 6": 0.0
+    },
+    "L_sparse": {
+      "Dreamer backbone": 1.542004793009255e-05,
+      "HTS trunk": 0.0008433542097918689,
+      "projector": 0.0,
+      "HTS head 1": 0.001117534120567143,
+      "prefix decoder 1": 0.0,
+      "predictor 1": 0.0,
+      "HTS head 2": 0.0011265918146818876,
+      "prefix decoder 2": 0.0,
+      "predictor 2": 0.0,
+      "HTS head 3": 0.001146972645074129,
+      "prefix decoder 3": 0.0,
+      "predictor 3": 0.0,
+      "HTS head 4": 0.0011029870947822928,
+      "prefix decoder 4": 0.0,
+      "predictor 4": 0.0,
+      "HTS head 5": 0.0010462243808433414,
+      "prefix decoder 5": 0.0,
+      "predictor 5": 0.0,
+      "HTS head 6": 0.001220117905177176,
+      "prefix decoder 6": 0.0,
+      "predictor 6": 0.0
+    }
+  },
+  "parameter_delta_after_one_optimizer_step": {
+    "optimizer": "sgd",
+    "learning_rate": 1e-05,
+    "global_delta_norm": 6.99115771567449e-05
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "diagnosis_note": "No new variants were run in V20. Inspect fair_compare_aggregate_v20.csv and curves for early/mid/late lag.",
+  "ranked_next_hypotheses": [
+    "auxiliary-loss warmup",
+    "reduced/gated HTS gradient into backbone early training",
+    "policy/actor-critic readout of HTS representation"
+  ]
+}

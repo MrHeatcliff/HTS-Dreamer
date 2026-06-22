@@ -1,0 +1,198 @@
+{
+  "completed_runs": 20,
+  "configs": [
+    "baseline_v9",
+    "hier_x3",
+    "temp_003_hier_x3",
+    "temp_003"
+  ],
+  "early_stop_rule": "V12 capped at 1000 updates because all required configs remain evaluable for matched-budget review; 2500 is deferred unless review requests it.",
+  "expected_runs": 20,
+  "rows": [
+    {
+      "config_name": "baseline_v9",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 0,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 119.998
+    },
+    {
+      "config_name": "baseline_v9",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 1,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 115.163
+    },
+    {
+      "config_name": "baseline_v9",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 2,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 123.266
+    },
+    {
+      "config_name": "baseline_v9",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 3,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.173
+    },
+    {
+      "config_name": "baseline_v9",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 4,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 112.663
+    },
+    {
+      "config_name": "hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 0,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 122.147
+    },
+    {
+      "config_name": "hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 1,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.578
+    },
+    {
+      "config_name": "hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 2,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.696
+    },
+    {
+      "config_name": "hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 3,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.665
+    },
+    {
+      "config_name": "hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 4,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.437
+    },
+    {
+      "config_name": "temp_003_hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 0,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 112.929
+    },
+    {
+      "config_name": "temp_003_hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 1,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 112.343
+    },
+    {
+      "config_name": "temp_003_hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 2,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.064
+    },
+    {
+      "config_name": "temp_003_hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 3,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 116.925
+    },
+    {
+      "config_name": "temp_003_hier_x3",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 4,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.416
+    },
+    {
+      "config_name": "temp_003",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 0,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 112.403
+    },
+    {
+      "config_name": "temp_003",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 1,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 113.309
+    },
+    {
+      "config_name": "temp_003",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 2,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 116.201
+    },
+    {
+      "config_name": "temp_003",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 3,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 114.5
+    },
+    {
+      "config_name": "temp_003",
+      "final_update": 1000,
+      "saved_updates": "500,1000",
+      "seed": 4,
+      "start_update": 250,
+      "status": "pass",
+      "wall_clock_seconds": 114.041
+    }
+  ],
+  "status": "pass",
+  "targets": [
+    500,
+    1000
+  ]
+}

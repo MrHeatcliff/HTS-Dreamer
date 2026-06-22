@@ -1,0 +1,14 @@
+{
+  "batch_size": 32,
+  "continuation_optimizer_updates": 750,
+  "continuation_sampled_sequence_timesteps": 1536000,
+  "continuation_sampled_sequences": 24000,
+  "initial_optimizer_updates": 250,
+  "initial_sampled_sequence_timesteps": 512000,
+  "initial_sampled_sequences": 8000,
+  "sequence_length": 64,
+  "status": "pass",
+  "total_optimizer_updates": 1000,
+  "total_sampled_sequence_timesteps": 2048000,
+  "total_sampled_sequences": 32000
+}

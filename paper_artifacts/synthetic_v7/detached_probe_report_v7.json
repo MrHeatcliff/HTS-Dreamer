@@ -1,0 +1,7 @@
+{
+  "probe_labels_evaluator_only": true,
+  "probe_loss_updates_dreamer": false,
+  "probe_loss_updates_hts": false,
+  "probe_optimizer_updates_probe_parameters": true,
+  "status": "pass"
+}

@@ -1,0 +1,61 @@
+{
+  "atari_dev_subset": {
+    "methods": [
+      "dreamer_anchor",
+      "hts_full",
+      "flat_mh",
+      "larger_flat_param",
+      "matryoshka_only",
+      "dense_multistride_no_sparse",
+      "hts_no_temp",
+      "hts_no_sdyn"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "tasks": [
+      "Alien",
+      "Asterix",
+      "Breakout",
+      "Hero",
+      "MsPacman",
+      "Seaquest"
+    ]
+  },
+  "keycorridor_checklist": {
+    "N": [
+      4,
+      8,
+      11
+    ],
+    "run": false,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "synthetic_full": {
+    "methods": [
+      "hts_full",
+      "flat_sae",
+      "flat_mh",
+      "flat_partition_dim_matched",
+      "matryoshka_only",
+      "dense_multistride_no_sparse",
+      "hts_no_temp",
+      "hts_no_vc",
+      "hts_no_hier",
+      "hts_no_sdyn"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

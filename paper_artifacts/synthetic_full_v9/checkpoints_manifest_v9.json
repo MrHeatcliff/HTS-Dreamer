@@ -1,0 +1,355 @@
+{
+  "rows": [
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_full/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_full",
+      "run_id": "synthetic_full_v9_hts_full_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_full/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_full",
+      "run_id": "synthetic_full_v9_hts_full_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_full/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_full",
+      "run_id": "synthetic_full_v9_hts_full_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_full/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_full",
+      "run_id": "synthetic_full_v9_hts_full_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_full/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_full",
+      "run_id": "synthetic_full_v9_hts_full_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_sae/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_sae",
+      "run_id": "synthetic_full_v9_flat_sae_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_sae/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_sae",
+      "run_id": "synthetic_full_v9_flat_sae_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_sae/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_sae",
+      "run_id": "synthetic_full_v9_flat_sae_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_sae/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_sae",
+      "run_id": "synthetic_full_v9_flat_sae_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_sae/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_sae",
+      "run_id": "synthetic_full_v9_flat_sae_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_mh/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_mh",
+      "run_id": "synthetic_full_v9_flat_mh_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_mh/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_mh",
+      "run_id": "synthetic_full_v9_flat_mh_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_mh/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_mh",
+      "run_id": "synthetic_full_v9_flat_mh_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_mh/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_mh",
+      "run_id": "synthetic_full_v9_flat_mh_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_mh/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_mh",
+      "run_id": "synthetic_full_v9_flat_mh_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_partition_dim_matched/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_partition_dim_matched",
+      "run_id": "synthetic_full_v9_flat_partition_dim_matched_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_partition_dim_matched/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_partition_dim_matched",
+      "run_id": "synthetic_full_v9_flat_partition_dim_matched_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_partition_dim_matched/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_partition_dim_matched",
+      "run_id": "synthetic_full_v9_flat_partition_dim_matched_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_partition_dim_matched/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_partition_dim_matched",
+      "run_id": "synthetic_full_v9_flat_partition_dim_matched_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/flat_partition_dim_matched/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "flat_partition_dim_matched",
+      "run_id": "synthetic_full_v9_flat_partition_dim_matched_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/matryoshka_only/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "matryoshka_only",
+      "run_id": "synthetic_full_v9_matryoshka_only_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/matryoshka_only/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "matryoshka_only",
+      "run_id": "synthetic_full_v9_matryoshka_only_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/matryoshka_only/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "matryoshka_only",
+      "run_id": "synthetic_full_v9_matryoshka_only_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/matryoshka_only/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "matryoshka_only",
+      "run_id": "synthetic_full_v9_matryoshka_only_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/matryoshka_only/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "matryoshka_only",
+      "run_id": "synthetic_full_v9_matryoshka_only_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/dense_multistride_no_sparse/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "dense_multistride_no_sparse",
+      "run_id": "synthetic_full_v9_dense_multistride_no_sparse_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/dense_multistride_no_sparse/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "dense_multistride_no_sparse",
+      "run_id": "synthetic_full_v9_dense_multistride_no_sparse_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/dense_multistride_no_sparse/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "dense_multistride_no_sparse",
+      "run_id": "synthetic_full_v9_dense_multistride_no_sparse_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/dense_multistride_no_sparse/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "dense_multistride_no_sparse",
+      "run_id": "synthetic_full_v9_dense_multistride_no_sparse_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/dense_multistride_no_sparse/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "dense_multistride_no_sparse",
+      "run_id": "synthetic_full_v9_dense_multistride_no_sparse_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_temp/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_temp",
+      "run_id": "synthetic_full_v9_hts_no_temp_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_temp/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_temp",
+      "run_id": "synthetic_full_v9_hts_no_temp_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_temp/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_temp",
+      "run_id": "synthetic_full_v9_hts_no_temp_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_temp/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_temp",
+      "run_id": "synthetic_full_v9_hts_no_temp_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_temp/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_temp",
+      "run_id": "synthetic_full_v9_hts_no_temp_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_vc/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_vc",
+      "run_id": "synthetic_full_v9_hts_no_vc_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_vc/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_vc",
+      "run_id": "synthetic_full_v9_hts_no_vc_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_vc/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_vc",
+      "run_id": "synthetic_full_v9_hts_no_vc_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_vc/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_vc",
+      "run_id": "synthetic_full_v9_hts_no_vc_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_vc/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_vc",
+      "run_id": "synthetic_full_v9_hts_no_vc_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_hier/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_hier",
+      "run_id": "synthetic_full_v9_hts_no_hier_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_hier/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_hier",
+      "run_id": "synthetic_full_v9_hts_no_hier_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_hier/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_hier",
+      "run_id": "synthetic_full_v9_hts_no_hier_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_hier/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_hier",
+      "run_id": "synthetic_full_v9_hts_no_hier_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_hier/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_hier",
+      "run_id": "synthetic_full_v9_hts_no_hier_seed4",
+      "seed": 4
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_sdyn/seed_0/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_sdyn",
+      "run_id": "synthetic_full_v9_hts_no_sdyn_seed0",
+      "seed": 0
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_sdyn/seed_1/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_sdyn",
+      "run_id": "synthetic_full_v9_hts_no_sdyn_seed1",
+      "seed": 1
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_sdyn/seed_2/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_sdyn",
+      "run_id": "synthetic_full_v9_hts_no_sdyn_seed2",
+      "seed": 2
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_sdyn/seed_3/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_sdyn",
+      "run_id": "synthetic_full_v9_hts_no_sdyn_seed3",
+      "seed": 3
+    },
+    {
+      "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/runs/hts_no_sdyn/seed_4/checkpoints/final.npz",
+      "load_pass": true,
+      "method": "hts_no_sdyn",
+      "run_id": "synthetic_full_v9_hts_no_sdyn_seed4",
+      "seed": 4
+    }
+  ],
+  "status": "pass"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "trace_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/replay_consistency_v6/update_event_trace_v6.jsonl",
+  "total_events": 6100,
+  "post_prefill_events": 5013,
+  "first_post_prefill_agent_action_index": 1088,
+  "last_post_prefill_agent_action_index": 5013,
+  "expected_updates_per_agent_action": 0.25,
+  "action_repeat": 4,
+  "batch_size": 16,
+  "batch_length": 64,
+  "minibatch_steps": 1024,
+  "train_ratio_replayed_steps_per_agent_action": 256.0,
+  "windows": {
+    "100": {
+      "executed_optimizer_updates": 25,
+      "realized_updates_per_agent_action": 0.25,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "pass": true
+    },
+    "500": {
+      "executed_optimizer_updates": 125,
+      "realized_updates_per_agent_action": 0.25,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "pass": true
+    },
+    "1000": {
+      "executed_optimizer_updates": 250,
+      "realized_updates_per_agent_action": 0.25,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "pass": true
+    },
+    "5000": {
+      "executed_optimizer_updates": 1250,
+      "realized_updates_per_agent_action": 0.25,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "pass": true
+    }
+  },
+  "command_meta": {
+    "command": "v6 replay smoke size1m atari100k_pong steps6100",
+    "exit_status": 0,
+    "wall_clock_seconds": 223
+  },
+  "diagnosis": {
+    "short_window_burstiness": "not observed in required windows",
+    "prefill_denominator": "excluded using is_prefill and post_prefill_agent_action_index",
+    "compile_only_steps": "none observed; field present and excluded",
+    "scheduler_accumulator_initialization": "first post-prefill call initializes accumulator; required windows still pass",
+    "resume_state": "fresh logdir, no resume",
+    "counting_requested_rather_than_executed": "executed_optimizer_updates used for acceptance",
+    "multiple_optimizer_calls_per_request": "executed equals requested per event in trace",
+    "writer_accounting_bug": "not observed in v6 trace"
+  }
+}

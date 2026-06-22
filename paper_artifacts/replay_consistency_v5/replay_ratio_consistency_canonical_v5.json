@@ -1,0 +1,36 @@
+{
+  "diagnosis": {
+    "compile_only_steps": "excluded by flag",
+    "counting_requested_rather_than_executed": "trace includes both and they match",
+    "multiple_optimizer_calls_per_request": "not present in deterministic trace",
+    "prefill_denominator": "excluded in trace schema",
+    "resume_state": "not covered by deterministic trace",
+    "scheduler_accumulator_initialization": "first call returns one update; convergence windows pass",
+    "short_window_burstiness": "not observed in 100+ action windows",
+    "writer_accounting_bug": "real Atari smoke still required"
+  },
+  "expected_updates_per_agent_action": 0.25,
+  "status": "scheduler_accounting_trace_pass_real_training_smoke_pending",
+  "windows": {
+    "100": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    },
+    "1000": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    },
+    "500": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    },
+    "5000": {
+      "absolute_error": 0.0,
+      "realized_updates_per_agent_action": 0.25,
+      "relative_error": 0.0
+    }
+  }
+}

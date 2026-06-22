@@ -1,0 +1,3 @@
+toggle_id,baseline_condition,single_changed_factor,expected_effect_if_factor_is_causal,reason_selected_from_protocol_diff
+T1,V15 exact_baseline_shared_trunk,model_parameterization_and_checkpoint_lineage_to_historical_direct_heads,boundary AUPRC returns from ~0.30 to ~0.70,routing_flags and checkpoint_selection are high-importance mismatches
+T2,historical direct-head recipe,evaluator_current_v15,historical remains high; evaluator instability rejected,re-evaluation sanity required before training

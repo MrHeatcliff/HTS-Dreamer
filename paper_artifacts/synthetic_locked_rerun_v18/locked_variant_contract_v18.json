@@ -1,0 +1,106 @@
+{
+  "alias_table": {
+    "baseline_shared_trunk": "locked_baseline_direct_head",
+    "hier_x3": "locked_hier_x3",
+    "no_hier_loss": "locked_no_hier_loss",
+    "recon_trunk_isolated_fine_only_x3": "locked_recon_trunk_isolated_fine_only_x3"
+  },
+  "rows": [
+    {
+      "comparison_role": "baseline",
+      "config_hash": "b0dfface92eefce0dfb6a2dee557143d5e61b746455dbd41f3165d68827f0fa5",
+      "dataset_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "entrypoint": "python -m dreamerv3.synthetic_locked_rerun_v18",
+      "head/trunk module graph": "six direct obs->head matrices, prefix decoders, prefix+action predictors, no trunk",
+      "historical_or_new": "historical",
+      "instantiated_parameter_count": 17160,
+      "loss_coefficients": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "parameterization": "direct_head",
+      "role": "historical reproducibility anchor",
+      "routing_flags": "direct_heads_no_shared_trunk",
+      "script_hash": "78b599af3036441c76aad6e88b1a1577052d9c2a94daa9644988e33932e75528",
+      "stop_gradient_flags": "not applicable: no shared trunk in locked direct-head protocol",
+      "train_status": "reuse_v17_locked_replay",
+      "trainable_parameter_count": 17160,
+      "variant_name": "locked_baseline_direct_head"
+    },
+    {
+      "comparison_role": "candidate",
+      "config_hash": "3f0a77d57a5ebb379123420b4854cd06f57c79dae11bdd6399f20d4565ce4f6e",
+      "dataset_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "entrypoint": "python -m dreamerv3.synthetic_locked_rerun_v18",
+      "head/trunk module graph": "six direct obs->head matrices, prefix decoders, prefix+action predictors, no trunk",
+      "historical_or_new": "new_locked_variant",
+      "instantiated_parameter_count": 17160,
+      "loss_coefficients": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "parameterization": "direct_head",
+      "role": "test stronger hierarchy reconstruction under locked direct-head protocol",
+      "routing_flags": "direct_heads_no_shared_trunk",
+      "script_hash": "78b599af3036441c76aad6e88b1a1577052d9c2a94daa9644988e33932e75528",
+      "stop_gradient_flags": "not applicable: no shared trunk in locked direct-head protocol",
+      "train_status": "continue_from_v9_250",
+      "trainable_parameter_count": 17160,
+      "variant_name": "locked_hier_x3"
+    },
+    {
+      "comparison_role": "not_applicable",
+      "config_hash": "b122b05cd2814c343d6d296b75538efb6df5d24c9bb1aba50cbda7d0fd48f091",
+      "dataset_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "entrypoint": "python -m dreamerv3.synthetic_locked_rerun_v18",
+      "head/trunk module graph": "six direct obs->head matrices, prefix decoders, prefix+action predictors, no trunk",
+      "historical_or_new": "new_locked_variant",
+      "instantiated_parameter_count": 17160,
+      "loss_coefficients": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "parameterization": "direct_head",
+      "role": "legacy V14 routing candidate",
+      "routing_flags": "direct_heads_no_shared_trunk",
+      "script_hash": "78b599af3036441c76aad6e88b1a1577052d9c2a94daa9644988e33932e75528",
+      "stop_gradient_flags": "not applicable: no shared trunk in locked direct-head protocol",
+      "train_status": "not_applicable_direct_head_no_shared_trunk",
+      "trainable_parameter_count": 17160,
+      "variant_name": "locked_recon_trunk_isolated_fine_only_x3"
+    },
+    {
+      "comparison_role": "control",
+      "config_hash": "eadc1f7bea259691a04406d9e61ca8d8ee108b20603090004f22398433f5130d",
+      "dataset_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "entrypoint": "python -m dreamerv3.synthetic_locked_rerun_v18",
+      "head/trunk module graph": "six direct obs->head matrices, prefix decoders, prefix+action predictors, no trunk",
+      "historical_or_new": "new_locked_variant",
+      "instantiated_parameter_count": 17160,
+      "loss_coefficients": {
+        "lambda_hier": 0.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "parameterization": "direct_head",
+      "role": "hierarchy reconstruction objective control",
+      "routing_flags": "direct_heads_no_shared_trunk",
+      "script_hash": "78b599af3036441c76aad6e88b1a1577052d9c2a94daa9644988e33932e75528",
+      "stop_gradient_flags": "not applicable: no shared trunk in locked direct-head protocol",
+      "train_status": "continue_from_v9_250",
+      "trainable_parameter_count": 17160,
+      "variant_name": "locked_no_hier_loss"
+    }
+  ]
+}

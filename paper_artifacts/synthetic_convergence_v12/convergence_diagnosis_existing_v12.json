@@ -1,0 +1,155 @@
+{
+  "rows": [
+    {
+      "classification": "degrading",
+      "config_name": "baseline_v9",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 0
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "baseline_v9",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 1
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "baseline_v9",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 2
+    },
+    {
+      "classification": "oscillating",
+      "config_name": "baseline_v9",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 3
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "baseline_v9",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 4
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 0
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 1
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 2
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 3
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 4
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_001",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 0
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_001",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 1
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_001",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 2
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_001",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 3
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_001",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 4
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 0
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 1
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 2
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 3
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 4
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003_hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 0
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003_hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 1
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003_hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 2
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003_hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 3
+    },
+    {
+      "classification": "improving_at_final_checkpoint",
+      "config_name": "temp_003_hier_x3",
+      "rule": "sign of final prefix-gain slope over last interval",
+      "seed": 4
+    }
+  ],
+  "status": "pass"
+}

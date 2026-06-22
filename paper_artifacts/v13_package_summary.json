@@ -1,0 +1,112 @@
+{
+  "boundary_degradation_origin_by_prefix_and_timescale": {
+    "macro_baseline_mean_auprc": 0.5825867524898314,
+    "macro_hier_x3_mean_auprc": 0.11823518243562837,
+    "z1_baseline_mean_auprc": 0.7031229334644903,
+    "z1_hier_x3_mean_auprc": 0.30818646532652616
+  },
+  "candidate_boundary_auprc_overall_and_macro": {
+    "coarse_protected_fine_x2": [
+      0.2950940137797612,
+      0.0825595899541239
+    ],
+    "coarse_protected_fine_x3": [
+      0.30435179597017736,
+      0.09400878614884262
+    ],
+    "coarse_protected_total_matched": [
+      0.30984971855169297,
+      0.10093262023920568
+    ],
+    "early_protected_late_x3": [
+      0.3004101818231192,
+      0.08942282026946306
+    ]
+  },
+  "candidate_factor_probe_accuracy": {
+    "coarse_protected_fine_x2": 0.4034261067708333,
+    "coarse_protected_fine_x3": 0.4175760904947916,
+    "coarse_protected_total_matched": 0.42388753255208333,
+    "early_protected_late_x3": 0.4156699625651042
+  },
+  "candidate_prefix_gains_and_ci": {
+    "coarse_protected_fine_x2": [
+      0.002770849109647688,
+      0.0022988373020512267,
+      0.0032485165048590447
+    ],
+    "coarse_protected_fine_x3": [
+      0.004984180996446175,
+      0.004350719836155914,
+      0.005708891528160431
+    ],
+    "coarse_protected_total_matched": [
+      0.006152289597167892,
+      0.005384508231023988,
+      0.007021076223371492
+    ],
+    "early_protected_late_x3": [
+      0.00490745941570796,
+      0.0043454177227669755,
+      0.005537509549718012
+    ]
+  },
+  "continuation_runs_to_2500": 0,
+  "corrected_total_sampled_sequence_timesteps_at_1000": 2048000,
+  "corrected_total_sampled_sequences_at_1000": 32000,
+  "cumulative_test_counts": {
+    "FAIL": 7,
+    "PASS": 54,
+    "XFAIL": 1
+  },
+  "dataset_hash_matches_expected": true,
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "gate_d1_decision": "NO_STABLE_CANDIDATE_AFTER_MINIMAL_REVISION",
+  "gate_d2_manifest_generated": false,
+  "global_hier_x3_multiplies_level1_reconstruction": true,
+  "minimal_revision_configs_and_beta_vectors": {
+    "coarse_protected_fine_x2": [
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "coarse_protected_fine_x3": [
+      1.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "coarse_protected_total_matched": [
+      1.0,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4
+    ],
+    "early_protected_late_x3": [
+      1.0,
+      1.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ]
+  },
+  "new_runs_completed": 20,
+  "new_runs_expected": 20,
+  "paired_initialization_and_sampler_status": "pass",
+  "remaining_blockers": [
+    "Gate D2 blocked",
+    "architectural revision required"
+  ],
+  "selected_candidate": null,
+  "unrelated_official_processes_observed_but_untouched": "dat.tt2  3476961 1347215 70 14:08 pts/2    00:18:45 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_crazy_climber --seed 3 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/crazy_climber/seed_3 --logger.outputs jsonl,scope,wandb",
+  "v12_decision": "NO_STABLE_CANDIDATE_AFTER_MATCHED_BUDGET",
+  "v12_early_stop_justification": "see v12_early_stop_audit_v13.md"
+}

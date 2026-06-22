@@ -1,0 +1,24 @@
+{
+  "candidate_mapping_valid": true,
+  "decision": "PASS_ATARI_DEV_SANITY_SMALL",
+  "gate_d2_full_status": "blocked",
+  "larger_atari_evaluation_justified": true,
+  "latest": {
+    "alien": {
+      "dreamer_reference_latest_mean": 1512.0,
+      "hts_latest_mean": 1083.3333333333333,
+      "hts_seed_count_with_scores": 3,
+      "reference_rows": 819
+    },
+    "breakout": {
+      "dreamer_reference_latest_mean": 7.2,
+      "hts_latest_mean": 9.0,
+      "hts_seed_count_with_scores": 3,
+      "reference_rows": 1368
+    }
+  },
+  "runs_completed": 6,
+  "runs_launched": 6,
+  "runs_planned": 6,
+  "wandb_status": "pass"
+}

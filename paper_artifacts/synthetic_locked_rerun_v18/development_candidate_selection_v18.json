@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "auprc": 0.7031229334644903,
+    "factor": 0.4068389892578125,
+    "gain": 0.0013702074893974902,
+    "macro": 0.5886741344193551
+  },
+  "decision": "PASS_WITH_LOCKED_PROTOCOL_DEVELOPMENT_CANDIDATE",
+  "entries": [
+    {
+      "boundary_auprc_macro": 0.5873902412974752,
+      "boundary_auprc_overall": 0.713103238873355,
+      "ci95_high": 0.003619204925592512,
+      "ci95_low": 0.001252588940719046,
+      "collapse_status": "no_collapse_detected",
+      "end_to_end_positive_gain_seeds": 5,
+      "factor_probe_accuracy": 0.4211649576822916,
+      "mean_prefix_gain_delta_vs_baseline": 0.0023794117518520564,
+      "mechanism_preservation_pass": true,
+      "nondegrading_seeds": 0,
+      "prefix_requirement_pass": true,
+      "rejection_reason": "",
+      "selection_status": "pass",
+      "strict_monotonic_seeds": 0,
+      "variant": "locked_hier_x3"
+    },
+    {
+      "boundary_auprc_macro": 0.5929018206537993,
+      "boundary_auprc_overall": 0.7063879251492257,
+      "ci95_high": 0.0013104526715040032,
+      "ci95_low": -0.0031693784859437753,
+      "collapse_status": "no_collapse_detected",
+      "end_to_end_positive_gain_seeds": 2,
+      "factor_probe_accuracy": 0.40481486002604167,
+      "mean_prefix_gain_delta_vs_baseline": -0.0009632172656609541,
+      "mechanism_preservation_pass": true,
+      "nondegrading_seeds": 0,
+      "prefix_requirement_pass": false,
+      "rejection_reason": "prefix_requirement_failed",
+      "selection_status": "reject",
+      "strict_monotonic_seeds": 0,
+      "variant": "locked_no_hier_loss"
+    }
+  ],
+  "not_applicable": {
+    "locked_recon_trunk_isolated_fine_only_x3": "requires shared trunk; locked protocol is direct-head"
+  },
+  "selected_candidate": "locked_hier_x3"
+}

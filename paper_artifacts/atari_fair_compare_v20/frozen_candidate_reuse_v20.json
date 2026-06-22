@@ -1,0 +1,67 @@
+{
+  "candidate_name": "hts_locked_hier_x3",
+  "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+  "config_hash": "a24a941cec434865",
+  "config_hash_source": "sha256(dreamerv3/configs.yaml)",
+  "created_at": "2026-06-16T18:01:19",
+  "file_hashes": {
+    "dreamerv3/configs.yaml": "a24a941cec434865c8136eee049e243a40715a2c5f8ba68a4661e9c3fd3396c2",
+    "dreamerv3/hts.py": "19c48b7059ce67cebd81f7ecbc57c7d4dfda81dc1bd9851e30302d9a1e5423c8",
+    "dreamerv3/hts_agent.py": "ccb64a7b89bf5af0cda9cb2ba598ff234dd7c54f7a516bfd5d9fd657e9ae27e8",
+    "dreamerv3/main_hts.py": "7dea0732eecf11c45b5794b7a126719e4390672a888cb4e2c334920bd07b0e39"
+  },
+  "hts_config": {
+    "configs": "hts_atari100k size12m",
+    "decoder_prefix_stop_gradient": true,
+    "dynamics_target_stop_gradient": true,
+    "head_dim": 32,
+    "l_hier": 0.3,
+    "l_sdyn": 0.1,
+    "l_sparse": 1e-05,
+    "l_temp": 0.01,
+    "l_vc": 0.01,
+    "latent_anchor_dim": 2560,
+    "latent_anchor_name": "rssm_repfeat",
+    "levels": 6,
+    "strides_coarse_to_fine": [
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "topk_per_level": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "total_topk": 48,
+    "training_regime": "joint",
+    "variant": "hts_full"
+  },
+  "script_hash": "42bad3d15e0b996db787d11280720793edff07c1fc5fb0b70c82081b00629472",
+  "source_gate": "V18 locked synthetic selected candidate; V19 PASS_ATARI_DEV_SANITY_SMALL",
+  "v18_synthetic_decision": "locked_hier_x3 selected under locked historical synthetic protocol (see V18 artifacts)",
+  "v19_atari_sanity_decision": "PASS_ATARI_DEV_SANITY_SMALL",
+  "video_logging_policy": {
+    "agent.report": false,
+    "run.log_policy_video": false,
+    "run.report_every": 999999
+  },
+  "wandb": {
+    "group": "v20_fair_compare_locked_hier_x3",
+    "project": "hts-wm-atari-dev",
+    "tags": [
+      "v20",
+      "fair_compare",
+      "locked_hier_x3",
+      "atari100k",
+      "alien_breakout",
+      "no_video"
+    ]
+  }
+}

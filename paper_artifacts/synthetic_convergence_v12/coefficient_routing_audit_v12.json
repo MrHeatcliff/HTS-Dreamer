@@ -1,0 +1,605 @@
+{
+  "config_snapshot_rows": [
+    {
+      "config_hash": "365f5535c18be000",
+      "config_name": "temp_003",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_seed0",
+      "seed": 0
+    },
+    {
+      "config_hash": "1c1a1cc5dc556664",
+      "config_name": "temp_003",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_seed1",
+      "seed": 1
+    },
+    {
+      "config_hash": "185495508bc7ed44",
+      "config_name": "temp_003",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_seed2",
+      "seed": 2
+    },
+    {
+      "config_hash": "9c1cbd83dc8b9931",
+      "config_name": "temp_003",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_seed3",
+      "seed": 3
+    },
+    {
+      "config_hash": "242546211088ec08",
+      "config_name": "temp_003",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_seed4",
+      "seed": 4
+    },
+    {
+      "config_hash": "ce26eec07b2f19ad",
+      "config_name": "temp_001",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_001_seed0",
+      "seed": 0
+    },
+    {
+      "config_hash": "e6b1b7f40a66a2c7",
+      "config_name": "temp_001",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_001_seed1",
+      "seed": 1
+    },
+    {
+      "config_hash": "df57b7a40a3717ad",
+      "config_name": "temp_001",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_001_seed2",
+      "seed": 2
+    },
+    {
+      "config_hash": "8d132ac6d438a639",
+      "config_name": "temp_001",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_001_seed3",
+      "seed": 3
+    },
+    {
+      "config_hash": "e96f28498be311cc",
+      "config_name": "temp_001",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 1.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.001,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_001_seed4",
+      "seed": 4
+    },
+    {
+      "config_hash": "1c6545be46bcff2b",
+      "config_name": "hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_hier_x3_seed0",
+      "seed": 0
+    },
+    {
+      "config_hash": "63949b74eaa8f98c",
+      "config_name": "hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_hier_x3_seed1",
+      "seed": 1
+    },
+    {
+      "config_hash": "d08081fb7d557f20",
+      "config_name": "hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_hier_x3_seed2",
+      "seed": 2
+    },
+    {
+      "config_hash": "fcd616fb6bbfdd57",
+      "config_name": "hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_hier_x3_seed3",
+      "seed": 3
+    },
+    {
+      "config_hash": "9d25d3e1a3a35d10",
+      "config_name": "hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.01,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_hier_x3_seed4",
+      "seed": 4
+    },
+    {
+      "config_hash": "9494f736fa01e97a",
+      "config_name": "temp_003_hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed0",
+      "seed": 0
+    },
+    {
+      "config_hash": "5d2276539fb4e423",
+      "config_name": "temp_003_hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed1",
+      "seed": 1
+    },
+    {
+      "config_hash": "67a798a8b23e7cd1",
+      "config_name": "temp_003_hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed2",
+      "seed": 2
+    },
+    {
+      "config_hash": "83f03659e09a2fd6",
+      "config_name": "temp_003_hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed3",
+      "seed": 3
+    },
+    {
+      "config_hash": "9f679b4eaa50c264",
+      "config_name": "temp_003_hier_x3",
+      "match": true,
+      "resolved_coefficients_config_snapshot": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "resolved_coefficients_loss_assembly": {
+        "lambda_hier": 3.0,
+        "lambda_sdyn": 1.0,
+        "lambda_sparse": 1.0,
+        "lambda_temp": 0.003,
+        "lambda_vc": 0.01
+      },
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed4",
+      "seed": 4
+    }
+  ],
+  "deterministic_rows": [
+    {
+      "config_name": "baseline_v9",
+      "decoder_1_gradient_norm": 0.0013580152299255133,
+      "decoder_2_gradient_norm": 0.001998600549995899,
+      "decoder_3_gradient_norm": 0.0023237355053424835,
+      "decoder_4_gradient_norm": 0.0027045703027397394,
+      "decoder_5_gradient_norm": 0.003090128768235445,
+      "decoder_6_gradient_norm": 0.003334588138386607,
+      "head_1_gradient_norm": 0.02990862727165222,
+      "head_2_gradient_norm": 0.030180029571056366,
+      "head_3_gradient_norm": 0.026313448324799538,
+      "head_4_gradient_norm": 0.02961983159184456,
+      "head_5_gradient_norm": 0.02931204065680504,
+      "head_6_gradient_norm": 0.029218874871730804,
+      "predictor_1_gradient_norm": 0.001993507845327258,
+      "predictor_2_gradient_norm": 0.002268753480166197,
+      "predictor_3_gradient_norm": 0.002464029472321272,
+      "predictor_4_gradient_norm": 0.0028748358599841595,
+      "predictor_5_gradient_norm": 0.0030550737865269184,
+      "predictor_6_gradient_norm": 0.003458260325714946,
+      "projector_gradient_norm": 0.0,
+      "raw_hier_loss": 0.11482639610767365,
+      "raw_sdyn_loss": 0.1162491962313652,
+      "raw_sparse_loss": 0.08965049684047699,
+      "raw_temp_loss": 0.009583935141563416,
+      "raw_vc_loss": 0.8963342308998108,
+      "total_aux_loss": 0.3297852873802185,
+      "trunk_gradient_norm": 0.17455285228788853,
+      "weighted_hier_loss": 0.11482639610767365,
+      "weighted_sdyn_loss": 0.1162491962313652,
+      "weighted_sparse_loss": 0.08965049684047699,
+      "weighted_temp_loss": 9.583935141563416e-05,
+      "weighted_vc_loss": 0.008963342308998107
+    },
+    {
+      "config_name": "temp_003",
+      "decoder_1_gradient_norm": 0.0013580152299255133,
+      "decoder_2_gradient_norm": 0.001998600549995899,
+      "decoder_3_gradient_norm": 0.0023237355053424835,
+      "decoder_4_gradient_norm": 0.0027045703027397394,
+      "decoder_5_gradient_norm": 0.003090128768235445,
+      "decoder_6_gradient_norm": 0.003334588138386607,
+      "head_1_gradient_norm": 0.02983979508280754,
+      "head_2_gradient_norm": 0.030180029571056366,
+      "head_3_gradient_norm": 0.026313448324799538,
+      "head_4_gradient_norm": 0.02961983159184456,
+      "head_5_gradient_norm": 0.02931204065680504,
+      "head_6_gradient_norm": 0.029218874871730804,
+      "predictor_1_gradient_norm": 0.001993507845327258,
+      "predictor_2_gradient_norm": 0.002268753480166197,
+      "predictor_3_gradient_norm": 0.002464029472321272,
+      "predictor_4_gradient_norm": 0.0028748358599841595,
+      "predictor_5_gradient_norm": 0.0030550737865269184,
+      "predictor_6_gradient_norm": 0.003458260325714946,
+      "projector_gradient_norm": 0.0,
+      "raw_hier_loss": 0.11482639610767365,
+      "raw_sdyn_loss": 0.1162491962313652,
+      "raw_sparse_loss": 0.08965049684047699,
+      "raw_temp_loss": 0.009583935141563416,
+      "raw_vc_loss": 0.8963342308998108,
+      "total_aux_loss": 0.3297181725502014,
+      "trunk_gradient_norm": 0.17448402009904385,
+      "weighted_hier_loss": 0.11482639610767365,
+      "weighted_sdyn_loss": 0.1162491962313652,
+      "weighted_sparse_loss": 0.08965049684047699,
+      "weighted_temp_loss": 2.8751805424690246e-05,
+      "weighted_vc_loss": 0.008963342308998107
+    },
+    {
+      "config_name": "temp_001",
+      "decoder_1_gradient_norm": 0.0013580152299255133,
+      "decoder_2_gradient_norm": 0.001998600549995899,
+      "decoder_3_gradient_norm": 0.0023237355053424835,
+      "decoder_4_gradient_norm": 0.0027045703027397394,
+      "decoder_5_gradient_norm": 0.003090128768235445,
+      "decoder_6_gradient_norm": 0.003334588138386607,
+      "head_1_gradient_norm": 0.029820384457707405,
+      "head_2_gradient_norm": 0.030180029571056366,
+      "head_3_gradient_norm": 0.026313448324799538,
+      "head_4_gradient_norm": 0.02961983159184456,
+      "head_5_gradient_norm": 0.02931204065680504,
+      "head_6_gradient_norm": 0.029218874871730804,
+      "predictor_1_gradient_norm": 0.001993507845327258,
+      "predictor_2_gradient_norm": 0.002268753480166197,
+      "predictor_3_gradient_norm": 0.002464029472321272,
+      "predictor_4_gradient_norm": 0.0028748358599841595,
+      "predictor_5_gradient_norm": 0.0030550737865269184,
+      "predictor_6_gradient_norm": 0.003458260325714946,
+      "projector_gradient_norm": 0.0,
+      "raw_hier_loss": 0.11482639610767365,
+      "raw_sdyn_loss": 0.1162491962313652,
+      "raw_sparse_loss": 0.08965049684047699,
+      "raw_temp_loss": 0.009583935141563416,
+      "raw_vc_loss": 0.8963342308998108,
+      "total_aux_loss": 0.32969900965690613,
+      "trunk_gradient_norm": 0.1744646094739437,
+      "weighted_hier_loss": 0.11482639610767365,
+      "weighted_sdyn_loss": 0.1162491962313652,
+      "weighted_sparse_loss": 0.08965049684047699,
+      "weighted_temp_loss": 9.583935141563416e-06,
+      "weighted_vc_loss": 0.008963342308998107
+    },
+    {
+      "config_name": "hier_x3",
+      "decoder_1_gradient_norm": 0.004074044991284609,
+      "decoder_2_gradient_norm": 0.00599580118432641,
+      "decoder_3_gradient_norm": 0.006971206050366163,
+      "decoder_4_gradient_norm": 0.008113710209727287,
+      "decoder_5_gradient_norm": 0.009270386770367622,
+      "decoder_6_gradient_norm": 0.010003766044974327,
+      "head_1_gradient_norm": 0.03409934416413307,
+      "head_2_gradient_norm": 0.033415984362363815,
+      "head_3_gradient_norm": 0.028334083035588264,
+      "head_4_gradient_norm": 0.029289696365594864,
+      "head_5_gradient_norm": 0.03025798313319683,
+      "head_6_gradient_norm": 0.027776319533586502,
+      "predictor_1_gradient_norm": 0.001993507845327258,
+      "predictor_2_gradient_norm": 0.002268753480166197,
+      "predictor_3_gradient_norm": 0.002464029472321272,
+      "predictor_4_gradient_norm": 0.0028748358599841595,
+      "predictor_5_gradient_norm": 0.0030550737865269184,
+      "predictor_6_gradient_norm": 0.003458260325714946,
+      "projector_gradient_norm": 0.0,
+      "raw_hier_loss": 0.11482639610767365,
+      "raw_sdyn_loss": 0.1162491962313652,
+      "raw_sparse_loss": 0.08965049684047699,
+      "raw_temp_loss": 0.009583935141563416,
+      "raw_vc_loss": 0.8963342308998108,
+      "total_aux_loss": 0.5594381093978882,
+      "trunk_gradient_norm": 0.18317341059446335,
+      "weighted_hier_loss": 0.34447918832302094,
+      "weighted_sdyn_loss": 0.1162491962313652,
+      "weighted_sparse_loss": 0.08965049684047699,
+      "weighted_temp_loss": 9.583935141563416e-05,
+      "weighted_vc_loss": 0.008963342308998107
+    },
+    {
+      "config_name": "temp_003_hier_x3",
+      "decoder_1_gradient_norm": 0.004074044991284609,
+      "decoder_2_gradient_norm": 0.00599580118432641,
+      "decoder_3_gradient_norm": 0.006971206050366163,
+      "decoder_4_gradient_norm": 0.008113710209727287,
+      "decoder_5_gradient_norm": 0.009270386770367622,
+      "decoder_6_gradient_norm": 0.010003766044974327,
+      "head_1_gradient_norm": 0.03403501957654953,
+      "head_2_gradient_norm": 0.033415984362363815,
+      "head_3_gradient_norm": 0.028334083035588264,
+      "head_4_gradient_norm": 0.029289696365594864,
+      "head_5_gradient_norm": 0.03025798313319683,
+      "head_6_gradient_norm": 0.027776319533586502,
+      "predictor_1_gradient_norm": 0.001993507845327258,
+      "predictor_2_gradient_norm": 0.002268753480166197,
+      "predictor_3_gradient_norm": 0.002464029472321272,
+      "predictor_4_gradient_norm": 0.0028748358599841595,
+      "predictor_5_gradient_norm": 0.0030550737865269184,
+      "predictor_6_gradient_norm": 0.003458260325714946,
+      "projector_gradient_norm": 0.0,
+      "raw_hier_loss": 0.11482639610767365,
+      "raw_sdyn_loss": 0.1162491962313652,
+      "raw_sparse_loss": 0.08965049684047699,
+      "raw_temp_loss": 0.009583935141563416,
+      "raw_vc_loss": 0.8963342308998108,
+      "total_aux_loss": 0.5593709945678711,
+      "trunk_gradient_norm": 0.1831090860068798,
+      "weighted_hier_loss": 0.34447918832302094,
+      "weighted_sdyn_loss": 0.1162491962313652,
+      "weighted_sparse_loss": 0.08965049684047699,
+      "weighted_temp_loss": 2.8751805424690246e-05,
+      "weighted_vc_loss": 0.008963342308998107
+    }
+  ],
+  "ratios": {
+    "weighted_hier_hier_x3_over_baseline": 3.0,
+    "weighted_hier_temp_003_hier_x3_over_temp_003": 3.0,
+    "weighted_temp_temp_001_over_baseline": 0.1,
+    "weighted_temp_temp_003_over_baseline": 0.3
+  },
+  "raw_terms_identical": true,
+  "status": "pass",
+  "weighted_ratio_pass": true
+}

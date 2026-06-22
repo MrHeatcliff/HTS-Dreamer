@@ -1,0 +1,10 @@
+{
+  "artifact_dir": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/atari_v22_paper_core_control_prefix",
+  "code_commit": "04c0e4f87a3a8d85687ebbd1b891ae1eea504b9e",
+  "created_at": "2026-06-22T08:50:58.231437+00:00",
+  "levels": 4,
+  "primary_config": "hts_paper_core_zfull",
+  "required_next_gate": "Breakout Stage A seeds 0,1,2",
+  "vc_loss_default_enabled": false,
+  "vicreg_cov_scale": 0.001
+}

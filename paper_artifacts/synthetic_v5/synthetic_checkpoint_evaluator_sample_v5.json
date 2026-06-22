@@ -1,0 +1,24 @@
+{
+  "model_derived": false,
+  "required_metrics": [
+    "prefix NRMSE",
+    "marginal prefix gain",
+    "level x horizon NRMSE",
+    "predictive utility per active feature",
+    "factor probes",
+    "boundary precision",
+    "boundary recall",
+    "boundary F1",
+    "boundary detection delay",
+    "false-change rate",
+    "revisit similarity",
+    "nuisance sensitivity",
+    "effective rank",
+    "alive ratio",
+    "dead ratio",
+    "TopK utilization entropy",
+    "active-count audit"
+  ],
+  "smoke_metric": false,
+  "status": "blocked_real_checkpoint_evaluator_not_wired"
+}

@@ -1,0 +1,8 @@
+{
+  "episode_length": 128,
+  "name": "synthetic_multiscale_smoke",
+  "status": "manifest_only_trainer_pending",
+  "test_episodes": 16,
+  "train_episodes": 64,
+  "val_episodes": 16
+}

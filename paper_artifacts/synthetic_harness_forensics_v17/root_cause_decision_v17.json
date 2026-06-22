@@ -1,0 +1,24 @@
+{
+  "decision": "HARNESS_DRIFT_FIXED_PROTOCOL_LOCKED",
+  "full26_atari_reference_status_from_v16": "external_reference_only_not_used_for_gate",
+  "gate_d2_status": "blocked",
+  "historical_checkpoint_auprc_under_current_evaluator": {
+    "boundary_auprc_macro": 0.5886741344193551,
+    "boundary_auprc_overall": 0.7031229334644903,
+    "dead_feature_ratio": 5.2642822265625e-05,
+    "detached_probe_auprc": 0.35290899674338994,
+    "effective_rank": 7.406697559356689,
+    "factor_probe_accuracy": 0.4068389892578125
+  },
+  "identified_drift_factor": "historical_direct_head_parameterization_plus_v9_v12_checkpoint_lineage",
+  "new_exact_baseline_auprc": {
+    "boundary_auprc_macro": 0.08550793927516975,
+    "boundary_auprc_overall": 0.29831903814222194,
+    "dead_feature_ratio": 0.000957489013671875,
+    "detached_probe_auprc": 0.2845925115511402,
+    "effective_rank": 7.2548394203186035,
+    "factor_probe_accuracy": 0.41750345865885413
+  },
+  "single_factor_status": "smallest recoverable locked protocol confirmed; architecture-only single-factor not isolated in V17",
+  "v15_root_cause": "TRAINING_HARNESS_DRIFT_FOUND"
+}

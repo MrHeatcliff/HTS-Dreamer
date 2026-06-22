@@ -1,0 +1,205 @@
+{
+  "rows": [
+    {
+      "candidate_config": "temp_003",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_0/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_0/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_0/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_0/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_0/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_seed0",
+      "seed": 0
+    },
+    {
+      "candidate_config": "temp_003",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_1/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_1/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_1/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_1/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_1/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_seed1",
+      "seed": 1
+    },
+    {
+      "candidate_config": "temp_003",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_2/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_2/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_2/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_2/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_2/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_seed2",
+      "seed": 2
+    },
+    {
+      "candidate_config": "temp_003",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_3/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_3/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_3/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_3/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_3/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_seed3",
+      "seed": 3
+    },
+    {
+      "candidate_config": "temp_003",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_4/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_4/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_4/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_4/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003/seed_4/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_seed4",
+      "seed": 4
+    },
+    {
+      "candidate_config": "temp_001",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_0/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_0/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_0/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_0/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_0/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_001_seed0",
+      "seed": 0
+    },
+    {
+      "candidate_config": "temp_001",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_1/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_1/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_1/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_1/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_1/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_001_seed1",
+      "seed": 1
+    },
+    {
+      "candidate_config": "temp_001",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_2/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_2/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_2/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_2/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_2/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_001_seed2",
+      "seed": 2
+    },
+    {
+      "candidate_config": "temp_001",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_3/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_3/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_3/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_3/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_3/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_001_seed3",
+      "seed": 3
+    },
+    {
+      "candidate_config": "temp_001",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_4/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_4/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_4/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_4/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_001/seed_4/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_001_seed4",
+      "seed": 4
+    },
+    {
+      "candidate_config": "hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_0/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_0/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_0/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_0/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_0/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_hier_x3_seed0",
+      "seed": 0
+    },
+    {
+      "candidate_config": "hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_1/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_1/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_1/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_1/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_1/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_hier_x3_seed1",
+      "seed": 1
+    },
+    {
+      "candidate_config": "hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_2/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_2/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_2/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_2/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_2/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_hier_x3_seed2",
+      "seed": 2
+    },
+    {
+      "candidate_config": "hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_3/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_3/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_3/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_3/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_3/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_hier_x3_seed3",
+      "seed": 3
+    },
+    {
+      "candidate_config": "hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_4/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_4/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_4/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_4/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/hier_x3/seed_4/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_hier_x3_seed4",
+      "seed": 4
+    },
+    {
+      "candidate_config": "temp_003_hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_0/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_0/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_0/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_0/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_0/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed0",
+      "seed": 0
+    },
+    {
+      "candidate_config": "temp_003_hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_1/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_1/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_1/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_1/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_1/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed1",
+      "seed": 1
+    },
+    {
+      "candidate_config": "temp_003_hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_2/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_2/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_2/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_2/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_2/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed2",
+      "seed": 2
+    },
+    {
+      "candidate_config": "temp_003_hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_3/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_3/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_3/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_3/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_3/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed3",
+      "seed": 3
+    },
+    {
+      "candidate_config": "temp_003_hier_x3",
+      "final": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_4/checkpoints/final.npz",
+      "final_exists": true,
+      "final_load_pass": true,
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_4/checkpoints/initial.npz",
+      "periodic": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_4/checkpoints/step_1.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_4/checkpoints/step_100.npz;/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_tuning_v11/runs/temp_003_hier_x3/seed_4/checkpoints/step_200.npz",
+      "run_id": "synthetic_tuning_v11_temp_003_hier_x3_seed4",
+      "seed": 4
+    }
+  ],
+  "status": "pass"
+}

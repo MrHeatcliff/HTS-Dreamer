@@ -1,0 +1,20 @@
+{
+  "episode_length": 128,
+  "episodes": {
+    "test": 16,
+    "train": 64,
+    "val": 16
+  },
+  "hashes": {
+    "test": "59225dc0a262987cff90888cacca75ede59d4ef01b6e3131cb815354913c2bc0",
+    "train": "d0a8822285c774c889bf9bfd1a906eb8a7263e4f76faccb3c7c2332b82753033",
+    "val": "b98675a7e0f5b364de56e2e9d6fa7b06f8e3897e5d733dcc32ef5b7c606b572c"
+  },
+  "name": "synthetic_multiscale_smoke_v7",
+  "observation_dim": 44,
+  "paths": {
+    "test": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/data/smoke_test.npz",
+    "train": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/data/smoke_train.npz",
+    "val": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/data/smoke_val.npz"
+  }
+}

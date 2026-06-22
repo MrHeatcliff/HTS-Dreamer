@@ -1,0 +1,9 @@
+game,available_seeds,completed_seeds,partial_seeds,latest_agent_actions_per_seed,latest_frames_per_seed,latest_eval_return_mean_per_seed,mean_latest_return_completed_only,std_latest_return_completed_only,mean_latest_return_all_available,std_latest_return_all_available,notes_on_missing_or_partial_runs
+alien,"[0, 1, 2, 3, 4]","[0, 1, 2, 3, 4]",[],"{""0"": 109457.0, ""1"": 109702.0, ""2"": 109285.0, ""3"": 109103.0, ""4"": 109805.0}","{""0"": 437828.0, ""1"": 438808.0, ""2"": 437140.0, ""3"": 436412.0, ""4"": 439220.0}","{""0"": 1080.0, ""1"": 720.0, ""2"": 880.0, ""3"": 600.0, ""4"": 2280.0}",1112.0,605.7854405645616,1112.0,605.7854405645616,All available seeds completed.
+asterix,"[0, 1, 2, 3, 4]","[0, 1, 2, 3, 4]",[],{},{},{},,,,,All available seeds completed.
+breakout,"[0, 1, 2, 3, 4]","[0, 1, 2, 4]",[3],"{""0"": 109569.0, ""1"": 109705.0, ""2"": 109982.0, ""3"": 54502.0, ""4"": 109784.0}","{""0"": 438276.0, ""1"": 438820.0, ""2"": 439928.0, ""3"": 218008.0, ""4"": 439136.0}","{""0"": 8.0, ""1"": 9.0, ""2"": 10.0, ""3"": 0.0, ""4"": 10.0}",9.25,0.82915619758885,7.4,3.7735924528226414,Partial seeds present: [3]
+crazy_climber,"[0, 1, 2, 3, 4]",[0],"[1, 2, 3, 4]",{},{},{},,,,,"Partial seeds present: [1, 2, 3, 4]"
+hero,"[0, 1, 2, 3, 4]","[0, 1, 3]","[2, 4]",{},{},{},,,,,"Partial seeds present: [2, 4]"
+ms_pacman,"[0, 1, 2, 3, 4]","[0, 1, 2, 3, 4]",[],{},{},{},,,,,All available seeds completed.
+qbert,[0],[],[0],{},{},{},,,,,No completed run exists.
+seaquest,[],[],[],{},{},{},,,,,No completed run exists.

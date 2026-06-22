@@ -1,0 +1,1 @@
+# Improvement Diagnosis V20\n\nNo new variants run. Candidate hypotheses, ranked: auxiliary-loss warmup; reduced/gated HTS gradient into backbone early training; policy/actor-critic readout of HTS representation.\n

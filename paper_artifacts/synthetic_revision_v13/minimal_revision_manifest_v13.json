@@ -1,0 +1,263 @@
+{
+  "completed_runs": 20,
+  "configs": {
+    "coarse_protected_fine_x2": [
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "coarse_protected_fine_x3": [
+      1.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "coarse_protected_total_matched": [
+      1.0,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4
+    ],
+    "early_protected_late_x3": [
+      1.0,
+      1.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ]
+  },
+  "continuation_reason": "No candidate meets mechanism-preservation at 1000; 2500 continuation not launched in V13.",
+  "continuation_to_2500_runs": 0,
+  "expected_runs": 20,
+  "rows": [
+    {
+      "beta_hier": "[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "coarse_protected_fine_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 168.274
+    },
+    {
+      "beta_hier": "[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "coarse_protected_fine_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 162.923
+    },
+    {
+      "beta_hier": "[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "coarse_protected_fine_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 162.964
+    },
+    {
+      "beta_hier": "[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "coarse_protected_fine_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 158.165
+    },
+    {
+      "beta_hier": "[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "coarse_protected_fine_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 154.451
+    },
+    {
+      "beta_hier": "[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "early_protected_late_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 160.111
+    },
+    {
+      "beta_hier": "[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "early_protected_late_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 178.927
+    },
+    {
+      "beta_hier": "[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "early_protected_late_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 167.918
+    },
+    {
+      "beta_hier": "[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "early_protected_late_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 161.565
+    },
+    {
+      "beta_hier": "[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",
+      "config_name": "early_protected_late_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 170.933
+    },
+    {
+      "beta_hier": "[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",
+      "config_name": "coarse_protected_total_matched",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 161.622
+    },
+    {
+      "beta_hier": "[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",
+      "config_name": "coarse_protected_total_matched",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 159.124
+    },
+    {
+      "beta_hier": "[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",
+      "config_name": "coarse_protected_total_matched",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 158.644
+    },
+    {
+      "beta_hier": "[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",
+      "config_name": "coarse_protected_total_matched",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 159.789
+    },
+    {
+      "beta_hier": "[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",
+      "config_name": "coarse_protected_total_matched",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 158.172
+    },
+    {
+      "beta_hier": "[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",
+      "config_name": "coarse_protected_fine_x2",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 157.894
+    },
+    {
+      "beta_hier": "[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",
+      "config_name": "coarse_protected_fine_x2",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 161.728
+    },
+    {
+      "beta_hier": "[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",
+      "config_name": "coarse_protected_fine_x2",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 160.45
+    },
+    {
+      "beta_hier": "[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",
+      "config_name": "coarse_protected_fine_x2",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 158.849
+    },
+    {
+      "beta_hier": "[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",
+      "config_name": "coarse_protected_fine_x2",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "paired_initialization": true,
+      "paired_sampler_order": true,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 158.246
+    }
+  ],
+  "status": "pass"
+}

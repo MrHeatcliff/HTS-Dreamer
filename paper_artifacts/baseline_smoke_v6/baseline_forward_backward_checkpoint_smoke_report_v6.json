@@ -1,0 +1,508 @@
+{
+  "status": "pass",
+  "fixture": "deterministic HTS objective fixture, not a long environment run",
+  "rows": [
+    {
+      "config_name": "dreamer_anchor",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -8.940696716308594e-07
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {},
+      "failure_reason": ""
+    },
+    {
+      "config_name": "hts_full",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sdyn",
+        "hts_sparse",
+        "hts_temp",
+        "hts_vc"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.009106695652008057
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "flat_sae",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sparse"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -1.9371509552001953e-05
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sparse": 0.018496034666895866
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "flat_mh",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_sdyn"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -5.960464477539063e-08
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "sdyn": 5.164483445696533e-05
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "flat_partition_dim_matched",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -8.940696716308594e-07
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "sgf_style_flat_same_code",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_sdyn",
+        "hts_vc"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.0009876489639282227
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "sdyn": 5.164483445696533e-05,
+        "vc": 0.9875876307487488
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "recon_only_hierarchy",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -8.940696716308594e-07
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "matryoshka_only",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sparse"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -1.9371509552001953e-05
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sparse": 0.018496034666895866
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "dense_multistride_no_sparse",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sdyn",
+        "hts_temp",
+        "hts_vc"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.009088218212127686
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "larger_flat_param",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_sdyn"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -5.960464477539063e-08
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "sdyn": 5.164483445696533e-05
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "hts_no_temp",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sdyn",
+        "hts_sparse",
+        "hts_vc"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.0010070204734802246
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "vc": 0.9875876307487488
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "hts_no_vc",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sdyn",
+        "hts_sparse",
+        "hts_temp"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.00811910629272461
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "hts_no_hier",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_sdyn",
+        "hts_sparse",
+        "hts_temp",
+        "hts_vc"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.009105801582336426
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "failure_reason": ""
+    },
+    {
+      "config_name": "hts_no_sdyn",
+      "construct_pass": true,
+      "forward_pass": true,
+      "active_loss_names": [
+        "hts_hier",
+        "hts_sparse",
+        "hts_temp",
+        "hts_vc"
+      ],
+      "loss_assembly_pass": true,
+      "backward_pass": true,
+      "optimizer_step_pass": true,
+      "artifact_write_pass": true,
+      "checkpoint_save_pass": true,
+      "checkpoint_reload_pass": true,
+      "reloaded_forward_pass": true,
+      "nonzero_expected_gradient_groups": [
+        "fixture_scale"
+      ],
+      "zero_expected_gradient_groups": [],
+      "parameter_delta_groups": {
+        "fixture_scale": -0.009106636047363281
+      },
+      "raw_losses": {
+        "hier": 0.0008959662518464029,
+        "sdyn": 5.164483445696533e-05,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "active_losses": {
+        "hier": 0.0008959662518464029,
+        "sparse": 0.018496034666895866,
+        "temp": 8.09967041015625,
+        "vc": 0.9875876307487488
+      },
+      "failure_reason": ""
+    }
+  ]
+}

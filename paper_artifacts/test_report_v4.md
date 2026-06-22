@@ -1,0 +1,43 @@
+PASS: 18 | XFAIL: 21 | FAIL: 0
+
+| test_id | test_name | status | assertions_checked | artifact_path | failure_reason |
+| --- | --- | --- | --- | --- | --- |
+| UT-01 | six head shapes | PASS | six [B,T,32] outputs |  |  |
+| UT-02 | TopK per level and total active budget 48 | PASS | each level has 8 active dimensions; total active count is 48 |  |  |
+| UT-03 | valid prefix input contract | PASS | decoder level 4 receives concat z1..z4 with width 16 |  |  |
+| UT-04 | lower-prefix stop-gradient | PASS | level 4 decoder sends no gradient to lower prefixes z1..z3 |  |  |
+| UT-05 | coarse-to-fine stride mapping | PASS | strides are [32,16,8,4,2,1] |  |  |
+| UT-06 | action-window off-by-one | PASS | t=3, Delta=4 uses actions [a3,a4,a5,a6] and target h7 |  |  |
+| UT-07 | reset/terminal masking | PASS | window crossing reset at t=5 is invalid |  |  |
+| UT-08 | positive sampler validity | PASS | positive pairs are valid within episode and positive valid fraction > 0 |  |  |
+| UT-09 | none/hard/soft negative modes differ | PASS | losses={'none': 6.4145283699035645, 'hard': 6.637998580932617, 'soft': 6.475249767303467}; far_counts={'none': 0.0, 'hard': 5.5, 'soft': 5.5} |  |  |
+| UT-10 | VC constant/random/duplicate behavior | PASS | constant variance penalty positive; duplicate covariance > random; cov_scale changes total VC only |  |  |
+| UT-11 | manual weighted-objective equality | PASS | manual and implemented weighted objective both equal 17.0 |  |  |
+| UT-15-MATRIX | required P0 component-matrix contracts | PASS | all required rows implemented and contract fields match | paper_artifacts/component_matrix_v4.csv |  |
+| UT-15-P1 | optional P1 status report | XFAIL | P1 rows are reported separately | paper_artifacts/component_matrix_v4.csv | larger_flat_flops remains P1 pending and does not block P0 |
+| UT-16A | 50K raw-frame auxiliary warmup schedule | PASS | alpha(0)=0, alpha(half)=0.5, alpha(horizon)=1, alpha(after)=1 |  |  |
+| UT-16B | 100K raw-frame auxiliary warmup schedule | PASS | alpha(0)=0, alpha(half)=0.5, alpha(horizon)=1, alpha(after)=1 |  |  |
+| UT-16C | zero-warmup equivalence | PASS | warmup disabled gives alpha=1 from the first update |  |  |
+| UT-17 | warmup loss routing | PASS | L_wm is not multiplied by alpha; only HTS auxiliary losses are |  |  |
+| UT-18 | warmup architecture invariance contract | PASS | warmup changes only auxiliary coefficients, not architecture |  |  |
+| UT-12 | regime-specific parameter deltas | XFAIL |  |  | requires automated one-step optimizer delta by module and regime |
+| UT-13A | decoder prefix stop-gradient scope | XFAIL |  |  | decoder SG is tested in UT-04; code-manuscript split audit generated separately |
+| UT-13B | predictor and target stop-gradient scope | XFAIL |  |  | predictor-prefix and dynamics-target SG are implementation decisions not explicit in paper.txt |
+| UT-14 | evaluation labels excluded from training | PASS | official Atari batch has no synthetic evaluation labels |  |  |
+| UT-15-P0 | full P0 forward/backward/checkpoint smoke | XFAIL |  |  | debug initialization exists; full optimizer/checkpoint reload smoke remains pending |
+| UT-15-P1 | P1 optional controls | XFAIL |  |  | larger_flat_flops and external long-suite wiring remain P1 |
+| IT-01 | tiny synthetic shard overfit | XFAIL |  |  | official HTS synthetic trainer not wired |
+| IT-02 | synthetic checkpoint evaluator smoke | XFAIL |  |  | current evaluator sample is structural placeholder |
+| IT-03 | short Atari smoke with complete artifacts | XFAIL |  |  | manual smoke exists; automated assertion pending |
+| IT-04 | periodic evaluation does not mutate training state | XFAIL |  |  | periodic eval not integrated |
+| IT-05 | checkpoint resume preserves optimizer and config | XFAIL |  |  | resume smoke not automated |
+| IT-06 | run-end replay-ratio consistency | XFAIL |  |  | writer exists; update-producing smoke pending |
+| RT-01 | dreamer anchor unchanged | XFAIL |  |  | baseline-vs-HTS regression pending |
+| RT-02 | disabling all HTS scales recovers anchor loss | XFAIL |  |  | zero-scale regression pending |
+| RT-03 | hts_no_temp differs only by temporal loss | XFAIL |  |  | ablation regression pending |
+| RT-04 | hts_no_vc differs only by VC loss | XFAIL |  |  | ablation regression pending |
+| RT-05 | hts_no_hier differs only by hierarchy loss | XFAIL |  |  | ablation regression pending |
+| RT-06 | hts_no_sdyn differs only by sparse-dynamics loss | XFAIL |  |  | ablation regression pending |
+| RT-07 | dense_multistride_no_sparse differs only by TopK/L1 | XFAIL |  |  | official variant/regression pending |
+| RT-08 | flat_partition_dim_matched trains reconstruction only | XFAIL |  |  | variant regression pending |
+| RT-09 | larger_flat_param is widened flat_mh | XFAIL |  |  | actual size12m match and checkpoint reload pending |

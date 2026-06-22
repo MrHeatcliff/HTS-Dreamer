@@ -1,0 +1,60 @@
+A.L.E: Arcade Learning Environment (version 0.9.0+750d7f9)
+[Powered by Stella]
+---  ___                           __   ______ ---
+--- |   \ _ _ ___ __ _ _ __  ___ _ \ \ / /__ / ---
+--- | |) | '_/ -_) _` | '  \/ -_) '/\ V / |_ \ ---
+--- |___/|_| \___\__,_|_|_|_\___|_|  \_/ |___/ ---
+Replica: 0 / 1
+Logdir: /tmp/hts_full_size12m_init
+Run script: train
+Observations
+  image            Space(uint8, shape=(64, 64, 3), low=0, high=255)
+  reward           Space(float32, shape=(), low=-inf, high=inf)
+  is_first         Space(bool, shape=(), low=False, high=True)
+  is_last          Space(bool, shape=(), low=False, high=True)
+  is_terminal      Space(bool, shape=(), low=False, high=True)
+Actions
+  action           Space(int32, shape=(), low=0, high=6)
+Extras
+  consec           Space(int32, shape=(), low=-2147483648, high=2147483647)
+  stepid           Space(uint8, shape=(20,), low=0, high=255)
+  dyn/deter        Space(float32, shape=(2048,), low=-inf, high=inf)
+  dyn/stoch        Space(float32, shape=(32, 16), low=-inf, high=inf)
+JAX devices (1): [cuda:0]
+Policy devices: cuda:0
+Train devices:  cuda:0
+Initializing parameters...
+Optimizer opt has 20,554,568 params:
+    10,061,952 hts
+     5,979,648 dyn
+     1,272,003 dec
+       853,503 val
+       789,510 pol
+       721,407 rew
+       656,129 con
+       220,416 enc
+Done initializing!
+Compiling 1 checkpoint groups...
+Largest checkpoint group: 0 GB
+Compiling train and report...
+Train cost analysis:
+  FLOPS:            8.3e+10
+  Memory (temp):    1.4e+09
+  Memory (inputs):  2.7e+08
+  Memory (outputs): 2.6e+08
+  Memory (code):    5.5e+06
+
+Report cost analysis:
+  FLOPS:            1.2e+09
+  Memory (temp):    1.7e+08
+  Memory (inputs):  4.2e+07
+  Memory (outputs): 1.0e+07
+  Memory (code):    8.1e+06
+
+Done compiling!
+Did not find any checkpoint.
+Saving checkpoint: /tmp/hts_full_size12m_init/ckpt/20260611T133945F079785
+Saved checkpoint.
+Start training loop
+Saving checkpoint: /tmp/hts_full_size12m_init/ckpt/20260611T133947F619644
+Saved checkpoint.

@@ -1,0 +1,44 @@
+PASS: 39 | XFAIL: 1 | FAIL: 0
+
+| test_id | test_name | status | execution_status | artifact_path | failure_reason |
+| --- | --- | --- | --- | --- | --- |
+| UT-01 | HTS module construction | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-02 | level-wise TopK masking | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-03 | nested reconstruction shape contract | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-04 | multi-stride target masking | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-05 | temporal negative sampling masks | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-06 | VICReg finite loss | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-07 | sparsity accounting | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-08 | variant loss routing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-09 | flat SAE width contract | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-10 | flat-MH horizon contract | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-11 | SGF-style flat objective contract | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-12 | recon-only hierarchy objective contract | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-13 | dense multistride no-sparsity contract | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-14 | larger-flat parameter matching | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| UT-15-P1 | larger_flat_flops remains P1 | XFAIL | inherited_from_v9 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/remaining_xfail_v9.md | P1 deferred |
+| IT-01 | synthetic tiny overfit | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| IT-02 | checkpoint evaluator model-derived | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| IT-03 | label exclusion | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| IT-04 | gradient balance sweep | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| IT-05 | real eval plumbing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| IT-06 | artifact generation | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-01 | dreamer anchor unchanged | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-02 | all HTS scales disabled anchor path | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-03 | no-temp routing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-04 | no-VC routing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-05 | no-hier routing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-06 | no-sdyn routing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-07 | dense no-sparsity routing | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-08 | flat partition active gradient | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| RT-09 | larger flat parameter match | PASS | inherited_from_v7 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/test_report_v7.csv |  |
+| GC-01 | all-P0 Breakout smoke | PASS | inherited_from_v9 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/gate_c_telemetry_repair_report_v9.json |  |
+| GC-02 | focused stability | PASS | inherited_from_v9 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/gate_c_telemetry_repair_report_v9.json |  |
+| GC-03 | size12m resource | PASS | inherited_from_v9 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/gate_c_telemetry_repair_report_v9.json |  |
+| GC-04 | artifact completeness | PASS | inherited_from_v9 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/gate_c_telemetry_repair_report_v9.json |  |
+| SD-01 | evaluator oracle tests | PASS | executed_v10 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_diagnosis_v10/evaluator_oracle_test_v10.json |  |
+| SD-02 | synthetic run completeness and provenance | PASS | executed_v10 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_diagnosis_v10/synthetic_run_audit_v10.json |  |
+| SD-03 | hts_full prefix seed-profile audit | PASS | executed_v10 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_diagnosis_v10/hts_full_seed_diagnostics_v10.csv |  |
+| SD-04 | decoder-level gradient audit | PASS | executed_v10 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_diagnosis_v10/decoder_level_gradient_audit_v10.json |  |
+| SD-05 | telemetry semantics cleanup | PASS | executed_v10 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/telemetry_cleanup_v10/telemetry_semantics_audit_v10.json |  |
+| SD-06 | Gate-D1 review decision | PASS | executed_v10 | /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_diagnosis_v10/gate_d1_review_v10.json |  |

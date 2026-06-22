@@ -1,0 +1,6 @@
+{
+  "blocker": "connect evaluator to real HTS checkpoints",
+  "model_derived_metrics": false,
+  "status": "structural_placeholder",
+  "usable_for_paper": false
+}

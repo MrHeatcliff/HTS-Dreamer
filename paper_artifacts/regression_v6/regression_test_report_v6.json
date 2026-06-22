@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "rows": [
+    {
+      "test_id": "RT-01",
+      "test_name": "dreamer_anchor unchanged",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-02",
+      "test_name": "disabling all HTS scales recovers anchor loss path",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-03",
+      "test_name": "hts_no_temp differs only by temporal loss",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-04",
+      "test_name": "hts_no_vc differs only by VC loss",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-05",
+      "test_name": "hts_no_hier differs only by hierarchy reconstruction loss",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-06",
+      "test_name": "hts_no_sdyn differs only by sparse-dynamics loss",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-07",
+      "test_name": "dense_multistride_no_sparse differs only by TopK/L1",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-08",
+      "test_name": "flat_partition_dim_matched has active flat reconstruction gradient",
+      "status": "PASS"
+    },
+    {
+      "test_id": "RT-09",
+      "test_name": "larger_flat_param matches flat_mh objective except width",
+      "status": "PASS"
+    }
+  ]
+}

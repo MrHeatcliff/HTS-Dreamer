@@ -1,0 +1,27 @@
+{
+  "absent_from_actor_input_tensors": true,
+  "absent_from_critic_input_tensors": true,
+  "absent_from_dreamer_input_tensors": true,
+  "absent_from_far_negative_sampler_decisions": true,
+  "absent_from_hts_input_tensors": true,
+  "absent_from_temporal_positive_sampler_inputs": true,
+  "absent_from_training_loss_assembly": true,
+  "labels": [
+    "episode_id",
+    "timestep",
+    "f_fast",
+    "f_mid",
+    "f_slow",
+    "f_context",
+    "f_nuisance",
+    "boundary_fast",
+    "boundary_mid",
+    "boundary_slow",
+    "boundary_context",
+    "boundary_macro",
+    "macro_state_id",
+    "full_state_id",
+    "revisit_group_id"
+  ],
+  "status": "pass"
+}

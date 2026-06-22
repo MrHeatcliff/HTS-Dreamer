@@ -1,0 +1,84 @@
+{
+  "boundary_calibration_audit_result": "pass",
+  "candidate_boundary_f1_and_auprc": {
+    "baseline_v9": [
+      0.5902877019972124,
+      0.7031229334644903
+    ],
+    "hier_x3": [
+      0.2784157350408857,
+      0.30818646532652616
+    ],
+    "temp_003": [
+      0.25838726649758154,
+      0.2903408962630741
+    ],
+    "temp_003_hier_x3": [
+      0.2778873317858867,
+      0.30776658039318877
+    ]
+  },
+  "candidate_end_to_end_positive_seeds": {
+    "baseline_v9": 3,
+    "hier_x3": 5,
+    "temp_003": 5,
+    "temp_003_hier_x3": 5
+  },
+  "candidate_factor_probe_accuracy": {
+    "baseline_v9": 0.4068389892578125,
+    "hier_x3": 0.41785441080729163,
+    "temp_003": 0.3950124104817708,
+    "temp_003_hier_x3": 0.4179380289713541
+  },
+  "candidate_prefix_gains_and_ci": {
+    "baseline_v9": [
+      0.0013702074893974902,
+      -0.0003576098743740541,
+      0.003255126472883907
+    ],
+    "hier_x3": [
+      0.00420102350147431,
+      0.003573147233953722,
+      0.004870874833324157
+    ],
+    "temp_003": [
+      0.001139618578111623,
+      0.0007419954213622626,
+      0.0014932302171475904
+    ],
+    "temp_003_hier_x3": [
+      0.004201942534461711,
+      0.0035743843937444454,
+      0.004873826343110688
+    ]
+  },
+  "coefficient_routing_audit_result": "pass",
+  "continuation_configs": [
+    "baseline_v9",
+    "hier_x3",
+    "temp_003_hier_x3",
+    "temp_003"
+  ],
+  "continuation_runs_completed": 20,
+  "continuation_runs_expected": 20,
+  "cumulative_test_counts": {
+    "FAIL": 5,
+    "PASS": 48,
+    "XFAIL": 1
+  },
+  "dataset_hash_matches_expected": true,
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "existing_checkpoint_convergence_result": "pass",
+  "final_matched_optimizer_budgets": 1000,
+  "gate_d1_decision": "NO_STABLE_CANDIDATE_AFTER_MATCHED_BUDGET",
+  "gate_d2_manifest_generated": false,
+  "remaining_blockers": [
+    "Gate D2 blocked"
+  ],
+  "sampled_sequence_timesteps": 512000,
+  "sampled_sequences": 8000,
+  "selected_development_candidate": null,
+  "unrelated_full26_processes_observed_but_untouched": "dat.tt2  3406738 1347215 79 12:58 pts/2    00:04:21 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_crazy_climber --seed 2 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/crazy_climber/seed_2 --logger.outputs jsonl,scope,wandb",
+  "v11_optimizer_budget": "250 updates, batch_size=32, sequence_length=64",
+  "v9_baseline_optimizer_budget": "250 updates, batch_size=32, sequence_length=64"
+}

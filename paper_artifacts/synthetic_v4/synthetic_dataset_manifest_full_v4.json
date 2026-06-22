@@ -1,0 +1,9 @@
+{
+  "blocker": "full synthetic dataset generation/trainer not wired in official port",
+  "planned_split_trajectories": {
+    "test": 2000,
+    "train": 10000,
+    "validation": 2000
+  },
+  "status": "not_generated"
+}

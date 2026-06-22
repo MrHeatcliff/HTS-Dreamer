@@ -1,0 +1,7 @@
+logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_3/paper_artifacts/train_metrics.jsonl
+logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_1/paper_artifacts/train_metrics.jsonl
+logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_0/paper_artifacts/train_metrics.jsonl
+logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_2/paper_artifacts/train_metrics.jsonl
+logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_4/paper_artifacts/train_metrics.jsonl
+logs/external_baselines/dreamerv3_official/full26_size12m/amidar/seed_1/paper_artifacts/train_metrics.jsonl
+logs/external_baselines/dreamerv3_official/full26_size12m/amidar/seed_0/paper_artifacts/train_metrics.jsonl

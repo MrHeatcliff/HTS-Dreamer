@@ -1,0 +1,70 @@
+{
+  "status": "structural_smoke_placeholder",
+  "source_csv": "artifacts/paper_development/synthetic_multiscale_sample_eval/synthetic_checkpoint_metrics.csv",
+  "metrics": [
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "prefix_reconstruction_nrmse",
+      "metric_value": "1.0",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "marginal_prefix_gain",
+      "metric_value": "0.1",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "level_horizon_prediction_nrmse",
+      "metric_value": "1.2",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "predictive_utility_per_active_feature",
+      "metric_value": "0.1",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "macro_state_probe_accuracy",
+      "metric_value": "0.25",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "factor_probe_fast",
+      "metric_value": "0.125",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "factor_probe_mid",
+      "metric_value": "0.125",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    },
+    {
+      "checkpoint_index": "0",
+      "global_step": "0",
+      "metric_name": "factor_probe_slow",
+      "metric_value": "0.125",
+      "smoke_metric": "True",
+      "notes": "smoke structural placeholder from synthetic labels; replace with model checkpoint evaluator"
+    }
+  ]
+}

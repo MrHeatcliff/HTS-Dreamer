@@ -1,0 +1,501 @@
+{
+  "action_repeat": 4,
+  "batch_length": 10,
+  "batch_size": 8,
+  "code_commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+  "command": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/dreamerv3/main_hts.py --configs hts_atari100k size12m debug --script eval_only --task atari100k_pong --seed 0 --logdir /tmp/hts_final_eval_smoke_a1 --run.from_checkpoint /tmp/hts_artifact_smoke_a1/ckpt/20260610T134053F542124 --run.steps 5000 --run.eval_eps 1 --run.log_every 20 --logger.outputs jsonl",
+  "condition": "final-eval-smoke",
+  "config": {
+    "actor_addr": "localhost:{auto}",
+    "actor_batch": -1,
+    "actor_threads": 1,
+    "agent": {
+      "ac_grads": false,
+      "advnorm": {
+        "impl": "none",
+        "limit": 1e-08,
+        "rate": 0.01
+      },
+      "conhead": {
+        "act": "silu",
+        "layers": 1,
+        "norm": "rms",
+        "output": "binary",
+        "outscale": 1.0,
+        "units": 8,
+        "winit": "trunc_normal_in"
+      },
+      "contdisc": true,
+      "dec": {
+        "simple": {
+          "act": "silu",
+          "bspace": 8,
+          "depth": 2,
+          "kernel": 5,
+          "layers": 1,
+          "mults": [
+            2,
+            3,
+            4,
+            4
+          ],
+          "norm": "rms",
+          "outer": false,
+          "outscale": 1.0,
+          "strided": false,
+          "units": 8,
+          "winit": "trunc_normal_in"
+        },
+        "typ": "simple"
+      },
+      "dyn": {
+        "rssm": {
+          "absolute": false,
+          "act": "silu",
+          "blocks": 4,
+          "classes": 4,
+          "deter": 8,
+          "dynlayers": 1,
+          "free_nats": 1.0,
+          "hidden": 3,
+          "imglayers": 2,
+          "norm": "rms",
+          "obslayers": 1,
+          "outscale": 1.0,
+          "stoch": 2,
+          "unimix": 0.01,
+          "winit": "trunc_normal_in"
+        },
+        "typ": "rssm"
+      },
+      "enc": {
+        "simple": {
+          "act": "silu",
+          "depth": 2,
+          "kernel": 5,
+          "layers": 1,
+          "mults": [
+            2,
+            3,
+            4,
+            4
+          ],
+          "norm": "rms",
+          "outer": false,
+          "strided": false,
+          "symlog": true,
+          "units": 8,
+          "winit": "trunc_normal_in"
+        },
+        "typ": "simple"
+      },
+      "horizon": 333,
+      "hts": {
+        "act": "silu",
+        "action_units": 128,
+        "alpha_sdyn": [
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667
+        ],
+        "backbone_lr_scale": 1.0,
+        "beta_hier": [
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667
+        ],
+        "head_dim": 32,
+        "hidden": 3,
+        "hierarchy_lr_scale": 1.0,
+        "hts_lr_scale": 1.0,
+        "l_hier": 0.1,
+        "l_sdyn": 0.1,
+        "l_sparse": 1e-05,
+        "l_temp": 0.01,
+        "l_vc": 0.01,
+        "latent_anchor_name": "rssm_repfeat",
+        "latent_anchor_source_module": "dreamerv3.rssm.RSSM.loss",
+        "layers": 1,
+        "levels": 6,
+        "norm": "rms",
+        "phase1_steps": 0,
+        "phase2_steps": 0,
+        "proj_dim": 64,
+        "strides": [
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ],
+        "strides_coarse_to_fine": [
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ],
+        "temporal_far_negative_mode": "none",
+        "temporal_far_weight": 0.25,
+        "temporal_k_pos": 4,
+        "temporal_min_far_distance": 16,
+        "temporal_temperature": 0.1,
+        "topk": 8,
+        "topk_per_level": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "training_regime": "joint",
+        "vicreg_gamma": 1.0,
+        "warmup_steps": 0
+      },
+      "imag_last": 0,
+      "imag_length": 15,
+      "imag_loss": {
+        "actent": 0.0003,
+        "lam": 0.95,
+        "slowreg": 1.0,
+        "slowtar": false
+      },
+      "loss_scales": {
+        "con": 1.0,
+        "dyn": 1.0,
+        "policy": 1.0,
+        "rec": 1.0,
+        "rep": 0.1,
+        "repval": 0.3,
+        "rew": 1.0,
+        "value": 1.0
+      },
+      "opt": {
+        "agc": 0.3,
+        "anneal": 0,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "eps": 1e-20,
+        "lr": 4e-05,
+        "momentum": true,
+        "schedule": "const",
+        "warmup": 1000,
+        "wd": 0.0
+      },
+      "policy": {
+        "act": "silu",
+        "layers": 1,
+        "maxstd": 1.0,
+        "minstd": 0.1,
+        "norm": "rms",
+        "outscale": 0.01,
+        "unimix": 0.01,
+        "units": 8,
+        "winit": "trunc_normal_in"
+      },
+      "policy_dist_cont": "bounded_normal",
+      "policy_dist_disc": "categorical",
+      "repl_loss": {
+        "lam": 0.95,
+        "slowreg": 1.0,
+        "slowtar": false
+      },
+      "report": true,
+      "report_gradnorms": false,
+      "repval_grad": true,
+      "repval_loss": true,
+      "retnorm": {
+        "debias": false,
+        "impl": "perc",
+        "limit": 1.0,
+        "perchi": 95.0,
+        "perclo": 5.0,
+        "rate": 0.01
+      },
+      "reward_grad": true,
+      "rewhead": {
+        "act": "silu",
+        "bins": 5,
+        "layers": 1,
+        "norm": "rms",
+        "output": "symexp_twohot",
+        "outscale": 0.0,
+        "units": 8,
+        "winit": "trunc_normal_in"
+      },
+      "slowvalue": {
+        "every": 1,
+        "rate": 0.02
+      },
+      "valnorm": {
+        "impl": "none",
+        "limit": 1e-08,
+        "rate": 0.01
+      },
+      "value": {
+        "act": "silu",
+        "bins": 5,
+        "layers": 1,
+        "norm": "rms",
+        "output": "symexp_twohot",
+        "outscale": 0.0,
+        "units": 8,
+        "winit": "trunc_normal_in"
+      }
+    },
+    "agent_process": false,
+    "batch_length": 10,
+    "batch_size": 8,
+    "consec_report": 1,
+    "consec_train": 1,
+    "debug": true,
+    "duration": 0,
+    "env": {
+      "atari": {
+        "actions": "all",
+        "aggregate": "max",
+        "autostart": false,
+        "clip_reward": false,
+        "gray": true,
+        "lives": "unused",
+        "noops": 30,
+        "pooling": 2,
+        "repeat": 4,
+        "resize": "pillow",
+        "size": [
+          96,
+          96
+        ],
+        "sticky": true
+      },
+      "atari100k": {
+        "actions": "needed",
+        "autostart": false,
+        "clip_reward": false,
+        "gray": false,
+        "lives": "unused",
+        "noops": 30,
+        "repeat": 4,
+        "resize": "pillow",
+        "size": [
+          64,
+          64
+        ],
+        "sticky": false
+      },
+      "crafter": {
+        "logs": false,
+        "size": [
+          64,
+          64
+        ]
+      },
+      "dmc": {
+        "camera": -1,
+        "image": true,
+        "proprio": true,
+        "repeat": 1,
+        "size": [
+          64,
+          64
+        ]
+      },
+      "dmlab": {
+        "episodic": true,
+        "repeat": 4,
+        "size": [
+          64,
+          64
+        ],
+        "use_seed": true
+      },
+      "loconav": {
+        "camera": -1,
+        "repeat": 1,
+        "size": [
+          64,
+          64
+        ]
+      },
+      "minecraft": {
+        "break_speed": 100.0,
+        "length": 36000,
+        "logs": false,
+        "size": [
+          64,
+          64
+        ]
+      },
+      "procgen": {
+        "resize": "pillow",
+        "size": [
+          96,
+          96
+        ]
+      }
+    },
+    "envs": 4,
+    "episode_timeout": 180,
+    "eval_envs": 4,
+    "eval_eps": 1,
+    "from_checkpoint": "/tmp/hts_artifact_smoke_a1/ckpt/20260610T134053F542124",
+    "log_every": 20,
+    "logdir": "/tmp/hts_final_eval_smoke_a1",
+    "logger": {
+      "filter": "score|length|fps|ratio|train/loss/|train/rand/|train/hts/|train/loss/hts",
+      "fps": 15,
+      "outputs": [
+        "jsonl"
+      ],
+      "timer": true,
+      "user": ""
+    },
+    "logger_addr": "localhost:{auto}",
+    "remote_envs": false,
+    "remote_replay": false,
+    "replay_addr": "localhost:{auto}",
+    "replay_context": 1,
+    "replica": 0,
+    "replicas": 1,
+    "report_batches": 1,
+    "report_every": 10,
+    "report_length": 5,
+    "save_every": 15,
+    "seed": 0,
+    "steps": 5000.0,
+    "task": "atari100k_pong",
+    "train_ratio": 8.0,
+    "usage": {
+      "gc": false,
+      "gputil": false,
+      "malloc": false,
+      "nvsmi": true,
+      "psutil": true
+    }
+  },
+  "config_hash": "fd54bbcc57ceeca5",
+  "created_wall_time": 1781073899.8267274,
+  "env": {
+    "atari": {
+      "actions": "all",
+      "aggregate": "max",
+      "autostart": false,
+      "clip_reward": false,
+      "gray": true,
+      "lives": "unused",
+      "noops": 30,
+      "pooling": 2,
+      "repeat": 4,
+      "resize": "pillow",
+      "size": [
+        96,
+        96
+      ],
+      "sticky": true
+    },
+    "atari100k": {
+      "actions": "needed",
+      "autostart": false,
+      "clip_reward": false,
+      "gray": false,
+      "lives": "unused",
+      "noops": 30,
+      "repeat": 4,
+      "resize": "pillow",
+      "size": [
+        64,
+        64
+      ],
+      "sticky": false
+    },
+    "crafter": {
+      "logs": false,
+      "size": [
+        64,
+        64
+      ]
+    },
+    "dmc": {
+      "camera": -1,
+      "image": true,
+      "proprio": true,
+      "repeat": 1,
+      "size": [
+        64,
+        64
+      ]
+    },
+    "dmlab": {
+      "episodic": true,
+      "repeat": 4,
+      "size": [
+        64,
+        64
+      ],
+      "use_seed": true
+    },
+    "loconav": {
+      "camera": -1,
+      "repeat": 1,
+      "size": [
+        64,
+        64
+      ]
+    },
+    "minecraft": {
+      "break_speed": 100.0,
+      "length": 36000,
+      "logs": false,
+      "size": [
+        64,
+        64
+      ]
+    },
+    "procgen": {
+      "resize": "pillow",
+      "size": [
+        96,
+        96
+      ]
+    }
+  },
+  "expected_updates_per_agent_action": 0.1,
+  "expected_updates_per_raw_frame": 0.025,
+  "experiment_id": "hts_final_eval_smoke_a1",
+  "latent_anchor_dim": 16,
+  "latent_anchor_name": "rssm_repfeat",
+  "latent_anchor_source_module": "dreamerv3.rssm.RSSM.loss",
+  "logdir": "/tmp/hts_final_eval_smoke_a1",
+  "method": "HTS-WM",
+  "minibatch_steps": 80,
+  "replay_semantics": {
+    "compilation_steps_excluded_from_consistency_check": true,
+    "configured_train_ratio_units": "replayed environment timesteps per agent action",
+    "expected_update_rate_units": "optimizer minibatch updates per agent action",
+    "initial_prefill_excluded_from_consistency_check": true
+  },
+  "run": {},
+  "seed": 0,
+  "sequence_length": 10,
+  "suite": "atari100k",
+  "task": "Pong",
+  "train_ratio_replayed_steps_per_agent_action": 8.0,
+  "wandb": {
+    "entity": "",
+    "group": "",
+    "job_type": "",
+    "mode": "disabled",
+    "project": "",
+    "run_name": "",
+    "tags": ""
+  }
+}

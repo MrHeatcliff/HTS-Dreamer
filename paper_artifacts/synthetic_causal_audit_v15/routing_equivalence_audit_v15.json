@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "boundary_auprc_diff": 0.0,
+      "decoder_1_parameter_max_abs_diff": 0.004454424604773521,
+      "factor_probe_diff": 0.0,
+      "latent_max_abs_diff": 0.0,
+      "non_decoder_parameter_hashes_match": true,
+      "seed": 0
+    },
+    {
+      "boundary_auprc_diff": 0.0,
+      "decoder_1_parameter_max_abs_diff": 0.003572944551706314,
+      "factor_probe_diff": 0.0,
+      "latent_max_abs_diff": 0.0,
+      "non_decoder_parameter_hashes_match": true,
+      "seed": 1
+    },
+    {
+      "boundary_auprc_diff": 0.0,
+      "decoder_1_parameter_max_abs_diff": 0.004992786794900894,
+      "factor_probe_diff": 0.0,
+      "latent_max_abs_diff": 0.0,
+      "non_decoder_parameter_hashes_match": true,
+      "seed": 2
+    },
+    {
+      "boundary_auprc_diff": 0.0,
+      "decoder_1_parameter_max_abs_diff": 0.0037017762660980225,
+      "factor_probe_diff": 0.0,
+      "latent_max_abs_diff": 0.0,
+      "non_decoder_parameter_hashes_match": true,
+      "seed": 3
+    },
+    {
+      "boundary_auprc_diff": 0.0,
+      "decoder_1_parameter_max_abs_diff": 0.007009550463408232,
+      "factor_probe_diff": 0.0,
+      "latent_max_abs_diff": 0.0,
+      "non_decoder_parameter_hashes_match": true,
+      "seed": 4
+    }
+  ],
+  "status": "pass"
+}

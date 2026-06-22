@@ -1,0 +1,44 @@
+{
+  "absolute_error": 0.0,
+  "batch_length": 64,
+  "batch_size": 16,
+  "executed_optimizer_updates": 25000,
+  "expected_updates_per_agent_action": 0.25,
+  "final_accumulator_state": {
+    "prev": 99997.0
+  },
+  "initial_accumulator_state": "prev=None; first call returns one update",
+  "minibatch_steps": 1024,
+  "num_agent_actions": 100000,
+  "relative_error": 0.0,
+  "requested_update_events": 25000,
+  "strict_status": "pass",
+  "train_ratio_replayed_steps_per_agent_action": 256,
+  "updates_per_agent_action": 0.25,
+  "window_diagnostics": {
+    "100": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    },
+    "1000": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    },
+    "500": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    },
+    "5000": {
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "strict_status": "pass",
+      "updates_per_agent_action": 0.25
+    }
+  }
+}

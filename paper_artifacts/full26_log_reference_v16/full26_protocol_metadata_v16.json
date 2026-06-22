@@ -1,0 +1,252 @@
+[
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_0/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "breakout",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_0",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "0",
+    "task": "atari100k_breakout",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_1/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "breakout",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_1",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "1",
+    "task": "atari100k_breakout",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_2/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "breakout",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_2",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "2",
+    "task": "atari100k_breakout",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_3/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "breakout",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_3",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "3",
+    "task": "atari100k_breakout",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_4/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "breakout",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_4",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "4",
+    "task": "atari100k_breakout",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_0/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "alien",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_0",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "0",
+    "task": "atari100k_alien",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_1/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "alien",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_1",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "1",
+    "task": "atari100k_alien",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_2/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "alien",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_2",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "2",
+    "task": "atari100k_alien",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_3/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "alien",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_3",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "3",
+    "task": "atari100k_alien",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  },
+  {
+    "action_repeat": 4,
+    "algorithm": "DreamerV3 official",
+    "batch_length": "64",
+    "batch_size": "16",
+    "checkpoint_interval": "unknown",
+    "code_commit_if_available": "unknown",
+    "config_file_paths": [
+      "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_4/config.yaml"
+    ],
+    "configs": "atari100k size12m",
+    "eval_interval": "unknown",
+    "game": "alien",
+    "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_4",
+    "logger_outputs": "[jsonl, scope, wandb]",
+    "model_size": "size12m",
+    "replay_rate_or_updates_per_action": "256.0",
+    "seed": "4",
+    "task": "atari100k_alien",
+    "total_train_frames_or_actions_target": {
+      "agent_actions": 110000.0,
+      "frames": 440000.0
+    },
+    "train_ratio": "256.0"
+  }
+]

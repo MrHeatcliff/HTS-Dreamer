@@ -1,0 +1,9 @@
+| cov_scale | completed | latest_raw_frames | auc_20bin_mean | final_20pct_mean | final_bin_mean | latest_episode_score | last_vicreg_var | last_vicreg_cov | last_vicreg_cov_scale | last_vc_weighted | logdir |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0.001 | True | 438664.0 | 7.124639656938044 | 9.122252747252746 | 8.615384615384615 | 14.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_0p001/seed_0 |
+| 0.003 | True | 438716.0 | 5.586839510921319 | 9.349893162393162 | 11.11111111111111 | 10.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_0p003/seed_0 |
+| 0.01 | True | 439948.0 | 3.9772751441425376 | 7.077403846153846 | 6.384615384615385 | 5.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_0p01/seed_0 |
+| 0.03 | True | 439000.0 | 5.354264863009645 | 6.653273809523809 | 6.266666666666667 | 21.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_0p03/seed_0 |
+| 0.1 | True | 438624.0 | 6.017832085614526 | 9.201923076923077 | 9.5 | 6.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_0p1/seed_0 |
+| 0.3 | True | 439900.0 | 4.741575989417014 | 7.268200549450549 | 8.76923076923077 | 6.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_0p3/seed_0 |
+| 1.0 | True | 439064.0 | 4.955623959373959 | 8.375 | 10.0 | 11.0 |  |  |  |  | /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_vc_cov_sweep/breakout_seed0/cov_1p0/seed_0 |

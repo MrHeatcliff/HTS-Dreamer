@@ -1,0 +1,8 @@
+{
+  "absolute_difference": 0.0,
+  "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_locked_rerun_v18/runs/locked_baseline_direct_head/seed_0/checkpoints/step_1000.npz",
+  "expected_seed0_auprc": 0.7338414786886552,
+  "observed_seed0_auprc": 0.7338414786886552,
+  "reused_from_v17": true,
+  "status": "pass"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "partial_static_trace_only",
+  "reason": "UT-12 still XFAIL; real optimizer parameter-delta by regime not yet automated",
+  "available_gradient_norms": {
+    "Dreamer backbone": 0.000945608364418149,
+    "HTS trunk": 0.1264972686767578,
+    "projector": 6.955314636230469,
+    "HTS head 1": 0.6954711079597473,
+    "prefix decoder 1": 4.804277864423057e-07,
+    "predictor 1": 2.897154445236083e-06,
+    "HTS head 2": 6.356698634135682e-08,
+    "prefix decoder 2": 4.802901116818248e-07,
+    "predictor 2": 1.5712855656602187e-06,
+    "HTS head 3": 5.700103145045432e-08,
+    "prefix decoder 3": 4.797598762706912e-07,
+    "predictor 3": 1.1723926718332223e-06,
+    "HTS head 4": 3.8015979697547664e-08,
+    "prefix decoder 4": 4.804154514204129e-07,
+    "predictor 4": 7.900515015535348e-07,
+    "HTS head 5": 3.846656682071625e-08,
+    "prefix decoder 5": 4.81018560094526e-07,
+    "predictor 5": 7.089581686159363e-07,
+    "HTS head 6": 4.852815749245565e-08,
+    "prefix decoder 6": 4.803175670531346e-07,
+    "predictor 6": 5.813972734358686e-07
+  },
+  "required_groups": [
+    "Dreamer backbone",
+    "HTS trunk",
+    "HTS heads",
+    "prefix decoders",
+    "predictors",
+    "projector",
+    "actor",
+    "critic"
+  ]
+}

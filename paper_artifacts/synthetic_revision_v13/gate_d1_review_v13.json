@@ -1,0 +1,21 @@
+{
+  "boundary_auprc_preservation": null,
+  "boundary_localization_result": "see boundary_localization_v13.csv",
+  "budget_semantics_status": "pass",
+  "collapse_status": null,
+  "end_to_end_positive_seeds": 0,
+  "factor_probe_preservation": null,
+  "gate_d1_decision": "NO_STABLE_CANDIDATE_AFTER_MINIMAL_REVISION",
+  "gate_d2_status": "blocked",
+  "macro_boundary_auprc_preservation": null,
+  "minimal_revision_runs_completed": 20,
+  "paired_fairness_status": "pass",
+  "per_level_hierarchy_routing_result": "hier_x3 multiplies level-1 reconstruction by 3",
+  "prefix_gain_and_ci": null,
+  "selected_beta_hier_vector": null,
+  "selected_candidate": null,
+  "selected_optimizer_budget": null,
+  "specialization_status": null,
+  "v12_decision": "NO_STABLE_CANDIDATE_AFTER_MATCHED_BUDGET",
+  "v12_early_stop_status": "pass"
+}

@@ -1,0 +1,260 @@
+{
+  "completed_runs": 20,
+  "continuation_runs_to_2500": 0,
+  "expected_runs": 20,
+  "routes": {
+    "baseline_shared_trunk": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": true,
+      "hier_recon_update_z1_head": true,
+      "train_new": false
+    },
+    "recon_trunk_isolated": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": true,
+      "train_new": true
+    },
+    "recon_trunk_isolated_fine_only": {
+      "beta_hier": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": false,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    },
+    "recon_trunk_isolated_fine_only_x3": {
+      "beta_hier": [
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "hier_recon_include_level1_decoder_loss": false,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    },
+    "recon_trunk_isolated_no_z1_grad": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    }
+  },
+  "rows": [
+    {
+      "config_name": "recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 280.677
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 262.988
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 260.562
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 254.187
+    },
+    {
+      "config_name": "recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 261.921
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 188.494
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 188.123
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 186.266
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 187.006
+    },
+    {
+      "config_name": "recon_trunk_isolated_no_z1_grad",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 188.283
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 190.919
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 188.919
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 188.389
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 188.819
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 192.88
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "status": "pass",
+      "wall_clock_seconds": 191.376
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "status": "pass",
+      "wall_clock_seconds": 191.482
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "status": "pass",
+      "wall_clock_seconds": 191.362
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "status": "pass",
+      "wall_clock_seconds": 197.19
+    },
+    {
+      "config_name": "recon_trunk_isolated_fine_only_x3",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "status": "pass",
+      "wall_clock_seconds": 195.631
+    }
+  ],
+  "status": "pass"
+}

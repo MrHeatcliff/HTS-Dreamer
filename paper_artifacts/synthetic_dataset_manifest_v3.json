@@ -1,0 +1,77 @@
+{
+  "name": "synthetic_multiscale",
+  "version": 1,
+  "observation_type": "state_vector_44",
+  "noise_std": 0.01,
+  "episode_length": 128,
+  "action_values": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "factor_names": [
+    "fast",
+    "mid",
+    "slow",
+    "context",
+    "nuisance"
+  ],
+  "factor_cardinalities": {
+    "fast": 8,
+    "mid": 8,
+    "slow": 8,
+    "context": 4,
+    "nuisance": 16
+  },
+  "boundary_names": [
+    "fast",
+    "mid",
+    "slow",
+    "context",
+    "macro"
+  ],
+  "macro_state_id": "slow * 4 + context",
+  "full_state_id": "(((fast * 8 + mid) * 8 + slow) * 4 + context)",
+  "reward_mode": "zero_fixed_buffer_representation",
+  "behavior_policy": "70% iid random actions, 30% block-structured actions with block length in {4,8,16}",
+  "splits": {
+    "train": [
+      {
+        "file": "train/train_000.npz",
+        "episodes": 16,
+        "length": 128
+      },
+      {
+        "file": "train/train_001.npz",
+        "episodes": 16,
+        "length": 128
+      },
+      {
+        "file": "train/train_002.npz",
+        "episodes": 16,
+        "length": 128
+      },
+      {
+        "file": "train/train_003.npz",
+        "episodes": 16,
+        "length": 128
+      }
+    ],
+    "val": [
+      {
+        "file": "val/val_000.npz",
+        "episodes": 16,
+        "length": 128
+      }
+    ],
+    "test": [
+      {
+        "file": "test/test_000.npz",
+        "episodes": 16,
+        "length": 128
+      }
+    ]
+  }
+}

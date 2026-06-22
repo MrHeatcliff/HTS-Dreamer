@@ -1,0 +1,36 @@
+{
+  "corrected_throughput_memory_fairness_summary": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/gate_c_v9/telemetry/throughput_memory_fairness_v9.csv",
+  "cumulative_test_counts": {
+    "FAIL": 1,
+    "PASS": 37,
+    "XFAIL": 1
+  },
+  "gate_c_telemetry_repair_status": "pass",
+  "gate_d1_failure_reason": "prefix_reconstruction_improves_all_seeds is false",
+  "gate_d1_status": "fail",
+  "gate_d2_plan_paths": {
+    "manifest": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/gate_d2_atari_dev_command_manifest_v9.json",
+    "plan": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/gate_d2_atari_dev_plan_v9.md"
+  },
+  "hts_full_collapse_status": "no_collapse_detected",
+  "hts_full_specialization_summary": {
+    "mean_boundary_f1": 0.5101506740681998,
+    "mean_factor_probe_accuracy": 0.6351577758789062,
+    "prefix_reconstruction_improves_all_seeds": false
+  },
+  "key_synthetic_aggregate_results": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/aggregate_metrics_v9.csv",
+  "memory_telemetry_status": "pass",
+  "native_writer_provenance_status": "pass",
+  "paper_draft_artifact_paths": {
+    "figures": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/figures",
+    "tables": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_full_v9/tables"
+  },
+  "periodic_eval_schedule_status": "pass",
+  "remaining_xfail_tests": [
+    "UT-15-P1"
+  ],
+  "synthetic_completed_runs": 50,
+  "synthetic_dataset_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "synthetic_expected_runs": 50,
+  "unrelated_running_processes_observed_but_untouched": "dat.tt2  1434998 1347215 69 21:29 pts/2    00:31:29 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_boxing --seed 3 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/boxing/seed_3 --logger.outputs jsonl,scope,wandb"
+}

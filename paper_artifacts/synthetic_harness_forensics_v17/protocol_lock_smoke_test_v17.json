@@ -1,0 +1,10 @@
+{
+  "checkpoint_path": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_harness_forensics_v17/runs/historical_recipe_replay/seed_0/checkpoints/step_1000.npz",
+  "expected_range": [
+    0.6838414786886552,
+    0.7838414786886553
+  ],
+  "observed_boundary_auprc_overall": 0.7338414786886552,
+  "seed": 0,
+  "status": "pass"
+}

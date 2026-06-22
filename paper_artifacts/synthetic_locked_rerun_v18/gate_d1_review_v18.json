@@ -1,0 +1,9 @@
+{
+  "candidate_decision": "PASS_WITH_LOCKED_PROTOCOL_DEVELOPMENT_CANDIDATE",
+  "gate_d1_status": "PASS_LOCKED_SYNTHETIC",
+  "gate_d2_status": "blocked",
+  "selected_candidate": "locked_hier_x3",
+  "variant_not_applicable": [
+    "locked_recon_trunk_isolated_fine_only_x3"
+  ]
+}

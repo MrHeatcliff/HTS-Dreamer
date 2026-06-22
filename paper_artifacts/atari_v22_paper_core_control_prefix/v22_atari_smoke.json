@@ -1,0 +1,50 @@
+{
+  "group": "v22_paper_core_control_prefix_smoke",
+  "pass": true,
+  "policy_video": false,
+  "project": "hts-wm-atari-dev",
+  "runs": [
+    {
+      "active_count_l1": 8.0,
+      "active_count_l4": 8.0,
+      "actor_input_dim": 128.0,
+      "actor_input_zfull": 1.0,
+      "completed": true,
+      "finite_numeric_metrics": true,
+      "game": "alien",
+      "latest_episode_score": 250.0,
+      "latest_step": 29840,
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/smoke/alien/seed_0",
+      "loss_ctrl": 40.85937936127897,
+      "loss_hier": 0.06844408266238719,
+      "loss_sdyn": 0.11459535049690824,
+      "loss_total": 122.41658967108526,
+      "seed": 0,
+      "wandb_run_id": "9elqbize",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/9elqbize",
+      "z_full_norm": 6.914028170119272,
+      "z_full_variance": 0.3631007116093848
+    },
+    {
+      "active_count_l1": 8.0,
+      "active_count_l4": 8.0,
+      "actor_input_dim": 128.0,
+      "actor_input_zfull": 1.0,
+      "completed": true,
+      "finite_numeric_metrics": true,
+      "game": "breakout",
+      "latest_episode_score": 1.0,
+      "latest_step": 29480,
+      "logdir": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/smoke/breakout/seed_0",
+      "loss_ctrl": 0.28725360379477216,
+      "loss_hier": 0.07730130189614501,
+      "loss_sdyn": 0.1644918241873265,
+      "loss_total": 191.50718992257575,
+      "seed": 0,
+      "wandb_run_id": "68juclpw",
+      "wandb_url": "https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/68juclpw",
+      "z_full_norm": 11.911106687898089,
+      "z_full_variance": 1.0827198198646497
+    }
+  ]
+}

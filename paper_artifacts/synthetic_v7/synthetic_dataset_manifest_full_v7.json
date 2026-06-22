@@ -1,0 +1,20 @@
+{
+  "episode_length": 128,
+  "episodes": {
+    "test": 2000,
+    "train": 10000,
+    "val": 2000
+  },
+  "hashes": {
+    "test": "e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78",
+    "train": "9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf",
+    "val": "2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0"
+  },
+  "name": "synthetic_multiscale_full_v7",
+  "observation_dim": 44,
+  "paths": {
+    "test": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/data/full_test.npz",
+    "train": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/data/full_train.npz",
+    "val": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/data/full_val.npz"
+  }
+}

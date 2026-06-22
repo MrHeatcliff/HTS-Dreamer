@@ -1,0 +1,8 @@
+{
+  "decision": "MIXED_RESULTS",
+  "game_results": {
+    "alien": true,
+    "breakout": false
+  },
+  "rule": "beat requires auc_20bin_mean >= Dreamer and final_20pct_mean >= Dreamer"
+}

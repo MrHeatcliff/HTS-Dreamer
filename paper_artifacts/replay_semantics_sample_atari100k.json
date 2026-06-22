@@ -1,0 +1,18 @@
+{
+  "suite": "atari100k",
+  "train_ratio_replayed_steps_per_agent_action": 256,
+  "batch_size": 16,
+  "batch_length": 64,
+  "minibatch_steps": 1024,
+  "expected_updates_per_agent_action": 0.25,
+  "action_repeat": 4,
+  "expected_updates_per_raw_frame": 0.0625,
+  "example_realized_agent_actions": 100000,
+  "example_realized_frames": 400000,
+  "example_expected_optimizer_updates": 25000,
+  "notes": [
+    "The configured official DreamerV3 train_ratio is replayed timesteps per collected agent action.",
+    "The derived optimizer update rate is train_ratio / (batch_size * batch_length).",
+    "Initial replay prefill and JAX compilation are excluded from run-end consistency checks."
+  ]
+}

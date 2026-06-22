@@ -1,0 +1,2 @@
+game,seed,run_name,wandb_url,logdir,status
+alien,3,v20__hts_locked_hier_x3__alien__seed3,https://wandb.ai/ttdat170703-ho-chi-minh-city-university-of-technology/hts-wm-atari-dev/runs/esl5p8v9,/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v20_fair_compare/hts_locked_hier_x3/alien/seed_3,launched

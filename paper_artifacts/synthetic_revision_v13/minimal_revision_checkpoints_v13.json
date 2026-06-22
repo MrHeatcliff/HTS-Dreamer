@@ -1,0 +1,185 @@
+{
+  "rows": [
+    {
+      "config_name": "coarse_protected_fine_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x3/seed_4/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "early_protected_late_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "early_protected_late_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "early_protected_late_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "early_protected_late_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "early_protected_late_x3",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/early_protected_late_x3/seed_4/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_total_matched",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_total_matched",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_total_matched",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_total_matched",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_total_matched",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_total_matched/seed_4/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x2",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_0/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 0,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_0/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_0/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_0/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x2",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_1/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 1,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_1/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_1/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_1/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x2",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_2/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 2,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_2/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_2/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_2/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x2",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_3/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 3,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_3/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_3/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_3/checkpoints/step_500.npz"
+    },
+    {
+      "config_name": "coarse_protected_fine_x2",
+      "initial": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_4/checkpoints/initial.npz",
+      "load_pass": true,
+      "seed": 4,
+      "step_1000": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_4/checkpoints/step_1000.npz",
+      "step_250": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_4/checkpoints/step_250.npz",
+      "step_500": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_revision_v13/runs/coarse_protected_fine_x2/seed_4/checkpoints/step_500.npz"
+    }
+  ],
+  "status": "pass"
+}

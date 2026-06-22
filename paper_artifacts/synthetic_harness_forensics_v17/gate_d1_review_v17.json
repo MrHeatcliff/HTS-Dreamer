@@ -1,0 +1,7 @@
+{
+  "do_not_launch_atari_gate_d2": true,
+  "do_not_mark_d1_pass": true,
+  "gate_d1_status": "BLOCKED_PENDING_RERUN_UNDER_LOCKED_PROTOCOL",
+  "gate_d2_status": "blocked",
+  "next_required_action": "rerun baseline_shared_trunk, hier_x3, recon_trunk_isolated_fine_only_x3, no_hier_loss under locked protocol"
+}

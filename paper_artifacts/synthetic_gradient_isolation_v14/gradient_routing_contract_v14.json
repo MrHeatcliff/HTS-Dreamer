@@ -1,0 +1,76 @@
+{
+  "parameter_matching": "all candidates instantiate trunk, six heads, six decoders, six predictors",
+  "routing_flags": {
+    "baseline_shared_trunk": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": true,
+      "hier_recon_update_z1_head": true,
+      "train_new": false
+    },
+    "recon_trunk_isolated": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": true,
+      "train_new": true
+    },
+    "recon_trunk_isolated_fine_only": {
+      "beta_hier": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": false,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    },
+    "recon_trunk_isolated_fine_only_x3": {
+      "beta_hier": [
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "hier_recon_include_level1_decoder_loss": false,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    },
+    "recon_trunk_isolated_no_z1_grad": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    }
+  },
+  "status": "pass"
+}

@@ -1,0 +1,143 @@
+{
+  "candidate_boundary_auprc_overall_and_macro": {
+    "recon_trunk_isolated": [
+      0.2983085571380252,
+      0.08548711816790933
+    ],
+    "recon_trunk_isolated_fine_only": [
+      0.29811138899467204,
+      0.08477010957404722
+    ],
+    "recon_trunk_isolated_fine_only_x3": [
+      0.2981287662647038,
+      0.08477029793295202
+    ],
+    "recon_trunk_isolated_no_z1_grad": [
+      0.29811138899467204,
+      0.08477010957404722
+    ]
+  },
+  "candidate_factor_probe_accuracy": {
+    "recon_trunk_isolated": 0.4174599202473958,
+    "recon_trunk_isolated_fine_only": 0.4172369384765625,
+    "recon_trunk_isolated_fine_only_x3": 0.4230173746744792,
+    "recon_trunk_isolated_no_z1_grad": 0.4172369384765625
+  },
+  "candidate_prefix_gains_and_ci": {
+    "recon_trunk_isolated": [
+      0.00040409173508391125,
+      9.29813951310754e-05,
+      0.0007152020750367472
+    ],
+    "recon_trunk_isolated_fine_only": [
+      0.0007484993471194024,
+      0.0004468797901328259,
+      0.0010192959516048595
+    ],
+    "recon_trunk_isolated_fine_only_x3": [
+      0.002079206091769126,
+      0.0018191020826180404,
+      0.0023744396950215463
+    ],
+    "recon_trunk_isolated_no_z1_grad": [
+      0.0006748706658580739,
+      0.0003621873655998309,
+      0.0009543980837240396
+    ]
+  },
+  "continuation_runs_to_2500": 0,
+  "cumulative_test_counts": {
+    "FAIL": 9,
+    "PASS": 65,
+    "XFAIL": 1
+  },
+  "dataset_hash_matches_expected": true,
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "fine_reconstruction_losses_update_shared_trunk_in_baseline": true,
+  "gate_d1_decision": "NO_STABLE_CANDIDATE_AFTER_GRADIENT_ISOLATION",
+  "gate_d2_manifest_generated": false,
+  "new_runs_completed": 20,
+  "new_runs_expected": 20,
+  "remaining_blockers": [
+    "Gate D2 blocked",
+    "split-branch architecture review required"
+  ],
+  "routing_flags_implemented": {
+    "baseline_shared_trunk": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": true,
+      "hier_recon_update_z1_head": true,
+      "train_new": false
+    },
+    "recon_trunk_isolated": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": true,
+      "train_new": true
+    },
+    "recon_trunk_isolated_fine_only": {
+      "beta_hier": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": false,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    },
+    "recon_trunk_isolated_fine_only_x3": {
+      "beta_hier": [
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "hier_recon_include_level1_decoder_loss": false,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    },
+    "recon_trunk_isolated_no_z1_grad": {
+      "beta_hier": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "hier_recon_include_level1_decoder_loss": true,
+      "hier_recon_update_shared_trunk": false,
+      "hier_recon_update_z1_head": false,
+      "train_new": true
+    }
+  },
+  "routing_unit_test_results": "pass",
+  "selected_routing_candidate": null,
+  "shared_trunk_gradient_path_audit_result": "pass",
+  "split_branch_proposal_generated": true,
+  "unrelated_official_processes_observed_but_untouched": "dat.tt2  3563062 1347215 69 15:18 pts/2    00:44:53 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_crazy_climber --seed 4 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/crazy_climber/seed_4 --logger.outputs jsonl,scope,wandb",
+  "v13_decision": "NO_STABLE_CANDIDATE_AFTER_MINIMAL_REVISION"
+}

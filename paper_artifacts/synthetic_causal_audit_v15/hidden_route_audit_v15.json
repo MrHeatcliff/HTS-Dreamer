@@ -1,0 +1,186 @@
+{
+  "assertions": {
+    "R0_vs_R1_only_hierarchy_to_trunk_route_changes": true,
+    "R0_vs_R2_hierarchy_contributions_change": true,
+    "optimizer_parameter_groups_match": true,
+    "parameter_counts_match": true,
+    "temporal_sdyn_vc_sparse_raw_terms_match": true
+  },
+  "rows": {
+    "exact_baseline_shared_trunk": {
+      "decoder_grad_by_level": [
+        0.0014170645736157894,
+        0.0017856346676126122,
+        0.0021729518193751574,
+        0.002625878434628248,
+        0.0029208550695329905,
+        0.0031059642788022757
+      ],
+      "head_1_grad_from_hier": 0.0013681689742952585,
+      "head_1_grad_from_sdyn": 0.002797241322696209,
+      "head_1_grad_from_temp": 0.025136321783065796,
+      "optimizer_parameter_groups": [
+        "all_parameters_sgd_lr_0.05"
+      ],
+      "parameter_count": 19096,
+      "predictor_grad_by_level": [
+        0.0017364817904308438,
+        0.0020828889682888985,
+        0.00222639087587595,
+        0.0025715280789881945,
+        0.0027660056948661804,
+        0.0033168101217597723
+      ],
+      "raw_hier_loss_by_level": [
+        0.019002316519618034,
+        0.018836989998817444,
+        0.01898307353258133,
+        0.019170448184013367,
+        0.019378680735826492,
+        0.018863629549741745
+      ],
+      "raw_sdyn_loss": 0.11532674729824066,
+      "raw_sparse_loss": 0.0879220962524414,
+      "raw_temp_loss": 0.007273770868778229,
+      "raw_vc_loss": 0.9095432162284851,
+      "shared_trunk_grad_from_hier": 0.0012236546026542783,
+      "shared_trunk_grad_from_sdyn": 0.001662588445469737,
+      "shared_trunk_grad_from_temp": 0.008752956986427307,
+      "trainable_parameter_names": [
+        "trunk",
+        "heads",
+        "decs",
+        "preds"
+      ],
+      "weighted_hier_loss_by_level": [
+        0.019002316519618034,
+        0.018836989998817444,
+        0.01898307353258133,
+        0.019170448184013367,
+        0.019378680735826492,
+        0.018863629549741745
+      ],
+      "weighted_sdyn_loss": 0.11532674729824066,
+      "weighted_sparse_loss": 0.0879220962524414,
+      "weighted_temp_loss": 7.273770868778229e-05,
+      "weighted_vc_loss": 0.009095432162284851
+    },
+    "exact_no_hier_loss": {
+      "decoder_grad_by_level": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "head_1_grad_from_hier": 0.0,
+      "head_1_grad_from_sdyn": 0.002797241322696209,
+      "head_1_grad_from_temp": 0.025136321783065796,
+      "optimizer_parameter_groups": [
+        "all_parameters_sgd_lr_0.05"
+      ],
+      "parameter_count": 19096,
+      "predictor_grad_by_level": [
+        0.0017364817904308438,
+        0.0020828889682888985,
+        0.00222639087587595,
+        0.0025715280789881945,
+        0.0027660056948661804,
+        0.0033168101217597723
+      ],
+      "raw_hier_loss_by_level": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_sdyn_loss": 0.11532674729824066,
+      "raw_sparse_loss": 0.0879220962524414,
+      "raw_temp_loss": 0.007273770868778229,
+      "raw_vc_loss": 0.9095432162284851,
+      "shared_trunk_grad_from_hier": 0.0,
+      "shared_trunk_grad_from_sdyn": 0.001662588445469737,
+      "shared_trunk_grad_from_temp": 0.008752956986427307,
+      "trainable_parameter_names": [
+        "trunk",
+        "heads",
+        "decs",
+        "preds"
+      ],
+      "weighted_hier_loss_by_level": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "weighted_sdyn_loss": 0.11532674729824066,
+      "weighted_sparse_loss": 0.0879220962524414,
+      "weighted_temp_loss": 7.273770868778229e-05,
+      "weighted_vc_loss": 0.009095432162284851
+    },
+    "exact_recon_trunk_isolated": {
+      "decoder_grad_by_level": [
+        0.0014170645736157894,
+        0.0017856346676126122,
+        0.0021729518193751574,
+        0.002625878434628248,
+        0.0029208550695329905,
+        0.0031059642788022757
+      ],
+      "head_1_grad_from_hier": 0.0013681689742952585,
+      "head_1_grad_from_sdyn": 0.002797241322696209,
+      "head_1_grad_from_temp": 0.025136321783065796,
+      "optimizer_parameter_groups": [
+        "all_parameters_sgd_lr_0.05"
+      ],
+      "parameter_count": 19096,
+      "predictor_grad_by_level": [
+        0.0017364817904308438,
+        0.0020828889682888985,
+        0.00222639087587595,
+        0.0025715280789881945,
+        0.0027660056948661804,
+        0.0033168101217597723
+      ],
+      "raw_hier_loss_by_level": [
+        0.019002316519618034,
+        0.018836989998817444,
+        0.01898307353258133,
+        0.019170448184013367,
+        0.019378680735826492,
+        0.018863629549741745
+      ],
+      "raw_sdyn_loss": 0.11532674729824066,
+      "raw_sparse_loss": 0.0879220962524414,
+      "raw_temp_loss": 0.007273770868778229,
+      "raw_vc_loss": 0.9095432162284851,
+      "shared_trunk_grad_from_hier": 0.0,
+      "shared_trunk_grad_from_sdyn": 0.001662588445469737,
+      "shared_trunk_grad_from_temp": 0.008752956986427307,
+      "trainable_parameter_names": [
+        "trunk",
+        "heads",
+        "decs",
+        "preds"
+      ],
+      "weighted_hier_loss_by_level": [
+        0.019002316519618034,
+        0.018836989998817444,
+        0.01898307353258133,
+        0.019170448184013367,
+        0.019378680735826492,
+        0.018863629549741745
+      ],
+      "weighted_sdyn_loss": 0.11532674729824066,
+      "weighted_sparse_loss": 0.0879220962524414,
+      "weighted_temp_loss": 7.273770868778229e-05,
+      "weighted_vc_loss": 0.009095432162284851
+    }
+  },
+  "status": "pass"
+}

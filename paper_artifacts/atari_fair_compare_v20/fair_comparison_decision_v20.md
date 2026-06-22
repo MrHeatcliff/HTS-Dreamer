@@ -1,0 +1,1 @@
+# Fair Comparison Decision V20\n\nDecision: `MIXED_RESULTS`\n\nRule: HTS beats a game if AUC and final-20% are both >= DreamerV3 on paired completed seeds.\n

@@ -1,0 +1,80 @@
+{
+  "all_games_complete": true,
+  "completed_selected_runs": 130,
+  "games_with_missing_or_incomplete_selected_runs": [],
+  "logroot": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m",
+  "metric_protocol": {
+    "bins": 20,
+    "completed_threshold": 418000.0,
+    "primary_curve": "mean over completed seeds per fixed raw-frame bin; shaded SEM",
+    "source": "scores.jsonl episode/score",
+    "target_frames": 440000,
+    "x_axis": "raw environment frames"
+  },
+  "repair_selected_runs": [
+    {
+      "game": "breakout",
+      "run_dir": "seed_3_repair_no_video",
+      "seed": 3
+    },
+    {
+      "game": "road_runner",
+      "run_dir": "seed_4_repair_no_video",
+      "seed": 4
+    },
+    {
+      "game": "seaquest",
+      "run_dir": "seed_0_repair_no_video",
+      "seed": 0
+    },
+    {
+      "game": "seaquest",
+      "run_dir": "seed_1_repair_no_video",
+      "seed": 1
+    },
+    {
+      "game": "seaquest",
+      "run_dir": "seed_2_repair_no_video",
+      "seed": 2
+    },
+    {
+      "game": "seaquest",
+      "run_dir": "seed_3_repair_no_video",
+      "seed": 3
+    },
+    {
+      "game": "seaquest",
+      "run_dir": "seed_4_repair_no_video",
+      "seed": 4
+    },
+    {
+      "game": "up_n_down",
+      "run_dir": "seed_0_repair_no_video",
+      "seed": 0
+    },
+    {
+      "game": "up_n_down",
+      "run_dir": "seed_1_repair_no_video",
+      "seed": 1
+    },
+    {
+      "game": "up_n_down",
+      "run_dir": "seed_2_repair_no_video",
+      "seed": 2
+    },
+    {
+      "game": "up_n_down",
+      "run_dir": "seed_3_repair_no_video",
+      "seed": 3
+    },
+    {
+      "game": "up_n_down",
+      "run_dir": "seed_4_repair2_no_video",
+      "seed": 4
+    }
+  ],
+  "selected_runs": 130,
+  "target_games": 26,
+  "target_runs": 130,
+  "target_seeds_per_game": 5
+}

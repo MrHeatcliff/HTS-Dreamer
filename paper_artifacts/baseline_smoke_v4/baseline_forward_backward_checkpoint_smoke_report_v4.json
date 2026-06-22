@@ -1,0 +1,126 @@
+{
+  "blocker": "full P0 optimizer/checkpoint reload smoke not yet automated",
+  "rows": [
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "dreamer_anchor",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "hts_full",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "flat_sae",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "flat_mh",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "flat_partition_dim_matched",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "sgf_style_flat_same_code",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "recon_only_hierarchy",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "matryoshka_only",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "dense_multistride_no_sparse",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "larger_flat_param",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": false,
+      "config_name": "larger_flat_flops",
+      "forward_verified": false,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "hts_no_temp",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "hts_no_vc",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "hts_no_hier",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    },
+    {
+      "backward_verified": false,
+      "checkpoint_reload_verified": false,
+      "checkpoint_save_verified": true,
+      "config_name": "hts_no_sdyn",
+      "forward_verified": true,
+      "optimizer_step_verified": false
+    }
+  ],
+  "status": "partial"
+}

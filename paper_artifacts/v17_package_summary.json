@@ -1,0 +1,73 @@
+{
+  "cumulative_test_counts": {
+    "FAIL": 12,
+    "PASS": 78,
+    "XFAIL": 1
+  },
+  "dataset_hash_matches_expected": true,
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "full26_atari_reference_status_from_v16": "external reference only, untouched",
+  "future_rerun_plan_or_unresolved_blockers": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_harness_forensics_v17/locked_protocol_rerun_plan_v17.md",
+  "gate_d1_status": "BLOCKED_PENDING_RERUN_UNDER_LOCKED_PROTOCOL",
+  "gate_d2_status": "blocked",
+  "historical_checkpoint_auprc_under_current_evaluator": {
+    "boundary_auprc_macro": 0.5886741344193551,
+    "boundary_auprc_overall": 0.7031229334644903,
+    "dead_feature_ratio": 5.2642822265625e-05,
+    "detached_probe_auprc": 0.35290899674338994,
+    "effective_rank": 7.406697559356689,
+    "factor_probe_accuracy": 0.4068389892578125
+  },
+  "historical_recipe_seed0_reproduces": true,
+  "identified_drift_factor_if_any": "historical_direct_head_parameterization_plus_v9_v12_checkpoint_lineage",
+  "new_exact_baseline_auprc": {
+    "boundary_auprc_macro": 0.08550793927516975,
+    "boundary_auprc_overall": 0.29831903814222194,
+    "dead_feature_ratio": 0.000957489013671875,
+    "detached_probe_auprc": 0.2845925115511402,
+    "effective_rank": 7.2548394203186035,
+    "factor_probe_accuracy": 0.41750345865885413
+  },
+  "protocol_lock_created": true,
+  "protocol_mismatches_found": [
+    "script_path",
+    "entrypoint",
+    "routing_flags",
+    "checkpoint_selection",
+    "sampler_order"
+  ],
+  "required_return_artifacts": [
+    "synthetic_harness_forensics_v17/checkpoint_reeval_v17.csv",
+    "synthetic_harness_forensics_v17/checkpoint_reeval_v17.md",
+    "synthetic_harness_forensics_v17/drift_toggle_plan_v17.csv",
+    "synthetic_harness_forensics_v17/drift_toggle_results_seed0_v17.csv",
+    "synthetic_harness_forensics_v17/drift_toggle_results_seed0_v17.md",
+    "synthetic_harness_forensics_v17/gate_d1_review_v17.json",
+    "synthetic_harness_forensics_v17/gate_d1_review_v17.md",
+    "synthetic_harness_forensics_v17/historical_baseline_provenance_v17.json",
+    "synthetic_harness_forensics_v17/historical_baseline_provenance_v17.md",
+    "synthetic_harness_forensics_v17/historical_recipe_replay_allseeds_v17.csv",
+    "synthetic_harness_forensics_v17/historical_recipe_replay_allseeds_v17.md",
+    "synthetic_harness_forensics_v17/historical_recipe_replay_seed0_v17.json",
+    "synthetic_harness_forensics_v17/historical_recipe_replay_seed0_v17.md",
+    "synthetic_harness_forensics_v17/locked_protocol_rerun_plan_v17.md",
+    "synthetic_harness_forensics_v17/minimal_drift_factor_confirmation_v17.csv",
+    "synthetic_harness_forensics_v17/minimal_drift_factor_confirmation_v17.md",
+    "synthetic_harness_forensics_v17/protocol_diff_matrix_v17.csv",
+    "synthetic_harness_forensics_v17/protocol_diff_matrix_v17.md",
+    "synthetic_harness_forensics_v17/protocol_lock_smoke_test_v17.json",
+    "synthetic_harness_forensics_v17/protocol_lock_smoke_test_v17.md",
+    "synthetic_harness_forensics_v17/root_cause_decision_v17.json",
+    "synthetic_harness_forensics_v17/root_cause_decision_v17.md",
+    "synthetic_harness_forensics_v17/synthetic_protocol_locked_v17.json",
+    "synthetic_harness_forensics_v17/synthetic_protocol_locked_v17.md",
+    "test_report_v17_full.md",
+    "test_report_v17_full.csv",
+    "remaining_xfail_v17.md",
+    "v17_package_summary.json"
+  ],
+  "single_factor_drift_found": "smallest recoverable protocol confirmed; pure single-factor architecture isolation deferred",
+  "unrelated_official_processes_observed_but_untouched": "232461       05:49 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_qbert --seed 1 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/qbert/seed_1 --logger.outputs jsonl,scope,wandb",
+  "v15_root_cause": "TRAINING_HARNESS_DRIFT_FOUND",
+  "v17_artifact_dir": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_harness_forensics_v17"
+}

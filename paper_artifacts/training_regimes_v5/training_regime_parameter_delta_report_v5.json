@@ -1,0 +1,19 @@
+{
+  "detach_hts_anchor": {
+    "defined": true,
+    "one_step_delta_asserted": false
+  },
+  "joint": {
+    "defined": true,
+    "one_step_delta_asserted": false
+  },
+  "posthoc_frozen_backbone": {
+    "defined": true,
+    "one_step_delta_asserted": false
+  },
+  "status": "partial_xfail",
+  "two_phase": {
+    "defined": true,
+    "one_step_delta_asserted": false
+  }
+}

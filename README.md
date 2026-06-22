@@ -39,14 +39,23 @@ dreamerv3/synthetic_*.py
 paper_artifacts/atari_fair_compare_v20/extract_v20_metrics.py
 ```
 
-Large generated outputs are ignored by `.gitignore`:
+Large generated outputs are ignored by `.gitignore`, but small paper artifacts
+are allowed to be committed by default:
 
 ```text
 wandb/
-paper_artifacts/
 logs/
 runs/
 tmp/
+paper_artifacts/**/data/
+paper_artifacts/**/run_logs/
+paper_artifacts/**/*.jsonl
+paper_artifacts/**/*.npz
+paper_artifacts/**/*.npy
+paper_artifacts/**/*.pkl
+paper_artifacts/**/*.pt
+paper_artifacts/**/*.pth
+paper_artifacts/**/*.ckpt
 **/ckpt/
 **/replay/
 **/scope/
@@ -58,7 +67,20 @@ tmp/
 *.log
 ```
 
-If a report artifact is small and should be committed, add it explicitly with `git add -f path/to/file`.
+This means small paper outputs such as scripts, manifests, Markdown reports,
+CSV summaries, JSON summaries, PNG/PDF figures, and extraction utilities under
+`paper_artifacts/` are visible to git. Bulky buffers, checkpoints, raw event
+streams, and run logs remain ignored:
+
+```text
+paper_artifacts/synthetic_v7/data/full_train.npz
+paper_artifacts/replay_consistency_v6/update_event_trace_v6.jsonl
+paper_artifacts/**/run_logs/
+*.log
+```
+
+Before committing, check `git status --short --untracked-files=all` and only
+add the artifact folders needed for the current paper revision.
 
 ## HTS Implementation Summary
 
@@ -241,6 +263,132 @@ TMPDIR=/mnt/disk1/backup_user/dat.tt2/xuance/tmp \
 ```
 
 Policy video is disabled because previous long runs hit W&B video/GIF encoding and disk issues. Keep scalar logging online through W&B.
+
+## Current HTS Versions
+
+The active HTS variants are:
+
+| Version | Config | Purpose |
+| --- | --- | --- |
+| V20 locked hierarchy | `hts_atari100k size12m` with `agent.hts.l_hier=0.3` | Previous fair Alien/Breakout candidate. |
+| V22 paper-core zfull | `hts_atari100k size12m hts_paper_core_zfull` | Control-aware sparse prefix model, actor/critic use `z_full`. |
+| V22 topk-detail | `hts_atari100k size12m hts_paper_core_zfull_topk_detail` | Same V22 model, but fine/short-term levels keep more detail. |
+
+V22 paper-core default:
+
+```text
+method: paper_core_control_prefix
+levels: 4
+head_dim: 32
+topk_per_level: [8, 8, 8, 8]
+strides: [32, 8, 2, 1]
+z_full width: 128
+active budget: 32
+actor_critic_input: z_full
+Lmodel = LWM + Lhier + Lsdyn + Lctrl
+Ltemp = Lvc = Lsparse = Lred = 0
+vicreg_cov_scale: 0.001  # logged/configured; VC loss disabled by default
+```
+
+V22 topk-detail:
+
+```text
+method: paper_core_control_prefix
+levels: 4
+head_dim: 32
+topk_per_level: [8, 12, 16, 32]
+strides: [32, 8, 2, 1]
+z_full width: 128
+active budget: 68
+actor_critic_input: z_full
+```
+
+Interpretation:
+
+```text
+level 1, stride 32: long-term/coarse, TopK 8/32
+level 2, stride 8:  mid horizon,       TopK 12/32
+level 3, stride 2:  short horizon,     TopK 16/32
+level 4, stride 1:  finest/one-step,   TopK 32/32
+```
+
+## Run V22 Paper-Core
+
+V22 artifact package:
+
+```text
+paper_artifacts/atari_v22_paper_core_control_prefix/
+```
+
+Important files:
+
+```text
+v22_method_mapping.md
+v22_config_diff.md
+v22_run_manifest.md
+v22_unit_tests.md
+v22_synthetic_control_diagnostic.md
+v22_atari_smoke.md
+v22_decision.md
+launch_v22_breakout_stage_a.sh
+launch_v22_topk_detail_breakout_stage_a.sh
+```
+
+Run V22 paper-core Breakout Stage A, seeds 0,1,2:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_breakout_stage_a.sh
+```
+
+Run V22 topk-detail Breakout Stage A, seeds 0,1,2:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_topk_detail_breakout_stage_a.sh
+```
+
+For a single manual V22 topk-detail run:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+
+CUDA_VISIBLE_DEVICES=0 \
+WANDB_MODE=online \
+WANDB_PROJECT=hts-wm-atari-dev \
+WANDB_GROUP=v22_topk_detail_breakout_stage_a \
+WANDB_JOB_TYPE=v22_topk_detail_stage_a \
+WANDB_TAGS=v22,paper_core,zfull,topk_detail,stage_a,no_video \
+WANDB_RUN_NAME=v22_topk_detail__hts_paper_core_zfull__breakout__seed0 \
+XLA_PYTHON_CLIENT_PREALLOCATE=false \
+TMPDIR=/mnt/disk1/backup_user/dat.tt2/xuance/tmp \
+/mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main_hts \
+  --configs hts_atari100k size12m hts_paper_core_zfull_topk_detail \
+  --task atari100k_breakout \
+  --seed 0 \
+  --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/topk_detail_stage_a/breakout/seed_0 \
+  --run.steps 110000 \
+  --run.envs 1 \
+  --run.train_ratio 256 \
+  --run.log_every 250 \
+  --run.report_every 999999 \
+  --run.log_policy_video False \
+  --run.save_every 10000 \
+  --batch_size 16 \
+  --batch_length 64 \
+  --agent.report False \
+  --logger.outputs jsonl,scope,wandb \
+  --jax.platform cuda \
+  --jax.prealloc False \
+  --jax.jit True
+```
+
+Monitor V22 runs:
+
+```bash
+ps -eo pid,ppid,stat,etimes,cmd | grep -E 'v22|dreamerv3.main_hts|topk_detail' | grep -v grep
+tail -n 80 paper_artifacts/atari_v22_paper_core_control_prefix/run_logs/v22_topk_detail__hts_paper_core_zfull__breakout__seed0.log
+```
 
 ## V20 Fair Comparison
 

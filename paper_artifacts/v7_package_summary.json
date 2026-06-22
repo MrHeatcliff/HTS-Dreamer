@@ -1,0 +1,37 @@
+{
+  "development_coefficient_candidate": {
+    "lambda_temp": 0.01,
+    "lambda_vc": 0.01,
+    "status": "development_candidate_only"
+  },
+  "eval_plumbing_artifact_paths": {
+    "it03_short_atari_artifact_smoke_v7.json": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/eval_plumbing_v7/it03_short_atari_artifact_smoke_v7.json",
+    "it04_periodic_eval_state_isolation_v7.json": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/eval_plumbing_v7/it04_periodic_eval_state_isolation_v7.json",
+    "it05_checkpoint_resume_v7.json": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/eval_plumbing_v7/it05_checkpoint_resume_v7.json"
+  },
+  "gate_b": "pass",
+  "gate_b1": "pass",
+  "gate_b2": "pass",
+  "gradient_balance_conclusion": "smoke model-derived metrics generated; no paper-final tuning",
+  "it01": "pass",
+  "it02": "pass",
+  "it03": "pass",
+  "it04": "pass",
+  "it05": "pass",
+  "model_derived_artifact_paths": {
+    "it02": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/it02_checkpoint_evaluator_report_v7.json",
+    "sample": "/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/paper_artifacts/synthetic_v7/synthetic_checkpoint_evaluator_sample_v7.json"
+  },
+  "remaining_xfail_tests": [
+    "UT-15-P1"
+  ],
+  "synthetic_full_dataset_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "synthetic_smoke_dataset_hash": "a443734b92bd118948ef482ad29f719750b12115811078a17569f2ecfaa6e37d",
+  "test_counts": {
+    "fail": 0,
+    "pass": 34,
+    "xfail": 1
+  },
+  "ut13d": "pass",
+  "ut14": "pass"
+}

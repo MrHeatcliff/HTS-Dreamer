@@ -1,0 +1,44 @@
+{
+  "action_repeat": 4,
+  "bin_count": 20,
+  "bin_edges": [
+    0,
+    22000,
+    44000,
+    66000,
+    88000,
+    110000,
+    132000,
+    154000,
+    176000,
+    198000,
+    220000,
+    242000,
+    264000,
+    286000,
+    308000,
+    330000,
+    352000,
+    374000,
+    396000,
+    418000,
+    440000
+  ],
+  "completed_threshold_raw_frames": 418000,
+  "primary_metrics": {
+    "auc_20bin_mean": "mean of available per-seed bin_score_mean over 20 fixed raw-frame bins; no interpolation",
+    "final_20pct_mean": "mean of bin_score_mean values for raw_frames >= 352000 (bins 17-20)",
+    "final_bin_mean": "bin_score_mean for final bin [418000, 440000]"
+  },
+  "score_type": "episode_score",
+  "secondary_metrics": [
+    "latest_episode_score",
+    "best_bin_score",
+    "score_std_across_seeds",
+    "number_of_completed_seeds",
+    "number_of_partial_seeds"
+  ],
+  "target_agent_actions": 110000,
+  "target_raw_frames": 440000,
+  "x_axis": "raw_frames"
+}

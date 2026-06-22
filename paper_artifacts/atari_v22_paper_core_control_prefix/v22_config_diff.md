@@ -1,0 +1,36 @@
+# V22 Config Diff
+
+Config: `hts_paper_core_zfull`.
+
+| key | value |
+| --- | --- |
+| `agent.hts.actor_critic_input` | `z_full` |
+| `agent.hts.actor_critic_stopgrad_z` | `False` |
+| `agent.hts.alpha_sdyn` | `[0.25, 0.25, 0.25, 0.25]` |
+| `agent.hts.beta_hier` | `[0.3657142857, 0.2742857143, 0.2057142857, 0.1542857143]` |
+| `agent.hts.head_dim` | `32` |
+| `agent.hts.hier_beta0` | `1.0` |
+| `agent.hts.hier_rho` | `0.75` |
+| `agent.hts.l_ctrl` | `0.1` |
+| `agent.hts.l_hier` | `0.1` |
+| `agent.hts.l_sdyn` | `0.1` |
+| `agent.hts.l_sparse` | `0.0` |
+| `agent.hts.l_temp` | `0.0` |
+| `agent.hts.l_vc` | `0.0` |
+| `agent.hts.levels` | `4` |
+| `agent.hts.method` | `paper_core_control_prefix` |
+| `agent.hts.sparsity_mode` | `levelwise_topk` |
+| `agent.hts.strides` | `[32, 8, 2, 1]` |
+| `agent.hts.strides_coarse_to_fine` | `[32, 8, 2, 1]` |
+| `agent.hts.topk` | `8` |
+| `agent.hts.topk_per_level` | `[8, 8, 8, 8]` |
+| `agent.hts.training_regime` | `joint_online_initial` |
+| `agent.hts.use_lctrl` | `True` |
+| `agent.hts.use_lhier` | `True` |
+| `agent.hts.use_lred` | `False` |
+| `agent.hts.use_lsdyn` | `True` |
+| `agent.hts.use_lsparse` | `False` |
+| `agent.hts.use_ltemp` | `False` |
+| `agent.hts.use_lvc` | `False` |
+| `agent.hts.variant` | `paper_core_control_prefix` |
+| `agent.hts.vicreg_cov_scale` | `0.001` |

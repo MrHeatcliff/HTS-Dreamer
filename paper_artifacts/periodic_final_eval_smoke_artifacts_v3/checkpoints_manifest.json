@@ -1,0 +1,6 @@
+{
+  "checkpoint_rule": "final_checkpoint_for_headline_tables",
+  "ckpt_dir": "/tmp/hts_final_eval_smoke_a1/ckpt",
+  "logdir": "/tmp/hts_final_eval_smoke_a1",
+  "status": "initialized"
+}

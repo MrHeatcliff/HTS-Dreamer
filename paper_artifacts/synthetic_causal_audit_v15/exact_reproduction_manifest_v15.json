@@ -1,0 +1,172 @@
+{
+  "completed_runs": 15,
+  "expected_runs": 15,
+  "rows": [
+    {
+      "batch_size": 32,
+      "config_name": "exact_baseline_shared_trunk",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 199.945
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_baseline_shared_trunk",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 185.183
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_baseline_shared_trunk",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 190.669
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_baseline_shared_trunk",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 187.952
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_baseline_shared_trunk",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 187.534
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 183.383
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 189.611
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 188.189
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 185.725
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_recon_trunk_isolated",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 190.211
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_no_hier_loss",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 0,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 194.397
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_no_hier_loss",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 1,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 326.785
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_no_hier_loss",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 2,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 247.562
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_no_hier_loss",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 3,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 203.119
+    },
+    {
+      "batch_size": 32,
+      "config_name": "exact_no_hier_loss",
+      "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+      "optimizer_updates": 1000,
+      "parameter_count": 19096,
+      "seed": 4,
+      "sequence_length": 64,
+      "status": "pass",
+      "wall_clock_seconds": 206.763
+    }
+  ],
+  "status": "pass"
+}

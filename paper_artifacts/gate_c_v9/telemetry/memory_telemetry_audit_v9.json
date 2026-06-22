@@ -1,0 +1,109 @@
+{
+  "rows": [
+    {
+      "gpu_peak_allocated_mb": 1334.0,
+      "gpu_peak_reserved_mb": 1334.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "dreamer_anchor",
+      "model_size": "size1m",
+      "pass": true,
+      "peak_memory_mb": 1334.0,
+      "process_peak_rss_mb": 2643.4765625,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_dreamer_anchor_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 1348.0,
+      "gpu_peak_reserved_mb": 1348.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "hts_full",
+      "model_size": "size1m",
+      "pass": true,
+      "peak_memory_mb": 1348.0,
+      "process_peak_rss_mb": 3212.13671875,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_hts_full_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 1340.0,
+      "gpu_peak_reserved_mb": 1340.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "larger_flat_param",
+      "model_size": "size1m",
+      "pass": true,
+      "peak_memory_mb": 1340.0,
+      "process_peak_rss_mb": 2870.18359375,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_larger_flat_param_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 1348.0,
+      "gpu_peak_reserved_mb": 1348.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "dense_multistride_no_sparse",
+      "model_size": "size1m",
+      "pass": true,
+      "peak_memory_mb": 1348.0,
+      "process_peak_rss_mb": 3187.77734375,
+      "run_id": "gate_c_v9_size1m_breakout_size1m_dense_multistride_no_sparse_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 3382.0,
+      "gpu_peak_reserved_mb": 3382.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "dreamer_anchor",
+      "model_size": "size12m",
+      "pass": true,
+      "peak_memory_mb": 3382.0,
+      "process_peak_rss_mb": 2767.9609375,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_dreamer_anchor_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 3398.0,
+      "gpu_peak_reserved_mb": 3398.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "hts_full",
+      "model_size": "size12m",
+      "pass": true,
+      "peak_memory_mb": 3398.0,
+      "process_peak_rss_mb": 3363.18359375,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_hts_full_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 3390.0,
+      "gpu_peak_reserved_mb": 3390.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "larger_flat_param",
+      "model_size": "size12m",
+      "pass": true,
+      "peak_memory_mb": 3390.0,
+      "process_peak_rss_mb": 3142.453125,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_larger_flat_param_seed0",
+      "task": "breakout"
+    },
+    {
+      "gpu_peak_allocated_mb": 3396.0,
+      "gpu_peak_reserved_mb": 3396.0,
+      "memory_backend": "nvidia_smi_process",
+      "memory_measurement_scope": "subprocess_and_descendants_sampled_0.5s",
+      "method": "dense_multistride_no_sparse",
+      "model_size": "size12m",
+      "pass": true,
+      "peak_memory_mb": 3396.0,
+      "process_peak_rss_mb": 3312.12890625,
+      "run_id": "gate_c_v9_size12m_breakout_size12m_dense_multistride_no_sparse_seed0",
+      "task": "breakout"
+    }
+  ],
+  "status": "pass"
+}

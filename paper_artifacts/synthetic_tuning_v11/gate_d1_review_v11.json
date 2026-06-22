@@ -1,0 +1,17 @@
+{
+  "baseline_v9_status": "fail",
+  "gate_d1_decision": "NO_STABLE_DEVELOPMENT_CANDIDATE",
+  "selected_candidate": null,
+  "selected_candidate_ci95": [
+    null,
+    null
+  ],
+  "selected_candidate_end_to_end_positive_seeds": 0,
+  "selected_candidate_full_prefix_gain": null,
+  "selected_candidate_mechanism_preserved": false,
+  "selected_candidate_no_collapse": false,
+  "selected_candidate_nondegrading_seeds": 0,
+  "selected_candidate_prefix_profile": [],
+  "selected_candidate_strict_monotonic_seeds": 0,
+  "targeted_tuning_status": "NO_STABLE_DEVELOPMENT_CANDIDATE"
+}

@@ -1,0 +1,40 @@
+protocol_item,historical_value,v15_value,same,importance,reason
+code_commit,e3f02248693a79dc8b0ebd62c93683888ddaccfe,e3f02248693a79dc8b0ebd62c93683888ddaccfe,true,low,same working tree commit for forensic readout; old run command still missing
+script_path,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/dreamerv3/synthetic_convergence_v12.py,/mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official/dreamerv3/synthetic_causal_audit_v15.py,false,high,historical replay/eval was V12; V15 retraining/eval used causal audit harness
+script_hash,45fdffaa25ff10d63fcc5b23c8a54e3610adc4a508da95b94f17fe861df5e601,1fe9299b169a0870ac904d083b6c38c213d82f5ab746668ec3a5af6e934fe169,false,high,different entrypoint and model parameterization
+entrypoint,gate_v9 train to 250 + synthetic_convergence_v12 continue to 1000,synthetic_causal_audit_v15 train_exact,false,high,checkpoint lineage and training loop differ
+config_hash,d1ebdb3707aea4534a06b54b6ab41b538591285b3e5cc2de083a8e13cca09bdd,182df2446d9fa0decf37efbeaa6d42abf98499314a56b3daa4b513e514b8c6d6,false,high,V15 route flags describe shared-trunk reconstruction; historical has no trunk
+resolved_config,"{'loss_coefficients': {'lambda_hier': 1.0, 'lambda_sdyn': 1.0, 'lambda_temp': 0.01, 'lambda_vc': 0.01, 'lambda_sparse': 1.0}, 'route': 'direct_heads_no_shared_trunk'}","{'loss_coefficients': {'lambda_hier': 1.0, 'lambda_sdyn': 1.0, 'lambda_temp': 0.01, 'lambda_vc': 0.01, 'lambda_sparse': 1.0}, 'route': {'exact_baseline_shared_trunk': {'hier_recon_update_shared_trunk': True, 'hier_recon_update_z1_head': True, 'hier_recon_include_level1_decoder_loss': True, 'beta_hier': [1, 1, 1, 1, 1, 1]}, 'exact_recon_trunk_isolated': {'hier_recon_update_shared_trunk': False, 'hier_recon_update_z1_head': True, 'hier_recon_include_level1_decoder_loss': True, 'beta_hier': [1, 1, 1, 1, 1, 1]}, 'exact_no_hier_loss': {'hier_recon_update_shared_trunk': False, 'hier_recon_update_z1_head': False, 'hier_recon_include_level1_decoder_loss': False, 'beta_hier': [0, 0, 0, 0, 0, 0]}}}",false,high,same coefficients but different trainable graph
+dataset_manifest_hash,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,true,low,same manifest
+train_shard_hash,9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf,9450479a6d6bfe3081b9e2d53ab93b8df27480386fafe2fe99c31dfaff21cebf,true,low,same train shard
+val_shard_hash,2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0,2cbb8415bb7f076ba8c7013f2130e0694cdf36e7f959ebe733c0713301f4d9b0,true,low,same val shard
+test_shard_hash,e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78,e02240c87c638f1bb3631d7c522808ae98bfb6ae61dc2b876e281a5f16f95b78,true,low,same test shard
+synthetic_data_generator_version,synthetic_v7,synthetic_v7,true,low,same manifest and generator contract
+boundary_label_generation_version,synthetic_v7 labels,synthetic_v7 labels,true,low,same labels
+boundary_definition,fast/mid/slow/context/macro from dataset labels,same,true,low,same evaluator labels
+target_tensor_definition,obs[t+horizon],obs[t+horizon],true,low,same synthetic target semantics
+normalization_policy,none beyond action /2 in predictor,none beyond action /2 in predictor,true,low,same
+train_val_test_split,full_v7 train/val/test,full_v7 train/val/test,true,low,same
+sampler_class,np.random.default_rng with sequence windows,np.random.default_rng with sequence windows,true,medium,class same
+sampler_seed,V9 seed then V12 advanced seed RNG after 250 updates,fresh seed RNG for 1000 updates,false,medium,ordering differs because historical starts from V9 checkpoint lineage
+sampler_order,250-update V9 order + continued order,single 1000-update V15 order,false,medium,could affect nonlinear optimization but does not explain architecture mismatch alone
+batch_size,32,32,true,low,same
+sequence_length,64,64,true,low,same
+optimizer,sgd,sgd,true,low,same
+learning_rate,0.05,0.05,true,low,same
+lr_schedule,constant,constant,true,low,same
+gradient_clip,none,none,true,low,same
+weight_decay,none,none,true,low,same
+loss_reduction_semantics,mean over batch/time/features,mean over batch/time/features,true,low,same
+masking_semantics,no terminal masks in fixed-length synthetic episodes,same,true,low,same
+loss_coefficients,"{'lambda_hier': 1.0, 'lambda_sdyn': 1.0, 'lambda_temp': 0.01, 'lambda_vc': 0.01, 'lambda_sparse': 1.0}","{'lambda_hier': 1.0, 'lambda_sdyn': 1.0, 'lambda_temp': 0.01, 'lambda_vc': 0.01, 'lambda_sparse': 1.0}",true,low,same
+auxiliary_loss_enabled_flags,hier/sdyn/temp/vc/sparse,hier/sdyn/temp/vc/sparse,true,low,same names
+TopK settings,dense synthetic proxy; no realized TopK mask,dense synthetic proxy; no realized TopK mask,true,low,same
+stride schedule,"[1, 2, 4, 8, 16, 32]","[1, 2, 4, 8, 16, 32]",true,low,same
+stop_gradient_flags,not exposed; direct heads only,"{'exact_baseline_shared_trunk': {'hier_recon_update_shared_trunk': True, 'hier_recon_update_z1_head': True, 'hier_recon_include_level1_decoder_loss': True, 'beta_hier': [1, 1, 1, 1, 1, 1]}, 'exact_recon_trunk_isolated': {'hier_recon_update_shared_trunk': False, 'hier_recon_update_z1_head': True, 'hier_recon_include_level1_decoder_loss': True, 'beta_hier': [1, 1, 1, 1, 1, 1]}, 'exact_no_hier_loss': {'hier_recon_update_shared_trunk': False, 'hier_recon_update_z1_head': False, 'hier_recon_include_level1_decoder_loss': False, 'beta_hier': [0, 0, 0, 0, 0, 0]}}",false,medium,shared trunk introduced route-specific gradient flags
+routing_flags,direct_heads_no_shared_trunk,shared_trunk + route variants,false,high,candidate minimal drift factor
+checkpoint_selection,V12 baseline_v9 step_1000 from V9 final,V15 step_1000 freshly trained,false,high,historical high checkpoint is not same protocol as V15 exact
+evaluator_script_hash,1fe9299b169a0870ac904d083b6c38c213d82f5ab746668ec3a5af6e934fe169,1fe9299b169a0870ac904d083b6c38c213d82f5ab746668ec3a5af6e934fe169,true,low,V17 re-eval uses V15 evaluator for both
+boundary_score_formula,z1 raw_delta_l2 under V15 direct evaluator,z1 raw_delta_l2 under V15 shared evaluator,true,low,"same formula, different code source"
+boundary_readout_policy,"validation threshold, test AUPRC",same,true,low,same
+probe_policy,detached train/val/test readout available from V15,same,true,low,same

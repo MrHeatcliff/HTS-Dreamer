@@ -1,0 +1,21 @@
+config_name,seed,beta_hier,optimizer_updates,dataset_manifest_hash,paired_initialization,paired_sampler_order,status,wall_clock_seconds
+coarse_protected_fine_x3,0,"[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,168.274
+coarse_protected_fine_x3,1,"[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,162.923
+coarse_protected_fine_x3,2,"[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,162.964
+coarse_protected_fine_x3,3,"[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,158.165
+coarse_protected_fine_x3,4,"[1.0, 3.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,154.451
+early_protected_late_x3,0,"[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,160.111
+early_protected_late_x3,1,"[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,178.927
+early_protected_late_x3,2,"[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,167.918
+early_protected_late_x3,3,"[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,161.565
+early_protected_late_x3,4,"[1.0, 1.0, 3.0, 3.0, 3.0, 3.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,170.933
+coarse_protected_total_matched,0,"[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,161.622
+coarse_protected_total_matched,1,"[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,159.124
+coarse_protected_total_matched,2,"[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,158.644
+coarse_protected_total_matched,3,"[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,159.789
+coarse_protected_total_matched,4,"[1.0, 3.4, 3.4, 3.4, 3.4, 3.4]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,158.172
+coarse_protected_fine_x2,0,"[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,157.894
+coarse_protected_fine_x2,1,"[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,161.728
+coarse_protected_fine_x2,2,"[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,160.45
+coarse_protected_fine_x2,3,"[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,158.849
+coarse_protected_fine_x2,4,"[1.0, 2.0, 2.0, 2.0, 2.0, 2.0]",1000,5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb,True,True,pass,158.246

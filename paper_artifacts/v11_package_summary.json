@@ -1,0 +1,147 @@
+{
+  "candidate_ci95": {
+    "hier_x3": [
+      0.00036400775786336046,
+      0.004593432913391204
+    ],
+    "temp_001": [
+      -0.00364067848481775,
+      0.0002565869406030874
+    ],
+    "temp_003": [
+      -0.0036401836209013715,
+      0.00025596836070769237
+    ],
+    "temp_003_hier_x3": [
+      0.0003620989970433364,
+      0.004593097112876587
+    ]
+  },
+  "candidate_configs": {
+    "hier_x3": {
+      "lambda_hier": 3.0,
+      "lambda_sdyn": 1.0,
+      "lambda_sparse": 1.0,
+      "lambda_temp": 0.01,
+      "lambda_vc": 0.01
+    },
+    "temp_001": {
+      "lambda_hier": 1.0,
+      "lambda_sdyn": 1.0,
+      "lambda_sparse": 1.0,
+      "lambda_temp": 0.001,
+      "lambda_vc": 0.01
+    },
+    "temp_003": {
+      "lambda_hier": 1.0,
+      "lambda_sdyn": 1.0,
+      "lambda_sparse": 1.0,
+      "lambda_temp": 0.003,
+      "lambda_vc": 0.01
+    },
+    "temp_003_hier_x3": {
+      "lambda_hier": 3.0,
+      "lambda_sdyn": 1.0,
+      "lambda_sparse": 1.0,
+      "lambda_temp": 0.003,
+      "lambda_vc": 0.01
+    }
+  },
+  "candidate_full_prefix_gains": {
+    "hier_x3": 0.0027226175515194352,
+    "temp_001": -0.001429803243889416,
+    "temp_003": -0.0014302274129605053,
+    "temp_003_hier_x3": 0.0027224761618290572
+  },
+  "candidate_prefix_profiles": {
+    "hier_x3": [
+      0.9996143653153651,
+      0.9992072867230721,
+      0.9988557919528066,
+      0.9972444089990565,
+      0.9968265140954502,
+      0.9968917477638456
+    ],
+    "temp_001": [
+      1.000391796527877,
+      1.0007178765012978,
+      1.0015001856581276,
+      1.0007189722713983,
+      1.0009048820405266,
+      1.0018215997717665
+    ],
+    "temp_003": [
+      1.0003909128423119,
+      1.000717045836867,
+      1.001499620099366,
+      1.000718654144595,
+      1.0009042634606313,
+      1.0018211402552726
+    ],
+    "temp_003_hier_x3": [
+      0.9996150015689718,
+      0.9992091071153357,
+      0.9988563221641457,
+      0.9972449922315294,
+      0.9968266908325631,
+      0.9968925254071428
+    ]
+  },
+  "collapse_status": {
+    "hier_x3": "no_collapse_detected",
+    "temp_001": "no_collapse_detected",
+    "temp_003": "no_collapse_detected",
+    "temp_003_hier_x3": "no_collapse_detected"
+  },
+  "cumulative_test_counts": {
+    "FAIL": 3,
+    "PASS": 43,
+    "XFAIL": 1
+  },
+  "dataset_hash_matches_expected": true,
+  "dataset_manifest_hash": "5670241265b225d4cdab4e78131192fc24822c8dd4cb5b5617b3364be3dae9eb",
+  "end_to_end_positive_seeds": {
+    "hier_x3": 4,
+    "temp_001": 1,
+    "temp_003": 1,
+    "temp_003_hier_x3": 4
+  },
+  "gate_d1_decision": "NO_STABLE_DEVELOPMENT_CANDIDATE",
+  "gate_d2_manifest_generated": false,
+  "mechanism_preservation_results": {
+    "hier_x3": false,
+    "temp_001": false,
+    "temp_003": false,
+    "temp_003_hier_x3": false
+  },
+  "new_targeted_runs_completed": 20,
+  "new_targeted_runs_expected": 20,
+  "nondegrading_seeds": {
+    "hier_x3": 0,
+    "temp_001": 0,
+    "temp_003": 0,
+    "temp_003_hier_x3": 0
+  },
+  "objective_balance_diagnosis": "see objective_balance_aggregate_v11.csv",
+  "remaining_blockers": [
+    "Gate D2 not launched in V11",
+    "Gate D2 remains blocked without stable candidate"
+  ],
+  "selected_development_candidate": null,
+  "selection_status": "NO_STABLE_DEVELOPMENT_CANDIDATE",
+  "strict_monotonic_seeds": {
+    "hier_x3": 0,
+    "temp_001": 0,
+    "temp_003": 0,
+    "temp_003_hier_x3": 0
+  },
+  "unrelated_running_processes_observed_but_untouched": "dat.tt2  3286895 1347215 70 10:38 pts/2    00:29:39 /mnt/disk1/backup_user/dat.tt2/xuance/.venv/bin/python -m dreamerv3.main --configs atari100k size12m --task atari100k_crazy_climber --seed 0 --logdir /mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/crazy_climber/seed_0 --logger.outputs jsonl,scope,wandb",
+  "v9_baseline_prefix_profile": [
+    1.0042106613699864,
+    1.006755976249779,
+    1.007666048665571,
+    1.0024317493068566,
+    1.004906068888371,
+    1.0063523793786113
+  ]
+}
