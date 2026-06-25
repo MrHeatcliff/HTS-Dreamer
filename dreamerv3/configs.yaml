@@ -119,6 +119,7 @@ defaults:
     report: True
     report_gradnorms: False
     hts:
+      impl: hts2
       latent_anchor_name: rssm_repfeat
       latent_anchor_source_module: dreamerv3.rssm.RSSM.loss
       levels: 6
@@ -244,6 +245,24 @@ hts_atari100k:
   task: atari100k_pong
   run: {steps: 1.1e5, envs: 1, train_ratio: 256}
   logger.filter: 'score|length|fps|ratio|train/loss/|train/rand/|train/hts/|train/loss/hts'
+
+hts_v1:
+  agent.hts.impl: hts1
+
+hts_v2:
+  agent.hts.impl: hts2
+
+hts1_atari100k:
+  task: atari100k_pong
+  run: {steps: 1.1e5, envs: 1, train_ratio: 256}
+  logger.filter: 'score|length|fps|ratio|train/loss/|train/rand/|train/hts/|train/loss/hts'
+  agent.hts.impl: hts1
+
+hts2_atari100k:
+  task: atari100k_pong
+  run: {steps: 1.1e5, envs: 1, train_ratio: 256}
+  logger.filter: 'score|length|fps|ratio|train/loss/|train/rand/|train/hts/|train/loss/hts'
+  agent.hts.impl: hts2
 
 hts_no_temp:
   agent.hts.l_temp: 0.0

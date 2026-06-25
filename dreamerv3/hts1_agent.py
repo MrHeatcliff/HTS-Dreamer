@@ -4,13 +4,12 @@ import jax.numpy as jnp
 from .agent import Agent as DreamerAgent
 from .agent import f32, sg, sample, prefix, concat, isimage, imag_loss, repl_loss
 from . import hts1
-from . import hts2
 
 
 def aux_warmup_alpha(
     optimizer_step, batch_size, batch_length, train_ratio=256,
     action_repeat=4, warmup_raw_frames=0, warmup_agent_actions=0,
-    warmup_optimizer_updates=0, mode='linear'):
+    warmup_optimizer_updates=0):
   optimizer_step = f32(optimizer_step)
   minibatch_steps = f32(batch_size * batch_length)
   train_ratio = f32(train_ratio)
@@ -30,14 +29,12 @@ def aux_warmup_alpha(
   denom = jnp.where(use_opt_horizon, opt_horizon, agent_horizon)
   numer = jnp.where(use_opt_horizon, optimizer_step, agent_actions)
   enabled = (raw_horizon > 0) | (agent_horizon > 0) | (opt_horizon > 0)
-  linear = jnp.minimum(1.0, numer / jnp.maximum(denom, 1.0))
-  hard = f32(numer >= denom)
-  alpha = jnp.where(mode == 'hard', hard, linear)
-  alpha = jnp.where(enabled, alpha, 1.0)
+  alpha = jnp.where(
+      enabled, jnp.minimum(1.0, numer / jnp.maximum(denom, 1.0)), 1.0)
   return jnp.clip(alpha, 0.0, 1.0), agent_actions, raw_frames, agent_horizon
 
 
-class Agent(DreamerAgent):
+class HTS1Agent(DreamerAgent):
 
   banner = DreamerAgent.banner + [
       r"--- HTS-WM auxiliary latent hierarchy enabled ---",
@@ -48,16 +45,8 @@ class Agent(DreamerAgent):
     feat_dim = (
         int(config.dyn.rssm.deter) +
         int(config.dyn.rssm.stoch) * int(config.dyn.rssm.classes))
-    self.hts_impl = str(getattr(config.hts, 'impl', 'hts2')).lower()
-    if self.hts_impl in ('hts1', 'hts-1', 'legacy', 'old'):
-      hts_cls = hts1.HTS1Aux
-      self.hts_impl = 'hts1'
-    elif self.hts_impl in ('hts2', 'hts-2', 'paper_core', 'new'):
-      hts_cls = hts2.HTS2Aux
-      self.hts_impl = 'hts2'
-    else:
-      raise ValueError(f'Unknown HTS implementation: {self.hts_impl}')
-    self.hts = hts_cls(act_space, feat_dim, **config.hts, name='hts')
+    self.hts = hts1.HTS1Aux(
+        act_space, feat_dim, **config.hts, name='hts')
     self.modules.append(self.hts)
     self.opt = self.opt.__class__(
         self.modules, self._make_opt(**config.opt), summary_depth=1,
@@ -163,14 +152,12 @@ class Agent(DreamerAgent):
     opt_horizon = f32(getattr(cfg, 'aux_warmup_optimizer_updates', 0))
     agent_horizon = f32(getattr(
         cfg, 'aux_warmup_agent_actions', 0))
-    mode = getattr(cfg, 'aux_warmup_mode', 'linear')
     alpha, agent_actions, raw_frames, agent_horizon = aux_warmup_alpha(
         step, self.config.batch_size, self.config.batch_length,
         train_ratio=train_ratio, action_repeat=action_repeat,
         warmup_raw_frames=raw_horizon,
         warmup_agent_actions=agent_horizon,
-        warmup_optimizer_updates=opt_horizon,
-        mode=mode)
+        warmup_optimizer_updates=opt_horizon)
     updates_per_action = train_ratio / jnp.maximum(
         f32(self.config.batch_size * self.config.batch_length), 1.0)
     return alpha, {
@@ -181,7 +168,6 @@ class Agent(DreamerAgent):
         'hts/aux_warmup_horizon_agent_actions': agent_horizon,
         'hts/aux_warmup_horizon_optimizer_updates': opt_horizon,
         'hts/aux_warmup_updates_per_agent_action': updates_per_action,
-        'hts/aux_warmup_mode_hard': f32(mode == 'hard'),
         'hts_aux_warmup_alpha': alpha,
         'hts_aux_warmup_raw_frames': raw_frames,
         'hts_aux_warmup_agent_actions': agent_actions,
@@ -197,6 +183,7 @@ class Agent(DreamerAgent):
     metrics = {}
 
     # World model
+    # 1. encoder --> dyn_loss --> decoder --> recon_loss
     enc_carry, enc_entries, tokens = self.enc(
         enc_carry, obs, reset, training)
     dyn_carry, dyn_entries, los, repfeat, mets = self.dyn.loss(
@@ -230,8 +217,8 @@ class Agent(DreamerAgent):
         hts_anchor, prevact, reset, training,
         reward=obs['reward'], cont=con, value_bootstrap=value_bootstrap)
     hts_metrics.update({
-        'hts/impl_hts1': f32(self.hts_impl == 'hts1'),
-        'hts/impl_hts2': f32(self.hts_impl == 'hts2'),
+        'hts/impl_hts1': f32(True),
+        'hts/impl_hts2': f32(False),
     })
     hts_alpha, warmup_metrics = self._hts_aux_warmup()
     hts_raw_losses = hts_losses
@@ -348,3 +335,7 @@ class Agent(DreamerAgent):
     entries = (enc_entries, dyn_entries, dec_entries)
     outs = {'tokens': tokens, 'repfeat': repfeat, 'losses': losses}
     return loss, (carry, entries, outs, metrics)
+
+
+# Backward-compatible module-local alias. Prefer HTS1Agent explicitly.
+Agent = HTS1Agent

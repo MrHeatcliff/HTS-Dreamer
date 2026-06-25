@@ -14,8 +14,62 @@ Core HTS implementation:
 
 ```text
 dreamerv3/main_hts.py
+dreamerv3/main_hts1.py
+dreamerv3/main_hts2.py
 dreamerv3/hts_agent.py
 dreamerv3/hts.py
+dreamerv3/hts1.py
+dreamerv3/hts1_agent.py
+dreamerv3/hts2.py
+```
+
+HTS implementations are intentionally separated:
+
+```text
+HTS-1 / legacy:
+  dreamerv3/hts1.py
+  dreamerv3/hts1_agent.py
+  dreamerv3/main_hts1.py
+
+HTS-2 / new paper-core:
+  dreamerv3/hts2.py
+  dreamerv3/hts_agent.py
+  dreamerv3/main_hts2.py
+```
+
+The shared entrypoint `dreamerv3.main_hts` chooses the implementation from:
+
+```bash
+--agent.hts.impl hts1
+--agent.hts.impl hts2
+```
+
+`hts2` is the default in `dreamerv3/configs.yaml`. Equivalent config presets:
+
+```bash
+python -m dreamerv3.main_hts --configs hts_atari100k size12m hts_v1 --task atari100k_breakout
+python -m dreamerv3.main_hts --configs hts_atari100k size12m hts_v2 --task atari100k_breakout
+```
+
+Short Atari100K aliases:
+
+```bash
+python -m dreamerv3.main_hts --configs hts1_atari100k size12m --task atari100k_breakout
+python -m dreamerv3.main_hts --configs hts2_atari100k size12m --task atari100k_breakout
+```
+
+Explicit entrypoints:
+
+```bash
+python -m dreamerv3.main_hts1 --configs hts_atari100k size12m --task atari100k_breakout
+python -m dreamerv3.main_hts2 --configs hts_atari100k size12m hts_paper_core_zfull_topk_detail --task atari100k_breakout
+```
+
+W&B/log metrics include:
+
+```text
+hts/impl_hts1
+hts/impl_hts2
 ```
 
 Config and logging changes:
