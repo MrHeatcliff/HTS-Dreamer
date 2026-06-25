@@ -8,6 +8,11 @@ from pathlib import Path
 
 import numpy as np
 
+try:
+  import jax
+except Exception:
+  jax = None
+
 
 ATARI_HNS_REFERENCES = {
     "Alien": (227.8, 7127.7),
@@ -124,6 +129,48 @@ def _compact_metrics(metrics):
     elif isinstance(value, list) and len(value) <= 16:
       compact[key] = value
   return compact
+
+
+def _hash_array(value):
+  if jax is not None:
+    value = jax.device_get(value)
+  value = np.asarray(value)
+  digest = hashlib.sha256()
+  digest.update(str(value.dtype).encode("utf-8"))
+  digest.update(str(value.shape).encode("utf-8"))
+  digest.update(np.ascontiguousarray(value).view(np.uint8))
+  return digest.hexdigest()[:16]
+
+
+def _hash_tree(tree, keys=None):
+  digest = hashlib.sha256()
+  if keys is None:
+    keys = sorted(str(key) for key in tree.keys())
+  for key in keys:
+    if key not in tree:
+      continue
+    value = tree[key]
+    if jax is not None:
+      value = jax.device_get(value)
+    value = np.asarray(value)
+    digest.update(str(key).encode("utf-8"))
+    digest.update(str(value.dtype).encode("utf-8"))
+    digest.update(str(value.shape).encode("utf-8"))
+    digest.update(np.ascontiguousarray(value).view(np.uint8))
+  return digest.hexdigest()[:16]
+
+
+def _small_value(value):
+  value = np.asarray(value)
+  if value.ndim == 0:
+    return _to_builtin(value.item())
+  if value.size <= 8:
+    return _to_builtin(value.reshape(-1).tolist())
+  return {
+      "shape": list(value.shape),
+      "dtype": str(value.dtype),
+      "hash": _hash_array(value),
+  }
 
 
 def _git_commit():
@@ -420,6 +467,70 @@ class PaperArtifactWriter:
     _append_jsonl(
         self.root / "replay_consistency_v6" / "update_event_trace_v6.jsonl",
         row)
+
+  def write_action_trace(self, step, tran, worker, optimizer_updates):
+    if os.environ.get("PAPER_DETERMINISM_TRACE", "0") != "1":
+      return
+    keys = sorted(str(key) for key in tran.keys() if not key.startswith("log/"))
+    action_keys = sorted(key for key in keys if key in ("action", "reset"))
+    row = self._base(step)
+    row.update({
+        "worker": int(worker),
+        "optimizer_updates_cumulative": float(optimizer_updates),
+        "transition_hash": _hash_tree(tran, keys),
+        "action_hash": _hash_tree(tran, action_keys),
+        "reward": _small_value(tran["reward"]) if "reward" in tran else "",
+        "is_first": _small_value(tran["is_first"]) if "is_first" in tran else "",
+        "is_last": _small_value(tran["is_last"]) if "is_last" in tran else "",
+        "is_terminal": (
+            _small_value(tran["is_terminal"]) if "is_terminal" in tran else ""),
+        "actions": {
+            key: _small_value(tran[key])
+            for key in action_keys
+        },
+        "keys": keys,
+    })
+    _append_jsonl(self.root / "determinism" / "action_trace.jsonl", row)
+
+  def write_batch_trace(
+      self, step, update_index, batch, optimizer_updates_before,
+      optimizer_updates_after=None, metrics=None):
+    if os.environ.get("PAPER_DETERMINISM_TRACE", "0") != "1":
+      return
+    keys = sorted(str(key) for key in batch.keys())
+    row = self._base(step)
+    row.update({
+        "update_index_in_step": int(update_index),
+        "optimizer_updates_before": float(optimizer_updates_before),
+        "optimizer_updates_after": (
+            "" if optimizer_updates_after is None
+            else float(optimizer_updates_after)),
+        "batch_hash": _hash_tree(batch, keys),
+        "stepid_hash": (
+            _hash_array(batch["stepid"]) if "stepid" in batch else ""),
+        "reward_hash": (
+            _hash_array(batch["reward"]) if "reward" in batch else ""),
+        "action_hash": (
+            _hash_array(batch["action"]) if "action" in batch else ""),
+        "is_first_hash": (
+            _hash_array(batch["is_first"]) if "is_first" in batch else ""),
+        "is_last_hash": (
+            _hash_array(batch["is_last"]) if "is_last" in batch else ""),
+        "is_terminal_hash": (
+            _hash_array(batch["is_terminal"])
+            if "is_terminal" in batch else ""),
+        "keys": keys,
+    })
+    if metrics:
+      compact = _compact_metrics({str(k): v for k, v in metrics.items()})
+      row.update({
+          key: compact[key]
+          for key in compact
+          if key.startswith("train/loss/") or key in (
+              "train/opt/loss", "train/opt/updates",
+              "train/opt/grad_norm", "train/opt/update_rms")
+      })
+    _append_jsonl(self.root / "determinism" / "batch_trace.jsonl", row)
 
   def _write_replay_consistency(self, step, status=None):
     base = self._base(step)

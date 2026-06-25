@@ -1,0 +1,36 @@
+[
+  {
+    "events": 213,
+    "id": "atari100k-dreamerv3-official-size12m-alien-seed0-local-replay-v1",
+    "name": "DreamerV3-size12m-seed0",
+    "project": "dreamv3-alien",
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/alien/seed_0/metrics.jsonl",
+    "summary": {
+      "summary/auc_20bin_mean": 512.9079365079365,
+      "summary/best_bin_score": 1093.3333333333333,
+      "summary/completed": true,
+      "summary/episode_score_rows": 159,
+      "summary/final_20pct_mean": 772.6190476190475,
+      "summary/final_bin_mean": 737.1428571428571,
+      "summary/latest_episode_score": 1080.0,
+      "summary/latest_raw_frames": 437828.0
+    }
+  },
+  {
+    "events": 363,
+    "id": "atari100k-dreamerv3-official-size12m-breakout-seed0-local-replay-v1",
+    "name": "DreamerV3-size12m-seed0",
+    "project": "dreamv3-breakout",
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official/full26_size12m/breakout/seed_0/metrics.jsonl",
+    "summary": {
+      "summary/auc_20bin_mean": 4.376165502024635,
+      "summary/best_bin_score": 6.642857142857143,
+      "summary/completed": true,
+      "summary/episode_score_rows": 332,
+      "summary/final_20pct_mean": 6.17780987394958,
+      "summary/final_bin_mean": 6.642857142857143,
+      "summary/latest_episode_score": 8.0,
+      "summary/latest_raw_frames": 438276.0
+    }
+  }
+]

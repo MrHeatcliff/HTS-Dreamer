@@ -229,6 +229,7 @@ class HTSAux(nj.Module):
   aux_warmup_raw_frames: int = 0
   aux_warmup_agent_actions: int = 0
   aux_warmup_optimizer_updates: int = 0
+  aux_warmup_mode: str = 'linear'
   aux_warmup_action_repeat: int = 4
   aux_warmup_train_ratio: int = 256
   vicreg_gamma: float = 1.0

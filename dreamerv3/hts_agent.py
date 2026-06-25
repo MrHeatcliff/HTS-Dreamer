@@ -9,7 +9,7 @@ from . import hts
 def aux_warmup_alpha(
     optimizer_step, batch_size, batch_length, train_ratio=256,
     action_repeat=4, warmup_raw_frames=0, warmup_agent_actions=0,
-    warmup_optimizer_updates=0):
+    warmup_optimizer_updates=0, mode='linear'):
   optimizer_step = f32(optimizer_step)
   minibatch_steps = f32(batch_size * batch_length)
   train_ratio = f32(train_ratio)
@@ -29,8 +29,10 @@ def aux_warmup_alpha(
   denom = jnp.where(use_opt_horizon, opt_horizon, agent_horizon)
   numer = jnp.where(use_opt_horizon, optimizer_step, agent_actions)
   enabled = (raw_horizon > 0) | (agent_horizon > 0) | (opt_horizon > 0)
-  alpha = jnp.where(
-      enabled, jnp.minimum(1.0, numer / jnp.maximum(denom, 1.0)), 1.0)
+  linear = jnp.minimum(1.0, numer / jnp.maximum(denom, 1.0))
+  hard = f32(numer >= denom)
+  alpha = jnp.where(mode == 'hard', hard, linear)
+  alpha = jnp.where(enabled, alpha, 1.0)
   return jnp.clip(alpha, 0.0, 1.0), agent_actions, raw_frames, agent_horizon
 
 
@@ -152,12 +154,14 @@ class Agent(DreamerAgent):
     opt_horizon = f32(getattr(cfg, 'aux_warmup_optimizer_updates', 0))
     agent_horizon = f32(getattr(
         cfg, 'aux_warmup_agent_actions', 0))
+    mode = getattr(cfg, 'aux_warmup_mode', 'linear')
     alpha, agent_actions, raw_frames, agent_horizon = aux_warmup_alpha(
         step, self.config.batch_size, self.config.batch_length,
         train_ratio=train_ratio, action_repeat=action_repeat,
         warmup_raw_frames=raw_horizon,
         warmup_agent_actions=agent_horizon,
-        warmup_optimizer_updates=opt_horizon)
+        warmup_optimizer_updates=opt_horizon,
+        mode=mode)
     updates_per_action = train_ratio / jnp.maximum(
         f32(self.config.batch_size * self.config.batch_length), 1.0)
     return alpha, {
@@ -168,6 +172,7 @@ class Agent(DreamerAgent):
         'hts/aux_warmup_horizon_agent_actions': agent_horizon,
         'hts/aux_warmup_horizon_optimizer_updates': opt_horizon,
         'hts/aux_warmup_updates_per_agent_action': updates_per_action,
+        'hts/aux_warmup_mode_hard': f32(mode == 'hard'),
         'hts_aux_warmup_alpha': alpha,
         'hts_aux_warmup_raw_frames': raw_frames,
         'hts_aux_warmup_agent_actions': agent_actions,

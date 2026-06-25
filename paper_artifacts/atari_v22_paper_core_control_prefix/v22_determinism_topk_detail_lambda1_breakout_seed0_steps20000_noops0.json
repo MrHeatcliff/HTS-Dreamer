@@ -1,0 +1,213 @@
+{
+  "root": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/determinism/topk_detail_lambda1/breakout/seed_0/steps_20000_noops_0",
+  "repeats": [
+    "0",
+    "1"
+  ],
+  "summaries": [
+    {
+      "path": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/determinism/topk_detail_lambda1/breakout/seed_0/steps_20000_noops_0/repeat_0",
+      "exists": true,
+      "scope_exists": true,
+      "score_count": 58,
+      "score_latest": [
+        79564,
+        2.0
+      ],
+      "score_max": 7.0,
+      "score_mean_last20": 2.3,
+      "metrics_jsonl_rows": 64
+    },
+    {
+      "path": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/determinism/topk_detail_lambda1/breakout/seed_0/steps_20000_noops_0/repeat_1",
+      "exists": true,
+      "scope_exists": true,
+      "score_count": 58,
+      "score_latest": [
+        78224,
+        8.0
+      ],
+      "score_max": 8.0,
+      "score_mean_last20": 2.3,
+      "metrics_jsonl_rows": 64
+    }
+  ],
+  "comparisons": [
+    {
+      "base": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/determinism/topk_detail_lambda1/breakout/seed_0/steps_20000_noops_0/repeat_0",
+      "other": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/determinism/topk_detail_lambda1/breakout/seed_0/steps_20000_noops_0/repeat_1",
+      "scalars": {
+        "episode-score.float": {
+          "base_count": 58,
+          "other_count": 58,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 17,
+            "base": [
+              12516,
+              2.0
+            ],
+            "other": [
+              12592,
+              2.0
+            ],
+            "kind": "step"
+          }
+        },
+        "train-loss-total.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              431.8462809135665
+            ],
+            "other": [
+              14800,
+              442.72150770190296
+            ],
+            "kind": "step"
+          }
+        },
+        "train-loss-weighted-wm.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              430.8934302714334
+            ],
+            "other": [
+              14800,
+              441.7490705019847
+            ],
+            "kind": "step"
+          }
+        },
+        "train-loss-weighted-hier.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              0.15846143547000724
+            ],
+            "other": [
+              14800,
+              0.162103007377837
+            ],
+            "kind": "step"
+          }
+        },
+        "train-loss-weighted-sdyn.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              0.30792369726878493
+            ],
+            "other": [
+              14800,
+              0.31490569986163386
+            ],
+            "kind": "step"
+          }
+        },
+        "train-loss-weighted-ctrl.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              0.48646471326920526
+            ],
+            "other": [
+              14800,
+              0.4954289675877069
+            ],
+            "kind": "step"
+          }
+        },
+        "train-hts-aux_warmup_alpha.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              1.0
+            ],
+            "other": [
+              14800,
+              1.0
+            ],
+            "kind": "step"
+          }
+        },
+        "train-hts-active_ratio.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              0.53125
+            ],
+            "other": [
+              14800,
+              0.53125
+            ],
+            "kind": "step"
+          }
+        },
+        "train-hts-z_full_variance.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              0.7647315181902985
+            ],
+            "other": [
+              14800,
+              0.7467188696401225
+            ],
+            "kind": "step"
+          }
+        },
+        "replay-replay_ratio.float": {
+          "base_count": 6,
+          "other_count": 6,
+          "exact_match": false,
+          "first_mismatch": {
+            "index": 0,
+            "base": [
+              15080,
+              188.58067997841337
+            ],
+            "other": [
+              14800,
+              187.34873487348736
+            ],
+            "kind": "step"
+          }
+        }
+      }
+    }
+  ]
+}

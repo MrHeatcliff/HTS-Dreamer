@@ -1,5 +1,6 @@
 import contextlib
 import dataclasses
+import os
 import re
 import threading
 import time
@@ -334,6 +335,8 @@ class Agent(embodied.Agent):
         self.n_batches.value += 1
       seed = self._seeds(counter, self.train_mirrored)
       return {**data, 'seed': seed}
+    if os.environ.get('PAPER_DISABLE_STREAM_PREFETCH', '0') == '1':
+      return embodied.streams.Map(st, fn)
     return embodied.streams.Prefetch(st, fn)
 
   @elements.timer.section('jaxagent_save')

@@ -85,6 +85,8 @@ def train(make_agent, make_replay, make_env, make_stream, make_logger, args):
   driver.on_step(lambda tran, _: policy_fps.step())
   driver.on_step(replay.add)
   driver.on_step(logfn)
+  driver.on_step(lambda tran, worker: paper.write_action_trace(
+      step, tran, worker, int(getattr(agent, 'n_updates', 0))))
 
   stream_train = iter(agent.stream(make_stream(replay, 'train')))
   stream_report = iter(agent.stream(make_stream(replay, 'report')))
@@ -106,8 +108,14 @@ def train(make_agent, make_replay, make_env, make_stream, make_logger, args):
     for _ in range(requested):
       with elements.timer.section('stream_next'):
         batch = next(stream_train)
+      before = int(getattr(agent, 'n_updates', 0))
+      paper.write_batch_trace(step, executed, batch, before)
       carry_train[0], outs, mets = agent.train(carry_train[0], batch)
       executed += 1
+      paper.write_batch_trace(
+          step, executed - 1, batch, before,
+          optimizer_updates_after=int(getattr(agent, 'n_updates', 0)),
+          metrics={f'train/{k}': v for k, v in mets.items()})
       train_fps.step(batch_steps)
       if 'replay' in outs:
         replay.update(outs['replay'])

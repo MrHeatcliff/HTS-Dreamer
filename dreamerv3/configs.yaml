@@ -30,7 +30,7 @@ defaults:
     atari: {size: [96, 96], repeat: 4, sticky: True, gray: True, actions: all, lives: unused, noops: 30, autostart: False, pooling: 2, aggregate: max, resize: pillow, clip_reward: False}
     procgen: {size: [96, 96], resize: pillow}
     crafter: {size: [64, 64], logs: False}
-    atari100k: {size: [64, 64], repeat: 4, sticky: False, gray: False, actions: needed, lives: unused, noops: 30, autostart: False, resize: pillow, clip_reward: False}
+    atari100k: {size: [64, 64], repeat: 4, sticky: False, gray: False, actions: needed, lives: unused, noops: 30, autostart: False, resize: pillow, clip_reward: False, use_seed: False}
     dmlab: {size: [64, 64], repeat: 4, episodic: True, use_seed: True}
     minecraft: {size: [64, 64], break_speed: 100.0, logs: False, length: 36000}
     dmc: {size: [64, 64], repeat: 1, proprio: True, image: True, camera: -1}
@@ -78,6 +78,7 @@ defaults:
     mock_devices: 0
     prealloc: True
     jit: True
+    deterministic: True
     debug: False
     expect_devices: 0
     enable_policy: True
@@ -175,6 +176,7 @@ defaults:
       aux_warmup_raw_frames: 0
       aux_warmup_agent_actions: 0
       aux_warmup_optimizer_updates: 0
+      aux_warmup_mode: linear
       aux_warmup_action_repeat: 4
       aux_warmup_train_ratio: 256
       vicreg_gamma: 1.0
@@ -343,6 +345,32 @@ hts_paper_core_zfull_topk_detail:
   agent.hts.actor_critic_stopgrad_z: False
   agent.hts.training_regime: joint_online_initial
   agent.hts.vicreg_cov_scale: 0.001
+
+hts_paper_core_zfull_lambda1:
+  agent.hts.l_hier: 1.0
+  agent.hts.l_sdyn: 1.0
+  agent.hts.l_ctrl: 1.0
+
+hts_paper_core_zfull_topk_detail_lambda1:
+  agent.hts.l_hier: 1.0
+  agent.hts.l_sdyn: 1.0
+  agent.hts.l_ctrl: 1.0
+
+hts_hard_phase1_200k_raw:
+  agent.hts.training_regime: two_phase
+  agent.hts.aux_warmup_mode: hard
+  agent.hts.aux_warmup_raw_frames: 200000
+  agent.hts.aux_warmup_agent_actions: 50000
+  agent.hts.aux_warmup_action_repeat: 4
+  agent.hts.aux_warmup_train_ratio: 256
+
+hts_hard_phase1_400k_raw:
+  agent.hts.training_regime: two_phase
+  agent.hts.aux_warmup_mode: hard
+  agent.hts.aux_warmup_raw_frames: 400000
+  agent.hts.aux_warmup_agent_actions: 100000
+  agent.hts.aux_warmup_action_repeat: 4
+  agent.hts.aux_warmup_train_ratio: 256
 
 hts_levels_6:
   agent.hts.levels: 6

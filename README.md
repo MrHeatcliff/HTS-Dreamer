@@ -273,6 +273,8 @@ The active HTS variants are:
 | V20 locked hierarchy | `hts_atari100k size12m` with `agent.hts.l_hier=0.3` | Previous fair Alien/Breakout candidate. |
 | V22 paper-core zfull | `hts_atari100k size12m hts_paper_core_zfull` | Control-aware sparse prefix model, actor/critic use `z_full`. |
 | V22 topk-detail | `hts_atari100k size12m hts_paper_core_zfull_topk_detail` | Same V22 model, but fine/short-term levels keep more detail. |
+| V22 lambda1 | `hts_atari100k size12m hts_paper_core_zfull hts_paper_core_zfull_lambda1` | Same V22 default TopK, but `l_hier/l_sdyn/l_ctrl` are raised from `0.1` to `1.0`. |
+| V22 topk-detail lambda1 | `hts_atari100k size12m hts_paper_core_zfull_topk_detail hts_paper_core_zfull_topk_detail_lambda1` | Same topk-detail architecture with stronger HTS auxiliary losses. |
 
 V22 paper-core default:
 
@@ -312,6 +314,14 @@ level 3, stride 2:  short horizon,     TopK 16/32
 level 4, stride 1:  finest/one-step,   TopK 32/32
 ```
 
+V22 lambda1 keeps the same architecture and raises only these coefficients:
+
+```text
+l_hier: 0.1 -> 1.0
+l_sdyn: 0.1 -> 1.0
+l_ctrl: 0.1 -> 1.0
+```
+
 ## Run V22 Paper-Core
 
 V22 artifact package:
@@ -332,9 +342,15 @@ v22_atari_smoke.md
 v22_decision.md
 launch_v22_breakout_stage_a.sh
 launch_v22_topk_detail_breakout_stage_a.sh
+launch_v22_lambda1_breakout_stage_a.sh
+launch_v22_two_phase_breakout.sh
+launch_v22_determinism_check.sh
+analyze_v22_determinism.py
 ```
 
-Run V22 paper-core Breakout Stage A, seeds 0,1,2:
+Run V22 paper-core Breakout Stage A default script. The checked-in script
+currently runs seed 0 only; seed 1 and 2 commands are left commented in the
+script:
 
 ```bash
 cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
@@ -346,6 +362,72 @@ Run V22 topk-detail Breakout Stage A, seeds 0,1,2:
 ```bash
 cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
 GPU=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_topk_detail_breakout_stage_a.sh
+```
+
+Run V22 lambda1 Breakout Stage A, default TopK `[8,8,8,8]`, seed 0:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 MODE=default SEEDS=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_lambda1_breakout_stage_a.sh
+```
+
+Run V22 lambda1 with topk-detail `[8,12,16,32]`, seed 0:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 MODE=topk_detail SEEDS=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_lambda1_breakout_stage_a.sh
+```
+
+Run V22 two-phase loss warmup with current candidate
+`topk-detail + lambda1`. Phase 1 has HTS auxiliary losses hard-disabled
+(`hts_alpha=0`); phase 2 enables them (`hts_alpha=1`). Actor and critic still
+use `z_full` throughout because the V22 actor/critic input shape is fixed at
+initialization.
+
+Phase 1 = 200k raw Atari frames, Phase 2 = 400k more raw frames:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 PHASE1_RAW=200000 PHASE2_RAW=400000 SEEDS=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_two_phase_breakout.sh
+```
+
+Phase 1 = 400k raw Atari frames, Phase 2 = 400k more raw frames:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 PHASE1_RAW=400000 PHASE2_RAW=400000 SEEDS=0 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_two_phase_breakout.sh
+```
+
+The script converts raw-frame budgets to `run.steps` using Atari action repeat
+4. Therefore, the 200k+400k setting runs `150000` agent actions, and the
+400k+400k setting runs `200000` agent actions.
+
+Run a short determinism check. This runs the same seed twice, disables random
+Atari no-op reset with `--env.atari100k.noops 0`, uses one env, enables
+JAX deterministic flags, disables W&B by default, and compares local score/loss
+scalars:
+
+```bash
+cd /mnt/disk1/backup_user/dat.tt2/xuance/external_baselines/dreamerv3-official
+GPU=0 GAME=breakout SEED=0 STEPS=20000 CLEAN=1 paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_determinism_check.sh
+```
+
+Useful variants:
+
+```bash
+# Same check but with the official DreamerV3 baseline config.
+GPU=0 MODE=baseline_dreamerv3 GAME=breakout SEED=0 STEPS=20000 CLEAN=1 \
+  paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_determinism_check.sh
+
+# Keep W&B online if you want live charts for both repeats.
+GPU=0 WANDB_MODE=online GAME=breakout SEED=0 STEPS=20000 CLEAN=1 \
+  paper_artifacts/atari_v22_paper_core_control_prefix/launch_v22_determinism_check.sh
+```
+
+The JSON comparison report is written to:
+
+```text
+paper_artifacts/atari_v22_paper_core_control_prefix/v22_determinism_<mode>_<game>_seed<seed>_steps<steps>_noops<noops>.json
 ```
 
 For a single manual V22 topk-detail run:

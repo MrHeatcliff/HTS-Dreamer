@@ -29,6 +29,8 @@ def main(argv=None):
   config = elements.Flags(config).parse(other)
   config = config.update(logdir=(
       config.logdir.format(timestamp=elements.timestamp())))
+  if os.environ.get('PAPER_DETERMINISTIC_UUID', '0') == '1':
+    elements.UUID.reset(debug=True)
 
   if 'JOB_COMPLETION_INDEX' in os.environ:
     config = config.update(replica=int(os.environ['JOB_COMPLETION_INDEX']))

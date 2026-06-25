@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "new_2phase100k",
+    "events": 350,
+    "game": "breakout",
+    "id": "atari100k-hts-new-v22-breakout-new_2phase100k-seed0-b2d05f089b",
+    "method": "HTS-new",
+    "name": "HTS-new-2phase100k-seed0",
+    "project": "dreamv3-breakout",
+    "seed": 0,
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/deterministic_ablation/breakout/two_phase_phase1_100000raw/seed_0/total_400000raw_tr256_onlineTrue_prefetch1/metrics.jsonl",
+    "uploaded": true
+  },
+  {
+    "condition": "new_2phase200k",
+    "events": 339,
+    "game": "breakout",
+    "id": "atari100k-hts-new-v22-breakout-new_2phase200k-seed0-25775d92e8",
+    "method": "HTS-new",
+    "name": "HTS-new-2phase200k-seed0",
+    "project": "dreamv3-breakout",
+    "seed": 0,
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/deterministic_ablation/breakout/two_phase_phase1_200000raw/seed_0/total_400000raw_tr256_onlineTrue_prefetch1/metrics.jsonl",
+    "uploaded": true
+  },
+  {
+    "condition": "new_2phase50k",
+    "events": 316,
+    "game": "breakout",
+    "id": "atari100k-hts-new-v22-breakout-new_2phase50k-seed0-c9225e16dd",
+    "method": "HTS-new",
+    "name": "HTS-new-2phase50k-seed0",
+    "project": "dreamv3-breakout",
+    "seed": 0,
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/deterministic_ablation/breakout/two_phase_phase1_50000raw/seed_0/total_400000raw_tr256_onlineTrue_prefetch1/metrics.jsonl",
+    "uploaded": true
+  },
+  {
+    "condition": "new_joint",
+    "events": 372,
+    "game": "breakout",
+    "id": "atari100k-hts-new-v22-breakout-new_joint-seed0-0b50b7b1a2",
+    "method": "HTS-new",
+    "name": "HTS-new-joint-seed0",
+    "project": "dreamv3-breakout",
+    "seed": 0,
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/deterministic_ablation/breakout/joint/seed_0/total_400000raw_tr256_onlineTrue_prefetch1/metrics.jsonl",
+    "uploaded": true
+  },
+  {
+    "condition": "new_no_hier",
+    "events": 270,
+    "game": "breakout",
+    "id": "atari100k-hts-new-v22-breakout-new_no_hier-seed0-d53a79420d",
+    "method": "HTS-new",
+    "name": "HTS-new-noHier-seed0",
+    "project": "dreamv3-breakout",
+    "seed": 0,
+    "source": "/mnt/disk1/backup_user/dat.tt2/xuance/logs/external_baselines/dreamerv3_official_hts_v22_paper_core/deterministic_ablation/breakout/joint_no_hier_loss/seed_0/total_400000raw_tr256_onlineTrue_prefetch1/metrics.jsonl",
+    "uploaded": true
+  }
+]
