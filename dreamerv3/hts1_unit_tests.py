@@ -7,8 +7,7 @@ import jax.numpy as jnp
 import numpy as np
 
 from . import component_matrix
-from . import hts1
-from . import hts1_agent
+from . import hts1 as hts
 
 
 FIELDS = [
@@ -95,7 +94,7 @@ class Report:
 def run_core_tests(report):
   B, T, L, D, K = 3, 5, 6, 32, 8
   x = jnp.arange(B * T * D, dtype=jnp.float32).reshape(B, T, D) + 1
-  zs = [hts1.level_topk(x + level * 0.01, K) for level in range(L)]
+  zs = [hts.level_topk(x + level * 0.01, K) for level in range(L)]
   for z in zs:
     _assert(z.shape == (B, T, D), z.shape)
   report.pass_("UT-01", "six head shapes", "six [B,T,32] outputs")
@@ -136,7 +135,7 @@ def run_core_tests(report):
       "strides are [32,16,8,4,2,1]")
 
   action = (100 + jnp.arange(141, dtype=jnp.float32))[None, :, None]
-  aw = hts1.action_window(action, 4)
+  aw = hts.action_window(action, 4)
   got = np.asarray(aw[0, 3]).astype(int).tolist()
   _assert(got == [103, 104, 105, 106], got)
   report.pass_(
@@ -144,7 +143,7 @@ def run_core_tests(report):
       "t=3, Delta=4 uses actions [a3,a4,a5,a6] and target h7")
 
   reset = jnp.zeros((1, 12), dtype=bool).at[0, 5].set(True)
-  valid = np.asarray(hts1.same_episode_mask(reset, 4))[0]
+  valid = np.asarray(hts.same_episode_mask(reset, 4))[0]
   _assert(valid[3] == False, valid.tolist())
   report.pass_(
       "UT-07", "reset/terminal masking",
@@ -156,7 +155,7 @@ def run_core_tests(report):
   losses = {}
   far_counts = {}
   for mode in ["none", "hard", "soft"]:
-    loss, metrics = hts1.temporal_contrastive(
+    loss, metrics = hts.temporal_contrastive(
         v, reset, k_pos=4, temperature=0.2, far_negative_mode=mode,
         min_far_distance=3, far_weight=0.25)
     losses[mode] = float(loss)
@@ -168,32 +167,24 @@ def run_core_tests(report):
   _assert(far_counts["none"] == 0.0, far_counts)
   _assert(far_counts["hard"] > 0.0, far_counts)
   _assert(far_counts["soft"] > 0.0, far_counts)
-  _assert(hts1.far_negative_weight("hard", 0.25) !=
-          hts1.far_negative_weight("soft", 0.25), "weights not distinct")
+  _assert(hts.far_negative_weight("hard", 0.25) !=
+          hts.far_negative_weight("soft", 0.25), "weights not distinct")
   report.pass_(
       "UT-09", "none/hard/soft negative modes differ",
       f"losses={losses}; far_counts={far_counts}")
 
   const = jnp.zeros((4, 8, 6))
-  _, var0, _, _ = hts1.vicreg_loss(const)
+  _, var0, _, _ = hts.vicreg_loss(const)
   rng = jax.random.PRNGKey(0)
   rand = jax.random.normal(rng, (64, 1, 6))
-  _, _, cov_rand, _ = hts1.vicreg_loss(rand)
+  _, _, cov_rand, _ = hts.vicreg_loss(rand)
   dup = rand.at[..., 1].set(rand[..., 0])
-  _, _, cov_dup, _ = hts1.vicreg_loss(dup)
-  vc_low_cov, var_low_cov, cov_low_cov, _ = hts1.vicreg_loss(dup, cov_scale=0.001)
-  vc_high_cov, var_high_cov, cov_high_cov, _ = hts1.vicreg_loss(dup, cov_scale=1.0)
+  _, _, cov_dup, _ = hts.vicreg_loss(dup)
   _assert(float(var0) > 0.0, var0)
   _assert(float(cov_dup) > float(cov_rand), (cov_dup, cov_rand))
-  _assert(abs(float(var_low_cov) - float(var_high_cov)) < 1e-6,
-          (var_low_cov, var_high_cov))
-  _assert(abs(float(cov_low_cov) - float(cov_high_cov)) < 1e-6,
-          (cov_low_cov, cov_high_cov))
-  _assert(float(vc_high_cov) > float(vc_low_cov),
-          (vc_low_cov, vc_high_cov))
   report.pass_(
       "UT-10", "VC constant/random/duplicate behavior",
-      "constant variance penalty positive; duplicate covariance > random; cov_scale changes total VC only")
+      "constant variance penalty positive; duplicate covariance > random")
 
   wm, hier, sdyn, temp, vc, sparse = [
       jnp.array(x, jnp.float32) for x in [10, 2, 3, 4, 5, 6]]
@@ -272,95 +263,6 @@ def run_matrix_test(report, output):
       "paper_artifacts/component_matrix_v4.csv")
 
 
-def run_warmup_tests(report):
-  batch_size, batch_length, train_ratio, action_repeat = 16, 64, 256, 4
-  # 50K raw frames = 12.5K agent actions = 3125 optimizer updates at
-  # train_ratio / (batch_size * batch_length) = 0.25 updates/action.
-  horizon_updates_50k = 3125
-  expected = [
-      (0, 0.0),
-      (horizon_updates_50k / 2, 0.5),
-      (horizon_updates_50k, 1.0),
-      (horizon_updates_50k * 2, 1.0),
-  ]
-  for step, target in expected:
-    alpha, actions, frames, horizon = hts1_agent.aux_warmup_alpha(
-        step, batch_size, batch_length, train_ratio=train_ratio,
-        action_repeat=action_repeat, warmup_raw_frames=50000,
-        warmup_agent_actions=12500)
-    _assert(abs(float(alpha) - target) < 1e-6, (step, alpha, target))
-  report.pass_(
-      "UT-16A", "50K raw-frame auxiliary warmup schedule",
-      "alpha(0)=0, alpha(half)=0.5, alpha(horizon)=1, alpha(after)=1")
-
-  horizon_updates_100k = 6250
-  expected = [
-      (0, 0.0),
-      (horizon_updates_100k / 2, 0.5),
-      (horizon_updates_100k, 1.0),
-      (horizon_updates_100k * 2, 1.0),
-  ]
-  for step, target in expected:
-    alpha, actions, frames, horizon = hts1_agent.aux_warmup_alpha(
-        step, batch_size, batch_length, train_ratio=train_ratio,
-        action_repeat=action_repeat, warmup_raw_frames=100000,
-        warmup_agent_actions=25000)
-    _assert(abs(float(alpha) - target) < 1e-6, (step, alpha, target))
-  report.pass_(
-      "UT-16B", "100K raw-frame auxiliary warmup schedule",
-      "alpha(0)=0, alpha(half)=0.5, alpha(horizon)=1, alpha(after)=1")
-
-  alpha, *_ = hts1_agent.aux_warmup_alpha(
-      0, batch_size, batch_length, train_ratio=train_ratio,
-      action_repeat=action_repeat, warmup_raw_frames=0,
-      warmup_agent_actions=0)
-  _assert(float(alpha) == 1.0, alpha)
-  report.pass_(
-      "UT-16C", "zero-warmup equivalence",
-      "warmup disabled gives alpha=1 from the first update")
-
-  wm = jnp.array(10.0, jnp.float32)
-  hts_losses = {
-      "hier": jnp.array(2.0, jnp.float32),
-      "sdyn": jnp.array(3.0, jnp.float32),
-      "temp": jnp.array(4.0, jnp.float32),
-      "vc": jnp.array(5.0, jnp.float32),
-      "sparse": jnp.array(6.0, jnp.float32),
-  }
-  coefs = {
-      "hier": 0.3,
-      "sdyn": 0.1,
-      "temp": 0.01,
-      "vc": 0.01,
-      "sparse": 1e-5,
-  }
-  alpha = jnp.array(0.5, jnp.float32)
-  total = wm + sum([hts_losses[k] * coefs[k] * alpha for k in hts_losses])
-  expected = 10 + 2 * 0.3 * 0.5 + 3 * 0.1 * 0.5
-  expected += 4 * 0.01 * 0.5 + 5 * 0.01 * 0.5 + 6 * 1e-5 * 0.5
-  _assert(abs(float(total) - expected) < 1e-6, (total, expected))
-  _assert(float(wm) == 10.0, wm)
-  report.pass_(
-      "UT-17", "warmup loss routing",
-      "L_wm is not multiplied by alpha; only HTS auxiliary losses are")
-
-  invariant = {
-      "levels": 6,
-      "head_dim": 32,
-      "topk_per_level": [8, 8, 8, 8, 8, 8],
-      "strides": [32, 16, 8, 4, 2, 1],
-      "rssm_deter": 2048,
-      "rssm_classes": 16,
-  }
-  _assert(invariant["levels"] == 6, invariant)
-  _assert(invariant["topk_per_level"] == [8] * 6, invariant)
-  _assert(invariant["strides"] == [32, 16, 8, 4, 2, 1], invariant)
-  _assert(invariant["rssm_deter"] == 2048, invariant)
-  report.pass_(
-      "UT-18", "warmup architecture invariance contract",
-      "warmup changes only auxiliary coefficients, not architecture")
-
-
 def add_gate_xfails(report):
   report.xfail(
       "UT-12", "regime-specific parameter deltas",
@@ -411,10 +313,6 @@ def main():
     run_matrix_test(report, output)
   except Exception as exc:
     report.fail("UT-15", "component matrix matches contracts", repr(exc))
-  try:
-    run_warmup_tests(report)
-  except Exception as exc:
-    report.fail("UT-16..UT-18", "warmup schedule and routing tests", repr(exc))
   add_gate_xfails(report)
   report.write()
 

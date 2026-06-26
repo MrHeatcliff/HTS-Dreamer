@@ -5,7 +5,7 @@ from pathlib import Path
 import jax
 import jax.numpy as jnp
 
-from . import hts1
+from . import hts1 as hts
 
 
 def _linear(x, w, b):
@@ -75,7 +75,7 @@ def write_backward_trace(output):
     for level in range(levels):
       code = jnp.tanh(_linear(
           trunk, params[f"head{level}/w"], params[f"head{level}/b"]))
-      z.append(hts1.level_topk(code, topks[level]))
+      z.append(hts.level_topk(code, topks[level]))
 
     hier_losses = []
     sdyn_losses = []
@@ -86,8 +86,8 @@ def write_backward_trace(output):
       recon = _linear(
           recon_prefix, params[f"decoder{level}/w"], params[f"decoder{level}/b"])
       hier_losses.append(jnp.square(recon - jax.lax.stop_gradient(h)).mean())
-      awin = hts1.action_window(action, stride)
-      valid = hts1.same_episode_mask(reset, stride)
+      awin = hts.action_window(action, stride)
+      valid = hts.same_episode_mask(reset, stride)
       pred_prefix = jnp.concatenate([
           z[i][:, :T - stride] for i in range(level + 1)], -1)
       aemb = jnp.tanh(_linear(
@@ -97,12 +97,12 @@ def write_backward_trace(output):
           pred_in, params[f"predictor{level}/w"],
           params[f"predictor{level}/b"])
       per = jnp.square(pred - jax.lax.stop_gradient(h[:, stride:])).mean(-1)
-      sdyn_losses.append(hts1._masked_mean(per, valid))
+      sdyn_losses.append(hts._masked_mean(per, valid))
     projected = _linear(z[0], params["projector/w"], params["projector/b"])
-    temp_loss, temp_metrics = hts1.temporal_contrastive(
+    temp_loss, temp_metrics = hts.temporal_contrastive(
         projected, reset, k_pos=4, temperature=0.1,
         far_negative_mode="soft", min_far_distance=16, far_weight=0.25)
-    vc_loss, vc_var, vc_cov, proj_std = hts1.vicreg_loss(projected)
+    vc_loss, vc_var, vc_cov, proj_std = hts.vicreg_loss(projected)
     sparse_loss = sum([jnp.abs(x).mean() for x in z]) / len(z)
     raw = {
         "hier": sum(hier_losses) / levels,
@@ -160,7 +160,7 @@ def write_backward_trace(output):
   valid_counts = {}
   action_examples = {}
   for level, stride in enumerate(strides):
-    valid = hts1.same_episode_mask(reset, stride)
+    valid = hts.same_episode_mask(reset, stride)
     valid_counts[f"level_{level + 1}"] = {
         "valid": int(valid.sum()),
         "invalid": int(valid.size - valid.sum()),
@@ -239,7 +239,7 @@ def main():
   for level in range(levels):
     start = level * head_dim
     code = h[..., start:start + head_dim]
-    z.append(hts1.level_topk(code, topks[level]))
+    z.append(hts.level_topk(code, topks[level]))
   active_counts = [jnp.asarray(jnp.abs(x) > 0).sum(-1).tolist() for x in z]
   total_active = sum([jnp.asarray(jnp.abs(x) > 0).sum(-1) for x in z]).tolist()
   prefix_shapes = [
@@ -247,8 +247,8 @@ def main():
       for level in range(levels)]
   dynamics = []
   for level, stride in enumerate(strides):
-    aw = hts1.action_window(action, stride)
-    valid = hts1.same_episode_mask(reset, stride)
+    aw = hts.action_window(action, stride)
+    valid = hts.same_episode_mask(reset, stride)
     dynamics.append({
         "level": level + 1,
         "stride": stride,
@@ -262,10 +262,10 @@ def main():
         "invalid_count": int(valid.size - valid.sum()),
     })
   projected = jax.random.normal(jax.random.PRNGKey(8), (B, T, 64))
-  temp_loss, temp_metrics = hts1.temporal_contrastive(
+  temp_loss, temp_metrics = hts.temporal_contrastive(
       projected, reset, k_pos=4, temperature=0.1,
       far_negative_mode="soft", min_far_distance=16, far_weight=0.25)
-  vc, vc_var, vc_cov, proj_std = hts1.vicreg_loss(projected)
+  vc, vc_var, vc_cov, proj_std = hts.vicreg_loss(projected)
   hier_levels = [float(jnp.square(x).mean()) for x in z]
   sdyn_levels = [float(1.0 / s) for s in strides]
   raw_losses = {

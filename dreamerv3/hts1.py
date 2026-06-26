@@ -158,14 +158,14 @@ def temporal_contrastive(
   }
 
 
-def vicreg_loss(v, gamma=1.0, cov_scale=1.0):
+def vicreg_loss(v, gamma=1.0):
   v = v.reshape((-1, v.shape[-1]))
   v = v - v.mean(0, keepdims=True)
   std = jnp.sqrt(v.var(0) + 1e-4)
   var_loss = jnp.maximum(0.0, f32(gamma) - std).mean()
   cov = (v.T @ v) / jnp.maximum(v.shape[0] - 1, 1)
   cov_loss = jnp.square(_offdiag(cov)).mean()
-  return var_loss + f32(cov_scale) * cov_loss, var_loss, cov_loss, std.mean()
+  return var_loss + cov_loss, var_loss, cov_loss, std.mean()
 
 
 class HTS1Aux(nj.Module):
@@ -188,28 +188,9 @@ class HTS1Aux(nj.Module):
   norm: str = 'rms'
   l_hier: float = 1.0
   l_sdyn: float = 1.0
-  l_ctrl: float = 0.0
   l_temp: float = 0.1
   l_vc: float = 0.1
   l_sparse: float = 1e-4
-  use_lhier: bool = True
-  use_lsdyn: bool = True
-  use_lctrl: bool = False
-  use_ltemp: bool = True
-  use_lvc: bool = True
-  use_lsparse: bool = True
-  use_lred: bool = False
-  impl: str = 'hts1'
-  method: str = 'auxiliary_hierarchy'
-  sparsity_mode: str = 'levelwise_topk'
-  actor_critic_input: str = 'rssm_feat'
-  actor_critic_stopgrad_z: bool = False
-  hier_beta0: float = 1.0
-  hier_rho: float = 0.75
-  ctrl_reward_scale: float = 1.0
-  ctrl_continue_scale: float = 1.0
-  ctrl_value_scale: float = 1.0
-  discount: float = 0.997
   temp_margin: float = 1.0
   far_gap: int = 16
   temporal_k_pos: int = 4
@@ -227,14 +208,7 @@ class HTS1Aux(nj.Module):
   hts_lr_scale: float = 1.0
   hierarchy_lr_scale: float = 1.0
   warmup_steps: int = 0
-  aux_warmup_raw_frames: int = 0
-  aux_warmup_agent_actions: int = 0
-  aux_warmup_optimizer_updates: int = 0
-  aux_warmup_mode: str = 'linear'
-  aux_warmup_action_repeat: int = 4
-  aux_warmup_train_ratio: int = 256
   vicreg_gamma: float = 1.0
-  vicreg_cov_scale: float = 1.0
   variant: str = 'hts_full'
   flat_width: int = 192
   flat_topk: int = 48
@@ -245,9 +219,7 @@ class HTS1Aux(nj.Module):
     self.feat_dim = int(feat_dim)
     self.kw = kw
 
-  def __call__(
-      self, h, prevact, reset, training, reward=None, cont=None,
-      value_bootstrap=None):
+  def __call__(self, h, prevact, reset, training):
     del training
     h = nn.cast(h)
     B, T, D = h.shape
@@ -255,12 +227,6 @@ class HTS1Aux(nj.Module):
     action = nn.DictConcat(self.act_space, 1)(prevact)
     action = nn.cast(action)
     variant = getattr(self, 'variant', 'hts_full')
-    if getattr(self, 'method', '') == 'paper_core_control_prefix':
-      return self._call_paper_core(
-          h, action, reset, reward, cont, value_bootstrap)
-    if variant == 'paper_core_control_prefix':
-      return self._call_paper_core(
-          h, action, reset, reward, cont, value_bootstrap)
     if variant == 'flat_sae':
       return self._call_flat_sae(h)
     if variant == 'flat_mh':
@@ -295,7 +261,6 @@ class HTS1Aux(nj.Module):
 
     losses['hts_hier'] = hier_loss
     losses['hts_sdyn'] = sdyn_loss
-    losses['hts_ctrl'] = jnp.zeros((), f32)
     losses['hts_temp'] = temp_loss
     losses['hts_vc'] = vc_loss
     losses['hts_sparse'] = sparse_loss
@@ -314,13 +279,11 @@ class HTS1Aux(nj.Module):
         self.topk_per_level, self.levels, self.topk)))
     metrics['loss/raw/hier'] = hier_loss
     metrics['loss/raw/sdyn'] = sdyn_loss
-    metrics['loss/raw/ctrl'] = losses['hts_ctrl']
     metrics['loss/raw/temp'] = temp_loss
     metrics['loss/raw/vc'] = vc_loss
     metrics['loss/raw/sparse'] = sparse_loss
     metrics['loss/weighted/hier'] = hier_loss * f32(self.l_hier)
     metrics['loss/weighted/sdyn'] = sdyn_loss * f32(self.l_sdyn)
-    metrics['loss/weighted/ctrl'] = losses['hts_ctrl'] * f32(self.l_ctrl)
     metrics['loss/weighted/temp'] = temp_loss * f32(self.l_temp)
     metrics['loss/weighted/vc'] = vc_loss * f32(self.l_vc)
     metrics['loss/weighted/sparse'] = sparse_loss * f32(self.l_sparse)
@@ -331,7 +294,6 @@ class HTS1Aux(nj.Module):
     return {
         'hts_hier': zero,
         'hts_sdyn': zero,
-        'hts_ctrl': zero,
         'hts_temp': zero,
         'hts_vc': zero,
         'hts_sparse': zero,
@@ -370,13 +332,11 @@ class HTS1Aux(nj.Module):
         'hts/total_active_budget': f32(self.flat_topk),
         'loss/raw/hier': recon,
         'loss/raw/sdyn': losses['hts_sdyn'],
-        'loss/raw/ctrl': losses['hts_ctrl'],
         'loss/raw/temp': losses['hts_temp'],
         'loss/raw/vc': losses['hts_vc'],
         'loss/raw/sparse': sparse,
         'loss/weighted/hier': recon * f32(self.l_hier),
         'loss/weighted/sdyn': losses['hts_sdyn'],
-        'loss/weighted/ctrl': losses['hts_ctrl'],
         'loss/weighted/temp': losses['hts_temp'],
         'loss/weighted/vc': losses['hts_vc'],
         'loss/weighted/sparse': sparse * f32(self.l_sparse),
@@ -403,13 +363,11 @@ class HTS1Aux(nj.Module):
         'hts/total_active_budget': f32(self.levels * self.head_dim),
         'loss/raw/hier': recon,
         'loss/raw/sdyn': losses['hts_sdyn'],
-        'loss/raw/ctrl': losses['hts_ctrl'],
         'loss/raw/temp': losses['hts_temp'],
         'loss/raw/vc': losses['hts_vc'],
         'loss/raw/sparse': losses['hts_sparse'],
         'loss/weighted/hier': recon * f32(self.l_hier),
         'loss/weighted/sdyn': losses['hts_sdyn'],
-        'loss/weighted/ctrl': losses['hts_ctrl'],
         'loss/weighted/temp': losses['hts_temp'],
         'loss/weighted/vc': losses['hts_vc'],
         'loss/weighted/sparse': losses['hts_sparse'],
@@ -431,13 +389,11 @@ class HTS1Aux(nj.Module):
         'hts/total_active_budget': f32(self.flat_width),
         'loss/raw/hier': losses['hts_hier'],
         'loss/raw/sdyn': sdyn,
-        'loss/raw/ctrl': losses['hts_ctrl'],
         'loss/raw/temp': losses['hts_temp'],
         'loss/raw/vc': losses['hts_vc'],
         'loss/raw/sparse': losses['hts_sparse'],
         'loss/weighted/hier': losses['hts_hier'],
         'loss/weighted/sdyn': sdyn * f32(self.l_sdyn),
-        'loss/weighted/ctrl': losses['hts_ctrl'],
         'loss/weighted/temp': losses['hts_temp'],
         'loss/weighted/vc': losses['hts_vc'],
         'loss/weighted/sparse': losses['hts_sparse'],
@@ -468,13 +424,11 @@ class HTS1Aux(nj.Module):
         'hts/total_active_budget': f32(self.proj_dim),
         'loss/raw/hier': losses['hts_hier'],
         'loss/raw/sdyn': sdyn,
-        'loss/raw/ctrl': losses['hts_ctrl'],
         'loss/raw/temp': losses['hts_temp'],
         'loss/raw/vc': vc,
         'loss/raw/sparse': losses['hts_sparse'],
         'loss/weighted/hier': losses['hts_hier'],
         'loss/weighted/sdyn': sdyn * f32(self.l_sdyn),
-        'loss/weighted/ctrl': losses['hts_ctrl'],
         'loss/weighted/temp': losses['hts_temp'],
         'loss/weighted/vc': vc * f32(self.l_vc),
         'loss/weighted/sparse': losses['hts_sparse'],
@@ -515,110 +469,8 @@ class HTS1Aux(nj.Module):
         sum(_as_tuple(self.topk_per_level, self.levels, self.topk))
         if sparse else self.levels * self.head_dim)
     for name, key in [
-        ('hier', 'hts_hier'), ('sdyn', 'hts_sdyn'), ('ctrl', 'hts_ctrl'),
-        ('temp', 'hts_temp'),
+        ('hier', 'hts_hier'), ('sdyn', 'hts_sdyn'), ('temp', 'hts_temp'),
         ('vc', 'hts_vc'), ('sparse', 'hts_sparse')]:
-      scale = getattr(self, f'l_{name}')
-      metrics[f'loss/raw/{name}'] = losses[key]
-      metrics[f'loss/weighted/{name}'] = losses[key] * f32(scale)
-    return losses, metrics
-
-  def z_levels(self, h, sparse=True, stopgrad=False):
-    squeeze = h.ndim == 2
-    h3 = h[:, None] if squeeze else h
-    z = self._encode(h3, sparse=sparse)
-    if stopgrad:
-      z = [sg(x) for x in z]
-    if squeeze:
-      z = [x[:, 0] for x in z]
-    return z
-
-  def zfull(self, h, sparse=True, stopgrad=False):
-    return jnp.concatenate(self.z_levels(h, sparse, stopgrad), -1)
-
-  def actor_critic_features(self, h):
-    mode = getattr(self, 'actor_critic_input', 'rssm_feat')
-    z = self.zfull(
-        h, sparse=True, stopgrad=getattr(self, 'actor_critic_stopgrad_z', False))
-    if mode == 'rssm_feat':
-      return h
-    if mode == 'z_full':
-      return z
-    if mode == 'h_z_hybrid':
-      return jnp.concatenate([h, z], -1)
-    raise ValueError(f'Unknown actor_critic_input: {mode}')
-
-  def actor_critic_metrics(self, h):
-    z = self.z_levels(h, sparse=True, stopgrad=True)
-    zfull = jnp.concatenate(z, -1)
-    metrics = {
-        'hts/actor_input_zfull': f32(
-            getattr(self, 'actor_critic_input', 'rssm_feat') == 'z_full'),
-        'hts/actor_input_h_z_hybrid': f32(
-            getattr(self, 'actor_critic_input', 'rssm_feat') == 'h_z_hybrid'),
-        'hts/actor_critic_stopgrad_z': f32(
-            getattr(self, 'actor_critic_stopgrad_z', False)),
-        'hts/z_full_norm': jnp.linalg.norm(zfull, axis=-1).mean(),
-        'hts/z_full_variance': zfull.var(),
-        'z_full_norm': jnp.linalg.norm(zfull, axis=-1).mean(),
-        'z_full_variance': zfull.var(),
-    }
-    for level, item in enumerate(z):
-      active = (jnp.abs(item) > 0).sum(-1)
-      metrics[f'hts/z_active_count_level_{level + 1}'] = f32(active).mean()
-      metrics[f'hts/z_norm_level_{level + 1}'] = (
-          jnp.linalg.norm(item, axis=-1).mean())
-      metrics[f'hts/z_variance_level_{level + 1}'] = item.var()
-    return metrics
-
-  def _call_paper_core(self, h, action, reset, reward, cont, value_bootstrap):
-    z = self._encode(h, sparse=True)
-    losses = self._zero_losses()
-    metrics = self._base_variant_metrics('paper_core_control_prefix')
-    hier = jnp.array(0.0, f32)
-    sdyn = jnp.array(0.0, f32)
-    ctrl = jnp.array(0.0, f32)
-    if getattr(self, 'use_lhier', True):
-      hier, hier_metrics = self._nested_recon(h, z, beta_schedule='front')
-      losses['hts_hier'] = hier
-      metrics.update(hier_metrics)
-    if getattr(self, 'use_lsdyn', True):
-      sdyn, sdyn_metrics = self._prefix_dynamics(z, action, reset)
-      losses['hts_sdyn'] = sdyn
-      metrics.update(sdyn_metrics)
-    if getattr(self, 'use_lctrl', True):
-      ctrl, ctrl_metrics = self._control_prefix(
-          z, action, reset, reward, cont, value_bootstrap)
-      losses['hts_ctrl'] = ctrl
-      metrics.update(ctrl_metrics)
-    if getattr(self, 'use_ltemp', False):
-      temp_loss, temp_metrics = self._temporal(z[0], reset)
-      losses['hts_temp'] = temp_loss
-      metrics.update(temp_metrics)
-    if getattr(self, 'use_lvc', False):
-      vc_loss, vc_metrics = self._vicreg(z[0])
-      losses['hts_vc'] = vc_loss
-      metrics.update(vc_metrics)
-    if getattr(self, 'use_lsparse', False):
-      losses['hts_sparse'] = sum([jnp.abs(x).mean() for x in z]) / len(z)
-
-    metrics.update(self.actor_critic_metrics(h))
-    metrics.update({
-        'hts/method_paper_core_control_prefix': jnp.array(1.0, f32),
-        'hts/sparse_l1': losses['hts_sparse'],
-        'hts/active_ratio': jnp.mean(jnp.stack([
-            (jnp.abs(x) > 0).mean() for x in z])),
-        'hts/mean_abs': jnp.mean(jnp.stack([
-            jnp.abs(x).mean() for x in z])),
-        'hts/latent_anchor_dim': f32(self.feat_dim),
-        'hts/total_dictionary_width': f32(self.levels * self.head_dim),
-        'hts/total_active_budget': f32(sum(_as_tuple(
-            self.topk_per_level, self.levels, self.topk))),
-        'hts/vicreg_cov_scale': f32(self.vicreg_cov_scale),
-    })
-    for name, key in [
-        ('hier', 'hts_hier'), ('sdyn', 'hts_sdyn'), ('ctrl', 'hts_ctrl'),
-        ('temp', 'hts_temp'), ('vc', 'hts_vc'), ('sparse', 'hts_sparse')]:
       scale = getattr(self, f'l_{name}')
       metrics[f'loss/raw/{name}'] = losses[key]
       metrics[f'loss/weighted/{name}'] = losses[key] * f32(scale)
@@ -687,16 +539,10 @@ class HTS1Aux(nj.Module):
   def _topk(self, x, k=None):
     return level_topk(x, self.topk if k is None else int(k))
 
-  def _nested_recon(self, h, z, beta_schedule='tuple'):
+  def _nested_recon(self, h, z):
     losses = []
     metrics = {}
-    if beta_schedule == 'front':
-      raw = jnp.array([
-          f32(self.hier_beta0) * (f32(self.hier_rho) ** i)
-          for i in range(self.levels)], f32)
-      weights = raw / jnp.maximum(raw.sum(), 1e-8)
-    else:
-      weights = _as_tuple(self.beta_hier, self.levels, 1.0 / self.levels)
+    weights = _as_tuple(self.beta_hier, self.levels, 1.0 / self.levels)
     for level in range(self.levels):
       prefix = [
           sg(z[i]) if self.decoder_prefix_stop_gradient and i < level else z[i]
@@ -707,12 +553,9 @@ class HTS1Aux(nj.Module):
       loss = jnp.square(pred - sg(h)).mean(-1)
       losses.append(loss.mean() * f32(weights[level]))
       metrics[f'hts/hier_l{level + 1}'] = loss.mean()
-      metrics[f'hts/loss_hier_level_{level + 1}'] = loss.mean()
-      metrics[f'hts/prefix_recon_error_level_{level + 1}'] = loss.mean()
       metrics[f'loss/raw/hier_level_{level + 1}'] = loss.mean()
       metrics[f'loss/weighted/hier_level_{level + 1}'] = (
           loss.mean() * f32(weights[level]) * f32(self.l_hier))
-    metrics['hts/loss_hier_total'] = sum(losses)
     return sum(losses), metrics
 
   def _action_window(self, action, stride):
@@ -759,138 +602,6 @@ class HTS1Aux(nj.Module):
           masked * f32(weights[level]) * f32(self.l_sdyn))
     return sum(losses), metrics
 
-  def _prefix_dynamics(self, z, action, reset):
-    T = z[0].shape[1]
-    deltas = tuple(int(x) for x in self.strides_coarse_to_fine or self.strides)
-    losses = []
-    metrics = {}
-    weights = _as_tuple(self.alpha_sdyn, self.levels, 1.0 / self.levels)
-    for level, stride in enumerate(deltas):
-      prefix_width = self.head_dim * (level + 1)
-      if T <= stride:
-        masked = jnp.array(0.0, f32)
-        losses.append(masked)
-        metrics[f'hts/sdyn_l{level + 1}'] = masked
-        metrics[f'hts/sdyn_valid_l{level + 1}'] = masked
-        metrics[f'hts/loss_sdyn_level_{level + 1}'] = masked
-        metrics[f'hts/prefix_dyn_error_level_{level + 1}'] = masked
-        metrics[f'loss/raw/sdyn_level_{level + 1}'] = masked
-        metrics[f'loss/weighted/sdyn_level_{level + 1}'] = masked
-        continue
-      zinp = jnp.concatenate([item[:, :T - stride] for item in z[:level + 1]], -1)
-      target = sg(jnp.concatenate(
-          [item[:, stride:] for item in z[:level + 1]], -1))
-      awin = self._action_window(action, stride)
-      aemb = self._mlp(f'pcore_actenc{level}', awin, self.action_units, 1)
-      inp = jnp.concatenate([zinp, aemb], -1)
-      x = self._mlp(f'pcore_pred{level}', inp)
-      pred = self.sub(
-          f'pcore_pred{level}_out', nn.Linear, prefix_width, **self.kw)(x)
-      per = jnp.square(pred - target).mean(-1)
-      valid = self._same_episode(reset, stride)
-      masked = _masked_mean(per, valid)
-      losses.append(masked * f32(weights[level]))
-      metrics[f'hts/sdyn_l{level + 1}'] = masked
-      metrics[f'hts/sdyn_valid_l{level + 1}'] = f32(valid).mean()
-      metrics[f'hts/loss_sdyn_level_{level + 1}'] = masked
-      metrics[f'hts/prefix_dyn_error_level_{level + 1}'] = masked
-      metrics[f'hts/prefix_dyn_error_stride_{stride}'] = masked
-      metrics[f'loss/raw/sdyn_level_{level + 1}'] = masked
-      metrics[f'loss/weighted/sdyn_level_{level + 1}'] = (
-          masked * f32(weights[level]) * f32(self.l_sdyn))
-    total = sum(losses)
-    metrics['hts/loss_sdyn_total'] = total
-    return total, metrics
-
-  def _discounted_prefix_return(self, reward, cont, bootstrap, stride):
-    B, T = reward.shape
-    n = T - stride
-    gamma = f32(self.discount)
-    ret = jnp.zeros((B, n), f32)
-    alive = jnp.ones((B, n), f32)
-    for offset in range(stride):
-      r = reward[:, offset:n + offset]
-      c = cont[:, offset:n + offset]
-      ret = ret + alive * (gamma ** offset) * sg(r)
-      alive = alive * sg(c)
-    ret = ret + alive * (gamma ** stride) * sg(bootstrap[:, stride:])
-    return ret
-
-  def _control_prefix(self, z, action, reset, reward, cont, value_bootstrap):
-    if reward is None or cont is None:
-      zero = jnp.array(0.0, f32)
-      return zero, {'hts/loss_ctrl_missing_targets': jnp.array(1.0, f32)}
-    T = z[0].shape[1]
-    reward = f32(reward)
-    cont = f32(cont)
-    if value_bootstrap is None:
-      value_bootstrap = jnp.zeros_like(reward)
-    value_bootstrap = f32(value_bootstrap)
-    deltas = tuple(int(x) for x in self.strides_coarse_to_fine or self.strides)
-    weights = _as_tuple(self.alpha_sdyn, self.levels, 1.0 / self.levels)
-    reward_losses = []
-    continue_losses = []
-    value_losses = []
-    metrics = {}
-    for level, stride in enumerate(deltas):
-      if T <= stride:
-        rloss = closs = vloss = jnp.array(0.0, f32)
-        valid = jnp.zeros((z[0].shape[0], 1), bool)
-      else:
-        prefix = jnp.concatenate([item[:, :T - stride] for item in z[:level + 1]], -1)
-        awin = self._action_window(action, stride)
-        aemb = self._mlp(f'ctrl_actenc{level}', awin, self.action_units, 1)
-        inp = jnp.concatenate([prefix, aemb], -1)
-        x = self._mlp(f'ctrl_seq{level}', inp)
-        rew_pred = self.sub(
-            f'ctrl_rew{level}_out', nn.Linear, stride, **self.kw)(x)
-        con_logit = self.sub(
-            f'ctrl_con{level}_out', nn.Linear, stride, **self.kw)(x)
-        v = self._mlp(f'ctrl_val{level}', prefix)
-        val_pred = self.sub(
-            f'ctrl_val{level}_out', nn.Linear, 1, **self.kw)(v)[..., 0]
-        rtarg = jnp.stack(
-            [reward[:, offset:T - stride + offset] for offset in range(stride)],
-            -1)
-        ctarg = jnp.stack(
-            [cont[:, offset:T - stride + offset] for offset in range(stride)],
-            -1)
-        valid = self._same_episode(reset, stride)
-        rper = jnp.square(rew_pred - sg(rtarg)).mean(-1)
-        bce = (
-            jax.nn.softplus(con_logit) -
-            con_logit * sg(ctarg))
-        cper = bce.mean(-1)
-        gtarg = self._discounted_prefix_return(
-            reward, cont, value_bootstrap, stride)
-        vper = jnp.square(val_pred - sg(gtarg))
-        rloss = _masked_mean(rper, valid)
-        closs = _masked_mean(cper, valid)
-        vloss = _masked_mean(vper, valid)
-      reward_losses.append(rloss * f32(weights[level]))
-      continue_losses.append(closs * f32(weights[level]))
-      value_losses.append(vloss * f32(weights[level]))
-      metrics[f'hts/loss_ctrl_reward_level_{level + 1}'] = rloss
-      metrics[f'hts/loss_ctrl_continue_level_{level + 1}'] = closs
-      metrics[f'hts/loss_ctrl_value_level_{level + 1}'] = vloss
-      metrics[f'hts/prefix_value_pred_level_{level + 1}'] = (
-          val_pred.mean() if T > stride else jnp.array(0.0, f32))
-      metrics[f'hts/ctrl_valid_level_{level + 1}'] = f32(valid).mean()
-    rtotal = sum(reward_losses) * f32(self.ctrl_reward_scale)
-    ctotal = sum(continue_losses) * f32(self.ctrl_continue_scale)
-    vtotal = sum(value_losses) * f32(self.ctrl_value_scale)
-    total = rtotal + ctotal + vtotal
-    metrics.update({
-        'hts/loss_ctrl_total': total,
-        'hts/loss_ctrl_reward_total': rtotal,
-        'hts/loss_ctrl_continue_total': ctotal,
-        'hts/loss_ctrl_value_total': vtotal,
-        'loss/raw/ctrl_reward': rtotal,
-        'loss/raw/ctrl_continue': ctotal,
-        'loss/raw/ctrl_value': vtotal,
-    })
-    return total, metrics
-
   def _project(self, z):
     x = self._mlp('proj', z, self.proj_dim, 1)
     return self.sub('proj_out', nn.Linear, self.proj_dim, **self.kw)(x)
@@ -907,12 +618,10 @@ class HTS1Aux(nj.Module):
 
   def _vicreg(self, z1):
     v = self._project(z1)
-    loss, var_loss, cov_loss, proj_std = vicreg_loss(
-        v, self.vicreg_gamma, self.vicreg_cov_scale)
+    loss, var_loss, cov_loss, proj_std = vicreg_loss(v, self.vicreg_gamma)
     return loss, {
         'hts/vicreg_var': var_loss,
         'hts/vicreg_cov': cov_loss,
-        'hts/vicreg_cov_scale': f32(self.vicreg_cov_scale),
         'hts/proj_std': proj_std,
         'loss/raw/vc_var': var_loss,
         'loss/raw/vc_cov': cov_loss,
